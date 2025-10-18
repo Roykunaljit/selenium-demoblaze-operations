@@ -1,7 +1,5 @@
-# Name for your GitHub Actions workflow
 name: Selenium Test Suite
 
-# Controls when the workflow will run
 on:
   push:
     branches: [ main ]
@@ -13,41 +11,33 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checks-out your repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Sets up Python 3.9
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
           cache: 'pip'
 
-      # 3. Installs all dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 4. *** NEW CRUCIAL STEP ***
-      # Runs your script to create the keyword_test_cases.xlsx file
       - name: Create Keyword-Driven Test Data
         run: python create_fresh_test_data.py
 
-      # 5. Enforces headless mode for the browser in the config file
       - name: Enforce Headless Mode for Tests
         run: |
           sed -i 's/^headless_mode = False/headless_mode = True/' selenium_demoblaze_framework/config/config.ini
 
-      # 6. Runs the pytest command to execute all tests
       - name: Run Pytest and Generate Reports
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
           pytest selenium_demoblaze_framework/tests/ --html=reports/test-report.html --alluredir=reports/allure-results
 
-      # 7. Uploads the HTML report as a build artifact
       - name: Upload HTML Test Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -55,7 +45,6 @@ jobs:
           name: html-test-report
           path: reports/test-report.html
 
-      # 8. Generates the user-friendly Allure web report
       - name: Generate Allure Report
         if: always()
         uses: simple-elf/allure-report-action@v1.7
@@ -64,7 +53,6 @@ jobs:
           allure_results: reports/allure-results
           allure_history: allure-history
 
-      # 9. Uploads the generated Allure report as a build artifact
       - name: Upload Allure Report
         if: always()
         uses: actions/upload-artifact@v4
