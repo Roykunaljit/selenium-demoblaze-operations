@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# IDE / Editor specific files
+.idea/
+*.vscode/
+
+# Runtime Generated Folders
+logs/
+reports/
+screenshots/
+allure-results/
+allure-history/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Test output data files (see note below)
+data/test_output.xml
+data/test_output.json
+data/test_output.csv
+test_pages/
+
+# Exclude generated keyword test data file
+selenium_demoblaze_framework/data/keyword_test_cases.xlsx

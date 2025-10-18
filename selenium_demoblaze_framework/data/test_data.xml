@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<testdata>
+  <testcase>
+    <username>testuser1</username>
+    <password>Test@123</password>
+    <product>Samsung galaxy s6</product>
+    <category>Phones</category>
+  </testcase>
+  <testcase>
+    <username>testuser2</username>
+    <password>Test@456</password>
+    <product>Sony vaio i5</product>
+    <category>Laptops</category>
+  </testcase>
+</testdata>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testdata><testcase><username>xmluser1</username><password>xmlpass1</password><product>Sony vaio i5</product></testcase><testcase><username>xmluser2</username><password>xmlpass2</password><product>MacBook air</product></testcase></testdata>

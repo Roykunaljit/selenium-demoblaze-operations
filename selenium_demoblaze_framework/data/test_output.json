@@ -1,0 +1,16 @@
+{
+    "test_users": [
+        {
+            "username": "jsonuser1",
+            "password": "jsonpass1"
+        },
+        {
+            "username": "jsonuser2",
+            "password": "jsonpass2"
+        }
+    ],
+    "test_products": [
+        "Samsung galaxy s6",
+        "Nokia lumia 1520"
+    ]
+}
