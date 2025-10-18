@@ -59,6 +59,7 @@ jobs:
       - name: Generate Allure Report
         if: always()
         uses: simple-elf/allure-report-action@v1.7
+        continue-on-error: true
         with:
           allure_results: reports/allure-results
           allure_history: allure-history
