@@ -12,7 +12,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
-from twisted.conch.telnet import EC
+#from twisted.conch.telnet import EC
 from selenium.webdriver.support import expected_conditions as EC
 
 # Add parent directory to path
