@@ -2,9 +2,9 @@ name: Selenium Test Suite
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -24,10 +24,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
-          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f1)
-          DRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_${CHROME_VERSION}")
-          echo "Chrome version: $(google-chrome --version)"
-          echo "Chromedriver version: $DRIVER_VERSION"
+          CHROME_VERSION=$(google-chrome --version | grep -o '[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*' | head -n1)
+          DRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_$(echo $CHROME_VERSION | cut -d. -f1)")
+          echo "Chrome: $CHROME_VERSION | Driver: $DRIVER_VERSION"
           wget -O chromedriver.zip "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${DRIVER_VERSION}/linux64/chromedriver-linux64.zip"
           unzip chromedriver.zip
           sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
@@ -41,11 +40,11 @@ jobs:
       - name: Create Keyword-Driven Test Data
         run: python create_fresh_test_data.py
 
-      - name: Enforce Headless Mode for Tests
+      - name: Enforce Headless Mode
         run: |
           sed -i 's/^headless_mode = False/headless_mode = True/' selenium_demoblaze_framework/config/config.ini
 
-      - name: Run Pytest and Generate Reports
+      - name: Run Tests and Generate Reports
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
@@ -61,28 +60,66 @@ jobs:
           name: html-test-report
           path: reports/test-report.html
 
-      - name: Get Allure history
-        uses: actions/checkout@v4
+      - name: Upload Allure Results
         if: always()
-        continue-on-error: true
+        uses: actions/upload-artifact@v4
         with:
-          ref: gh-pages
-          path: gh-pages
+          name: allure-results
+          path: reports/allure-results
 
       - name: Generate Allure Report
         if: always()
         uses: simple-elf/allure-report-action@v1.7
         with:
           allure_results: reports/allure-results
-          allure_history: allure-history
-          keep_reports: 20
+          allure_report: allure-report
 
-      - name: Upload Allure Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
+      - name: Prepare GitHub Pages Deployment
+        run: |
+          mkdir -p pages-deploy
+
+          # Copy Allure report (as a subfolder named by run number)
+          cp -r allure-report "pages-deploy/${{ github.run_number }}"
+
+          # Create symlink for "latest" (optional)
+          ln -sf "${{ github.run_number }}" pages-deploy/latest
+
+          # Copy HTML report
+          mkdir -p pages-deploy/html-reports
+          cp reports/test-report.html "pages-deploy/html-reports/report-${{ github.run_number }}.html"
+
+          # Generate index.html
+          cat > pages-deploy/index.html <<EOF
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>Selenium Test Reports</title>
+            <meta charset="utf-8">
+            <style>
+              body { font-family: sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.6; }
+              h1 { color: #2c3e50; }
+              .card { background: #f8f9fa; padding: 20px; margin: 20px 0; border-radius: 8px; }
+              a.btn { display: inline-block; padding: 10px 20px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; margin: 5px; }
+              a.btn:hover { background: #2980b9; }
+            </style>
+          </head>
+          <body>
+            <h1>🧪 Selenium DemoBlaze Test Reports</h1>
+
+            <div class="card">
+              <h2>📊 Allure Report (Run #${{ github.run_number }})</h2>
+              ${{ github.run_number }}/Open Allure Report</a>
+            </div>
+
+            <div class="card">
+              <h2>📄 HTML Report</h2>
+              html-reports/report-${{ github.run_number }}.htmlOpen HTML Report</a>
+            </div>
+
+            <p><em>Reports auto-deployed via GitHub Actions.</em></p>
+          </body>
+          </html>
+          EOF
 
       - name: Deploy to GitHub Pages
         if: always()
@@ -90,153 +127,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-history
-          keep_files: true
-
-      - name: Copy HTML Report to Pages
-        if: always()
-        run: |
-          cp -r allure-history/. pages-deploy/ || mkdir -p pages-deploy
-          mkdir -p pages-deploy/html-reports
-          cp reports/test-report.html pages-deploy/html-reports/report-${{ github.run_number }}.html
-          
-          # Create index page with links to both reports
-          cat > pages-deploy/index.html <<EOF
-          <!DOCTYPE html>
-          <html>
-          <head>
-              <title>Test Reports - Selenium DemoBlaze</title>
-              <meta charset="utf-8">
-              <style>
-                  body {
-                      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-                      line-height: 1.6;
-                      color: #333;
-                      max-width: 1200px;
-                      margin: 0 auto;
-                      padding: 20px;
-                      background: #f5f5f5;
-                  }
-                  h1 {
-                      color: #2c3e50;
-                      border-bottom: 3px solid #3498db;
-                      padding-bottom: 10px;
-                  }
-                  .container {
-                      background: white;
-                      border-radius: 8px;
-                      padding: 30px;
-                      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                      margin-bottom: 20px;
-                  }
-                  .report-section {
-                      margin: 20px 0;
-                      padding: 20px;
-                      border-left: 4px solid #3498db;
-                      background: #f8f9fa;
-                      border-radius: 4px;
-                  }
-                  .report-section h2 {
-                      margin-top: 0;
-                      color: #2c3e50;
-                  }
-                  .btn {
-                      display: inline-block;
-                      padding: 10px 20px;
-                      background: #3498db;
-                      color: white;
-                      text-decoration: none;
-                      border-radius: 5px;
-                      margin: 5px;
-                      transition: background 0.3s;
-                  }
-                  .btn:hover {
-                      background: #2980b9;
-                  }
-                  .btn-success {
-                      background: #27ae60;
-                  }
-                  .btn-success:hover {
-                      background: #229954;
-                  }
-                  .info {
-                      background: #e8f4f8;
-                      padding: 15px;
-                      border-radius: 5px;
-                      margin: 10px 0;
-                  }
-                  .timestamp {
-                      color: #7f8c8d;
-                      font-size: 0.9em;
-                  }
-              </style>
-          </head>
-          <body>
-              <div class="container">
-                  <h1>🧪 Selenium DemoBlaze Test Reports</h1>
-                  
-                  <div class="info">
-                      <strong>Repository:</strong> selenium-demoblaze-automation<br>
-                      <strong>Run Number:</strong> #${{ github.run_number }}<br>
-                      <strong>Branch:</strong> ${{ github.ref_name }}<br>
-                      <strong>Commit:</strong> ${{ github.sha }}<br>
-                      <span class="timestamp">Generated: $(date)</span>
-                  </div>
-
-                  <div class="report-section">
-                      <h2>📊 Allure Report</h2>
-                      <p>Interactive test report with detailed test execution information, trends, and history.</p>
-                      <a href="${{ github.run_number }}/" class="btn btn-success">View Current Allure Report</a>
-                      <a href="last-history/" class="btn">View Latest Report</a>
-                  </div>
-
-                  <div class="report-section">
-                      <h2>📄 HTML Report</h2>
-                      <p>Simple HTML test report generated by pytest-html.</p>
-                      <a href="html-reports/report-${{ github.run_number }}.html" class="btn">View HTML Report</a>
-                  </div>
-
-                  <div class="report-section">
-                      <h2>📚 Historical Reports</h2>
-                      <p>Access previous test run reports:</p>
-                      <ul id="history-list">
-                          <!-- Will be populated by JavaScript -->
-                      </ul>
-                  </div>
-              </div>
-
-              <script>
-                  // Add links to historical reports
-                  const runNumber = ${{ github.run_number }};
-                  const historyList = document.getElementById('history-list');
-                  
-                  for(let i = runNumber; i > Math.max(1, runNumber - 10); i--) {
-                      const li = document.createElement('li');
-                      li.innerHTML = \`
-                          Run #\${i}: 
-                          <a href="\${i}/">Allure</a> | 
-                          <a href="html-reports/report-\${i}.html">HTML</a>
-                      \`;
-                      historyList.appendChild(li);
-                  }
-              </script>
-          </body>
-          </html>
-          EOF
-
-      - name: Deploy Complete Reports to GitHub Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
           publish_dir: pages-deploy
-          keep_files: false
-
-      - name: Post Report URLs
-        if: always()
-        run: |
-          echo "📊 Test Reports are available at:"
-          echo "🌐 Main Page: https://roykunaljit.github.io/selenium-demoblaze-automation/"
-          echo "📈 Allure Report: https://roykunaljit.github.io/selenium-demoblaze-automation/${{ github.run_number }}/"
-          echo "📄 HTML Report: https://roykunaljit.github.io/selenium-demoblaze-automation/html-reports/report-${{ github.run_number }}.html"
+          keep_files: true
