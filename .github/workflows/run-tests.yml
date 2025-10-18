@@ -10,6 +10,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # This gives write permission to the repository
+      pages: write     # This gives permission to deploy to GitHub Pages
+      id-token: write  # This is required for GitHub Pages deployment
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -162,7 +166,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: deploy
-          force_orphan: ${{ github.run_number == '1' }}
+          force_orphan: true  # Always use force_orphan for first deployment
 
       - name: Post Report URLs
         if: always()
