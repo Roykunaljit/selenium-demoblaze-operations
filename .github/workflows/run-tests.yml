@@ -42,6 +42,8 @@ jobs:
 
       # 6. Runs the pytest command to execute all tests
       - name: Run Pytest and Generate Reports
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           pytest selenium_demoblaze_framework/tests/ --html=reports/test-report.html --alluredir=reports/allure-results
 
