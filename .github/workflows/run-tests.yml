@@ -57,6 +57,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget gnupg
 
+          # Add Microsoft Edge repo
           curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-edge.gpg
           echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
           sudo apt-get update
@@ -67,8 +68,13 @@ jobs:
           EDGE_MAJOR=$(echo "$EDGE_VERSION" | cut -d. -f1)
           echo "Edge version: $EDGE_VERSION (major: $EDGE_MAJOR)"
 
-          # Download matching msedgedriver
-          DRIVER_VERSION=$(curl -s "https://msedgedriver.azureedge.net/LATEST_RELEASE_${EDGE_MAJOR}_LINUX")
+          # ✅ CORRECT URL: NO _LINUX suffix
+          DRIVER_VERSION=$(curl -s "https://msedgedriver.azureedge.net/LATEST_RELEASE_${EDGE_MAJOR}")
+          if [ -z "$DRIVER_VERSION" ]; then
+            echo "❌ Failed to fetch EdgeDriver version for major version $EDGE_MAJOR"
+            exit 1
+          fi
+
           echo "Downloading msedgedriver version: $DRIVER_VERSION"
           wget -O msedgedriver.zip "https://msedgedriver.azureedge.net/${DRIVER_VERSION}/edgedriver_linux64.zip"
           unzip msedgedriver.zip
