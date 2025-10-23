@@ -265,3 +265,7 @@ class HomePageFactory(BasePageFactory):
             self.logger.info(f"Products on page: {all_products}")
 
         return False
+
+    def click_logo(self):
+        logo_element = self.logo()  # ← This uses @find_by and caching
+        self.click_element(logo_element)

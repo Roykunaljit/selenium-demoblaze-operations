@@ -1,5 +1,5 @@
 # pages/home_page.py
-from selenium.common import TimeoutException, NoSuchElementException
+from selenium.common import TimeoutException, NoSuchElementException, WebDriverException
 from selenium.webdriver.common.by import By
 from selenium_demoblaze_framework.pages.base_page import BasePage
 import time
@@ -16,6 +16,7 @@ class HomePage(BasePage):
     SIGNUP_MENU = (By.ID, "signin2")
     LOGOUT_MENU = (By.ID, "logout2")
     WELCOME_USER = (By.ID, "nameofuser")
+    LOGOUT_BUTTON = (By.ID, "logout2")
 
     # ==================== Categories ====================
     PHONES_CATEGORY = (By.XPATH, "//a[contains(text(),'Phones')]")
@@ -202,9 +203,16 @@ class HomePage(BasePage):
     def is_user_logged_in(self):
         """Check if a user is currently logged in."""
         try:
-            welcome_text = self.get_text(self.WELCOME_USER)
-            return "Welcome" in welcome_text
-        except (TimeoutException, NoSuchElementException):
+            # Condition 1: Logout button must be present and displayed
+            logout_btn = self.driver.find_element(*self.LOGOUT_BUTTON)  # e.g., (By.ID, "logout2")
+            if not logout_btn.is_displayed():
+                return False
+
+            # Condition 2: Welcome text must contain "Welcome"
+            welcome_text = self.get_text(self.WELCOME_USER)  # (By.ID, "nameofuser")
+            return "Welcome" in welcome_text and len(welcome_text.strip()) > 8  # e.g., "Welcome abc"
+
+        except (TimeoutException, NoSuchElementException, WebDriverException):
             return False
 
     def get_username_from_welcome(self):

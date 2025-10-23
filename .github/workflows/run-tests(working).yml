@@ -1,5 +1,4 @@
-# .github/workflows/test.yml
-name: Selenium Test Suite - Cross Browser Parallel
+name: Selenium Test Suite
 
 on:
   push:
@@ -12,15 +11,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pages: write
-      id-token: write
-
-    strategy:
-      matrix:
-        browser: [chrome, edge]
-      fail-fast: false  # Continue other browsers even if one fails
-
+      contents: write  # This gives write permission to the repository
+      pages: write     # This gives permission to deploy to GitHub Pages
+      id-token: write  # This is required for GitHub Pages deployment
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,7 +25,6 @@ jobs:
           cache: 'pip'
 
       - name: Install Chrome and Chromedriver
-        if: matrix.browser == 'chrome'
         run: |
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
@@ -44,16 +36,6 @@ jobs:
           unzip chromedriver.zip
           sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
           chmod +x /usr/local/bin/chromedriver
-
-      - name: Install Edge and EdgeDriver
-        if: matrix.browser == 'edge'
-        run: |
-          curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-          sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
-          sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
-          sudo apt-get update
-          sudo apt-get install -y microsoft-edge-stable
-          echo "Edge version: $(microsoft-edge --version)"
 
       - name: Install dependencies
         run: |
@@ -67,77 +49,32 @@ jobs:
         run: |
           sed -i 's/^headless_mode = False/headless_mode = True/' selenium_demoblaze_framework/config/config.ini
 
-      - name: Run Pytest with Parallel Execution
+      - name: Run Pytest and Generate Reports
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
           pytest selenium_demoblaze_framework/tests/ \
-            --browser=${{ matrix.browser }} \
-            -n 4 \
-            --dist loadgroup \
-            --html=reports/test-report-${{ matrix.browser }}.html \
+            --html=reports/test-report.html \
             --self-contained-html \
-            --alluredir=reports/allure-results-${{ matrix.browser }}
+            --alluredir=reports/allure-results
 
       - name: Upload HTML Test Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: html-test-report-${{ matrix.browser }}
-          path: reports/test-report-${{ matrix.browser }}.html
-
-      - name: Upload Allure Results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results-${{ matrix.browser }}
-          path: reports/allure-results-${{ matrix.browser }}
-
-      - name: Upload Screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: screenshots-${{ matrix.browser }}
-          path: reports/screenshots
-        continue-on-error: true
-
-  # Combine and deploy reports after all browser tests complete
-  deploy-reports:
-    needs: test
-    runs-on: ubuntu-latest
-    if: always()
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Download all artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: artifacts
+          name: html-test-report
+          path: reports/test-report.html
 
       - name: Get Allure history
         uses: actions/checkout@v4
+        if: always()
         continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
 
-      - name: Combine Allure Results
-        run: |
-          mkdir -p reports/allure-results
-          # Merge all browser results
-          find artifacts -name "allure-results-*" -type d | while read dir; do
-            cp -r "$dir"/* reports/allure-results/ 2>/dev/null || true
-          done
-          echo "Combined allure results from all browsers"
-          ls -la reports/allure-results/
-
-      - name: Generate Combined Allure Report
+      - name: Generate Allure Report
+        if: always()
         uses: simple-elf/allure-report-action@v1.7
         with:
           allure_results: reports/allure-results
@@ -145,14 +82,15 @@ jobs:
           keep_reports: 20
           gh_pages: gh-pages
 
-      - name: Upload Combined Allure Report
+      - name: Upload Allure Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report-combined
+          name: allure-report
           path: allure-report
 
       - name: Prepare Reports for GitHub Pages
+        if: always()
         run: |
           mkdir -p deploy
           
@@ -163,28 +101,14 @@ jobs:
           
           # Create HTML reports directory
           mkdir -p deploy/html-reports
+          cp reports/test-report.html deploy/html-reports/report-${{ github.run_number }}.html
           
-          # Copy browser-specific HTML reports
-          for browser in chrome edge; do
-            if [ -f "artifacts/html-test-report-${browser}/test-report-${browser}.html" ]; then
-              cp "artifacts/html-test-report-${browser}/test-report-${browser}.html" \
-                 "deploy/html-reports/report-${browser}-${{ github.run_number }}.html"
-              echo "Copied ${browser} HTML report"
-            fi
-          done
-          
-          # Copy screenshots if available
-          mkdir -p deploy/screenshots
-          find artifacts -name "screenshots-*" -type d | while read dir; do
-            cp -r "$dir"/* deploy/screenshots/ 2>/dev/null || true
-          done
-          
-          # Create enhanced index page
-          cat > deploy/index.html <<'EOF'
+          # Create an index page WITHOUT auto-redirect
+          cat > deploy/index.html <<EOF
           <!DOCTYPE html>
           <html>
           <head>
-              <title>Cross-Browser Test Reports - Selenium DemoBlaze</title>
+              <title>Test Reports Dashboard - Selenium DemoBlaze</title>
               <meta charset="utf-8">
               <meta name="viewport" content="width=device-width, initial-scale=1">
               <style>
@@ -209,7 +133,7 @@ jobs:
                       border-radius: 12px;
                       padding: 40px;
                       box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-                      max-width: 1000px;
+                      max-width: 800px;
                       width: 100%;
                       animation: fadeIn 0.5s ease-in;
                   }
@@ -229,26 +153,6 @@ jobs:
                       margin-bottom: 30px;
                       font-size: 1.1em;
                   }
-                  .badge {
-                      display: inline-block;
-                      padding: 5px 12px;
-                      border-radius: 20px;
-                      font-size: 0.85em;
-                      font-weight: 600;
-                      margin: 0 5px;
-                  }
-                  .badge-chrome {
-                      background: #4285f4;
-                      color: white;
-                  }
-                  .badge-edge {
-                      background: #0078d7;
-                      color: white;
-                  }
-                  .badge-parallel {
-                      background: #28a745;
-                      color: white;
-                  }
                   .info-box {
                       background: #f8f9fa;
                       border-left: 4px solid #667eea;
@@ -266,7 +170,7 @@ jobs:
                   }
                   .reports-section {
                       display: grid;
-                      grid-template-columns: 1fr;
+                      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                       gap: 20px;
                       margin-bottom: 30px;
                   }
@@ -277,6 +181,7 @@ jobs:
                       padding: 25px;
                       text-align: center;
                       transition: all 0.3s ease;
+                      cursor: pointer;
                   }
                   .report-card:hover {
                       transform: translateY(-5px);
@@ -302,7 +207,6 @@ jobs:
                       font-weight: 500;
                       transition: all 0.3s ease;
                       font-size: 1em;
-                      margin: 5px;
                   }
                   .btn-allure {
                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -311,63 +215,12 @@ jobs:
                       transform: scale(1.05);
                       box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
                   }
-                  .btn-chrome {
-                      background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+                  .btn-html {
+                      background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
                   }
-                  .btn-chrome:hover {
+                  .btn-html:hover {
                       transform: scale(1.05);
-                      box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4);
-                  }
-                  .btn-edge {
-                      background: linear-gradient(135deg, #0078d7 0%, #00bcf2 100%);
-                  }
-                  .btn-edge:hover {
-                      transform: scale(1.05);
-                      box-shadow: 0 5px 15px rgba(0, 120, 215, 0.4);
-                  }
-                  .browser-reports {
-                      display: flex;
-                      justify-content: center;
-                      flex-wrap: wrap;
-                      margin-top: 20px;
-                      gap: 10px;
-                  }
-                  .emoji {
-                      font-size: 1.5em;
-                      margin-bottom: 10px;
-                  }
-                  .timestamp {
-                      text-align: center;
-                      color: #95a5a6;
-                      font-size: 0.85em;
-                      margin-top: 20px;
-                  }
-                  .feature-list {
-                      background: #e8f4f8;
-                      border-radius: 8px;
-                      padding: 20px;
-                      margin: 20px 0;
-                  }
-                  .feature-list h4 {
-                      color: #2c3e50;
-                      margin-bottom: 15px;
-                      display: flex;
-                      align-items: center;
-                      gap: 10px;
-                  }
-                  .feature-list ul {
-                      list-style: none;
-                      padding-left: 0;
-                  }
-                  .feature-list li {
-                      padding: 8px 0;
-                      color: #555;
-                  }
-                  .feature-list li::before {
-                      content: "✓ ";
-                      color: #28a745;
-                      font-weight: bold;
-                      margin-right: 8px;
+                      box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
                   }
                   .history-section {
                       margin-top: 30px;
@@ -400,18 +253,22 @@ jobs:
                       color: white;
                       border-color: #667eea;
                   }
+                  .timestamp {
+                      text-align: center;
+                      color: #95a5a6;
+                      font-size: 0.85em;
+                      margin-top: 20px;
+                  }
+                  .emoji {
+                      font-size: 1.5em;
+                      margin-bottom: 10px;
+                  }
               </style>
           </head>
           <body>
               <div class="container">
-                  <h1>🧪 Cross-Browser Test Reports</h1>
-                  <p class="subtitle">
-                      Selenium DemoBlaze Automation
-                      <br>
-                      <span class="badge badge-chrome">Chrome</span>
-                      <span class="badge badge-edge">Edge</span>
-                      <span class="badge badge-parallel">Parallel Execution</span>
-                  </p>
+                  <h1>🧪 Test Reports Dashboard</h1>
+                  <p class="subtitle">Selenium DemoBlaze Automation</p>
                   
                   <div class="info-box">
                       <p><strong>📦 Repository:</strong> ${{ github.repository }}</p>
@@ -421,38 +278,19 @@ jobs:
                       <p><strong>👤 Actor:</strong> ${{ github.actor }}</p>
                   </div>
 
-                  <div class="feature-list">
-                      <h4>🚀 Test Execution Features</h4>
-                      <ul>
-                          <li>Cross-browser testing on Chrome and Edge</li>
-                          <li>Parallel test execution with pytest-xdist (4 workers)</li>
-                          <li>Thread-safe screenshot handling</li>
-                          <li>Comprehensive Allure reporting with trends</li>
-                          <li>Browser-specific HTML reports</li>
-                          <li>Automated report history tracking</li>
-                      </ul>
-                  </div>
-
                   <div class="reports-section">
                       <div class="report-card">
                           <div class="emoji">📊</div>
-                          <h3>Combined Allure Report</h3>
-                          <p>Interactive test report combining results from all browsers with detailed execution info, trends, and history</p>
+                          <h3>Allure Report</h3>
+                          <p>Interactive test report with detailed execution info, trends, and history</p>
                           <a href="${{ github.run_number }}/" class="btn btn-allure">Open Allure Report</a>
                       </div>
                       
                       <div class="report-card">
-                          <div class="emoji">🌐</div>
-                          <h3>Browser-Specific HTML Reports</h3>
-                          <p>Detailed HTML reports generated by pytest-html for each browser</p>
-                          <div class="browser-reports">
-                              <a href="html-reports/report-chrome-${{ github.run_number }}.html" class="btn btn-chrome">
-                                  Chrome Report
-                              </a>
-                              <a href="html-reports/report-edge-${{ github.run_number }}.html" class="btn btn-edge">
-                                  Edge Report
-                              </a>
-                          </div>
+                          <div class="emoji">📄</div>
+                          <h3>HTML Report</h3>
+                          <p>Simple, self-contained HTML test report generated by pytest-html</p>
+                          <a href="html-reports/report-${{ github.run_number }}.html" class="btn btn-html">Open HTML Report</a>
                       </div>
                   </div>
 
@@ -480,11 +318,11 @@ jobs:
                   for(let i = currentRun - 1; i > Math.max(0, currentRun - 10); i--) {
                       const linkDiv = document.createElement('div');
                       linkDiv.style.display = 'inline-block';
-                      linkDiv.innerHTML = `
-                          <a href="${i}/" class="history-link" title="View Run #${i}">
-                              Run #${i}
+                      linkDiv.innerHTML = \`
+                          <a href="\${i}/" class="history-link" title="View Run #\${i}">
+                              Run #\${i}
                           </a>
-                      `;
+                      \`;
                       historyContainer.appendChild(linkDiv);
                   }
                   
@@ -495,33 +333,25 @@ jobs:
           </body>
           </html>
           EOF
-          
-          echo "Index page created successfully"
 
       - name: Deploy to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: deploy
-          force_orphan: false
-          keep_files: false
+          force_orphan: true  # Always use force_orphan for first deployment
 
       - name: Post Report URLs
+        if: always()
         run: |
-          echo "### 📊 Cross-Browser Test Reports Published! 🎉" >> $GITHUB_STEP_SUMMARY
+          echo "### 📊 Test Reports Published! 🎉" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**🌐 Main Dashboard:** https://roykunaljit.github.io/selenium-demoblaze-automation/" >> $GITHUB_STEP_SUMMARY
-          echo "**📈 Combined Allure Report:** https://roykunaljit.github.io/selenium-demoblaze-automation/${{ github.run_number }}/" >> $GITHUB_STEP_SUMMARY
-          echo "**🔵 Chrome HTML Report:** https://roykunaljit.github.io/selenium-demoblaze-automation/html-reports/report-chrome-${{ github.run_number }}.html" >> $GITHUB_STEP_SUMMARY
-          echo "**🔷 Edge HTML Report:** https://roykunaljit.github.io/selenium-demoblaze-automation/html-reports/report-edge-${{ github.run_number }}.html" >> $GITHUB_STEP_SUMMARY
+          echo "**📈 Allure Report:** https://roykunaljit.github.io/selenium-demoblaze-automation/${{ github.run_number }}/" >> $GITHUB_STEP_SUMMARY
+          echo "**📄 HTML Report:** https://roykunaljit.github.io/selenium-demoblaze-automation/html-reports/report-${{ github.run_number }}.html" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
-          echo "### 📋 Execution Summary" >> $GITHUB_STEP_SUMMARY
-          echo "✅ Tests executed on Chrome and Edge in parallel" >> $GITHUB_STEP_SUMMARY
-          echo "⚡ Parallel execution with 4 workers per browser" >> $GITHUB_STEP_SUMMARY
-          echo "🔒 Thread-safe screenshot and report generation" >> $GITHUB_STEP_SUMMARY
-          echo "📸 Screenshots available in artifacts" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Run Number:** #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
-          echo "**Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "Run Number: #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "Commit: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY

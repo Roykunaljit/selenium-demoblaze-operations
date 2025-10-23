@@ -4,6 +4,34 @@ import allure
 from allure_commons.types import AttachmentType
 import os
 from datetime import datetime
+import threading
+
+# Thread-safe screenshot counter
+screenshot_lock = threading.Lock()
+screenshot_counter = {}
+
+
+def pytest_addoption(parser):
+    """Add command line options for browser selection."""
+    parser.addoption(
+        "--browser",
+        action="store",
+        default="chrome",
+        help="Browser to run tests: chrome, edge, or all"
+    )
+
+
+def pytest_generate_tests(metafunc):
+    """Generate test combinations for different browsers."""
+    if "browser_name" in metafunc.fixturenames:
+        browser_option = metafunc.config.getoption("--browser").lower()
+
+        if browser_option == "all":
+            browsers = ["chrome", "edge"]
+        else:
+            browsers = [browser_option]
+
+        metafunc.parametrize("browser_name", browsers, scope="function")
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
@@ -11,6 +39,7 @@ def pytest_runtest_makereport(item, call):
     """
     Hook to take screenshot on test failure for Allure reports.
     Handles multiple fixture names and patterns.
+    Thread-safe implementation for parallel execution.
     """
     outcome = yield
     report = outcome.get_result()
@@ -53,13 +82,27 @@ def pytest_runtest_makereport(item, call):
                 print(f"\n⚠️ No driver found for screenshot in test: {item.name}")
                 return
 
-            # Create screenshot directory
+            # Create screenshot directory (thread-safe)
             screenshot_dir = os.path.join(os.getcwd(), 'reports', 'screenshots')
             os.makedirs(screenshot_dir, exist_ok=True)
 
-            # Generate unique filename
-            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            filename = f"failure_{item.name}_{timestamp}.png"
+            # Generate unique filename with thread-safe counter
+            with screenshot_lock:
+                thread_id = threading.current_thread().ident
+                if thread_id not in screenshot_counter:
+                    screenshot_counter[thread_id] = 0
+                screenshot_counter[thread_id] += 1
+                counter = screenshot_counter[thread_id]
+
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S_%f')
+            worker_id = os.environ.get('PYTEST_XDIST_WORKER', 'master')
+
+            # Get browser name from test parameters
+            browser_name = "unknown"
+            if hasattr(item, 'callspec') and 'browser_name' in item.callspec.params:
+                browser_name = item.callspec.params['browser_name']
+
+            filename = f"failure_{browser_name}_{item.name}_{worker_id}_{timestamp}_{counter}.png"
             filepath = os.path.join(screenshot_dir, filename)
 
             # Save screenshot
@@ -68,7 +111,7 @@ def pytest_runtest_makereport(item, call):
             # Attach to Allure
             allure.attach(
                 driver.get_screenshot_as_png(),
-                name=f"Screenshot on Failure: {item.name}",
+                name=f"Screenshot [{browser_name}] {item.name}",
                 attachment_type=AttachmentType.PNG
             )
 
@@ -76,3 +119,20 @@ def pytest_runtest_makereport(item, call):
 
         except Exception as e:
             print(f"\n❗ Screenshot failed for {item.name}: {str(e)}")
+
+
+@pytest.hookimpl(tryfirst=True)
+def pytest_configure(config):
+    """Configure pytest with custom markers."""
+    config.addinivalue_line(
+        "markers", "chrome: mark test to run only on Chrome"
+    )
+    config.addinivalue_line(
+        "markers", "edge: mark test to run only on Edge"
+    )
+    config.addinivalue_line(
+        "markers", "smoke: mark test as smoke test"
+    )
+    config.addinivalue_line(
+        "markers", "regression: mark test as regression test"
+    )
