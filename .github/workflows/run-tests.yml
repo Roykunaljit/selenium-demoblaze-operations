@@ -39,10 +39,10 @@ jobs:
           DRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_${CHROME_VERSION}")
           echo "Chrome version: $(google-chrome --version)"
           echo "Chromedriver version: $DRIVER_VERSION"
-          wget -O chromedriver.zip "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${DRIVER_VERSION}/linux64/chromedriver-linux64.zip"
+          wget -O chromedriver.zip "https://storage.googleapis.com/chrome-for-testing-public/${DRIVER_VERSION}/linux64/chromedriver-linux64.zip"
           unzip chromedriver.zip
           sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
-          chmod +x /usr/local/bin/chromedriver
+          sudo chmod +x /usr/local/bin/chromedriver
 
       - name: Install Edge and EdgeDriver
         if: matrix.browser == 'edge'
@@ -56,16 +56,50 @@ jobs:
           
           # Get Edge version
           EDGE_VERSION=$(microsoft-edge --version | awk '{print $3}')
+          EDGE_MAJOR_VERSION=$(echo $EDGE_VERSION | cut -d '.' -f1)
           echo "Edge version: $EDGE_VERSION"
+          echo "Edge major version: $EDGE_MAJOR_VERSION"
           
-          # Install EdgeDriver using webdriver-manager
-          pip install webdriver-manager
-          python -c "from webdriver_manager.microsoft import EdgeChromiumDriverManager; EdgeChromiumDriverManager().install()"
+          # Install EdgeDriver using the correct URL format
+          echo "Installing EdgeDriver..."
+          
+          # Download EdgeDriver
+          DRIVER_URL="https://msedgedriver.azureedge.net/${EDGE_VERSION}/edgedriver_linux64.zip"
+          echo "Downloading EdgeDriver from: $DRIVER_URL"
+          
+          if wget --timeout=30 --tries=3 -O edgedriver.zip "$DRIVER_URL"; then
+            echo "Successfully downloaded EdgeDriver"
+            unzip -q edgedriver.zip
+            sudo mv msedgedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/msedgedriver
+          else
+            echo "Failed to download exact version, trying stable channel..."
+            # Fallback to stable version
+            STABLE_URL="https://msedgedriver.azureedge.net/LATEST_STABLE"
+            STABLE_VERSION=$(curl -s $STABLE_URL)
+            DRIVER_URL="https://msedgedriver.azureedge.net/${STABLE_VERSION}/edgedriver_linux64.zip"
+            
+            if wget --timeout=30 --tries=3 -O edgedriver.zip "$DRIVER_URL"; then
+              unzip -q edgedriver.zip
+              sudo mv msedgedriver /usr/local/bin/
+              sudo chmod +x /usr/local/bin/msedgedriver
+            else
+              echo "ERROR: Failed to download EdgeDriver"
+              exit 1
+            fi
+          fi
+          
+          # Verify installation
+          if command -v msedgedriver &> /dev/null; then
+            echo "EdgeDriver version: $(msedgedriver --version)"
+          else
+            echo "ERROR: EdgeDriver installation failed"
+            exit 1
+          fi
 
       - name: Install system dependencies for browser stability
         run: |
           sudo apt-get update
-          # Use the correct package names for Ubuntu 24.04
           sudo apt-get install -y \
             xvfb \
             x11-utils \
@@ -83,12 +117,15 @@ jobs:
             libxtst6 \
             libnss3 \
             libnspr4 \
-            libasound2t64 \
+            libasound2 \
             libatk-bridge2.0-0 \
             libgtk-3-0 \
             libgbm1 \
             libxkbcommon0 \
-            libxshmfence1
+            libxshmfence1 \
+            curl \
+            wget \
+            unzip || true
 
       - name: Install dependencies
         run: |
@@ -128,6 +165,14 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
           DISPLAY: :99
         run: |
+          # Set environment variables for Edge driver location
+          if [ "${{ matrix.browser }}" = "edge" ]; then
+            export EDGE_BINARY_PATH=$(which microsoft-edge)
+            export EDGE_DRIVER_PATH=$(which msedgedriver)
+            echo "Edge binary: $EDGE_BINARY_PATH"
+            echo "Edge driver: $EDGE_DRIVER_PATH"
+          fi
+          
           # Run tests with retry capability for flaky tests
           pytest selenium_demoblaze_framework/tests/ \
             --browser=${{ matrix.browser }} \
@@ -140,8 +185,7 @@ jobs:
             --alluredir=reports/allure-results-${{ matrix.browser }} \
             -v \
             --tb=short \
-            --maxfail=10 \
-            || EXIT_CODE=$?
+            --maxfail=10 || true
           
           # Check if critical tests passed
           if [ -f "reports/test-report-${{ matrix.browser }}.html" ]; then
@@ -149,12 +193,6 @@ jobs:
           else
             echo "Warning: Test report not generated"
           fi
-          
-          # Exit with success if most tests passed
-          if [ "${EXIT_CODE:-0}" -ne 0 ]; then
-            echo "Some tests failed but continuing..."
-          fi
-          exit 0
 
       - name: Upload HTML Test Report
         if: always()
@@ -222,7 +260,7 @@ jobs:
             cp -r "$dir"/* reports/allure-results/ 2>/dev/null || true
           done
           echo "Combined allure results from all browsers"
-          ls -la reports/allure-results/
+          ls -la reports/allure-results/ || true
 
       - name: Generate Combined Allure Report
         uses: simple-elf/allure-report-action@v1.7
@@ -266,7 +304,10 @@ jobs:
             cp -r "$dir"/* deploy/screenshots/ 2>/dev/null || true
           done
           
-          # Create enhanced index page (keeping your existing HTML)
+          # Get repository name for correct URLs
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          
+          # Create enhanced index page
           cat > deploy/index.html <<'EOF'
           <!DOCTYPE html>
           <html>
@@ -568,11 +609,11 @@ jobs:
                   for(let i = currentRun - 1; i > Math.max(0, currentRun - 10); i--) {
                       const linkDiv = document.createElement('div');
                       linkDiv.style.display = 'inline-block';
-                      linkDiv.innerHTML = \`
-                          <a href="\${i}/" class="history-link" title="View Run #\${i}">
-                              Run #\${i}
+                      linkDiv.innerHTML = `
+                          <a href="${i}/" class="history-link" title="View Run #${i}">
+                              Run #${i}
                           </a>
-                      \`;
+                      `;
                       historyContainer.appendChild(linkDiv);
                   }
                   
@@ -597,12 +638,16 @@ jobs:
 
       - name: Post Report URLs
         run: |
+          # Extract repository name
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          OWNER=$(echo "${{ github.repository }}" | cut -d'/' -f1)
+          
           echo "### 📊 Cross-Browser Test Reports Published! 🎉" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**🌐 Main Dashboard:** https://roykunaljit.github.io/selenium-demoblaze-operations/" >> $GITHUB_STEP_SUMMARY
-          echo "**📈 Combined Allure Report:** https://roykunaljit.github.io/selenium-demoblaze-operations/${{ github.run_number }}/" >> $GITHUB_STEP_SUMMARY
-          echo "**🔵 Chrome HTML Report:** https://roykunaljit.github.io/selenium-demoblaze-operations/html-reports/report-chrome-${{ github.run_number }}.html" >> $GITHUB_STEP_SUMMARY
-          echo "**🔷 Edge HTML Report:** https://roykunaljit.github.io/selenium-demoblaze-operations/html-reports/report-edge-${{ github.run_number }}.html" >> $GITHUB_STEP_SUMMARY
+          echo "**🌐 Main Dashboard:** https://${OWNER}.github.io/${REPO_NAME}/" >> $GITHUB_STEP_SUMMARY
+          echo "**📈 Combined Allure Report:** https://${OWNER}.github.io/${REPO_NAME}/${{ github.run_number }}/" >> $GITHUB_STEP_SUMMARY
+          echo "**🔵 Chrome HTML Report:** https://${OWNER}.github.io/${REPO_NAME}/html-reports/report-chrome-${{ github.run_number }}.html" >> $GITHUB_STEP_SUMMARY
+          echo "**🔷 Edge HTML Report:** https://${OWNER}.github.io/${REPO_NAME}/html-reports/report-edge-${{ github.run_number }}.html" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
           echo "### 📋 Execution Summary" >> $GITHUB_STEP_SUMMARY
