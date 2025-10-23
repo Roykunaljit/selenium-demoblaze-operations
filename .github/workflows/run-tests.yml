@@ -63,38 +63,94 @@ jobs:
           # Install EdgeDriver using the correct URL format
           echo "Installing EdgeDriver..."
           
-          # Download EdgeDriver
-          DRIVER_URL="https://msedgedriver.azureedge.net/${EDGE_VERSION}/edgedriver_linux64.zip"
-          echo "Downloading EdgeDriver from: $DRIVER_URL"
+          # Try multiple CDN endpoints
+          DRIVER_URLS=(
+            "https://msedgewebdriverstorage.blob.core.windows.net/edgewebdriver/${EDGE_VERSION}/edgedriver_linux64.zip"
+            "https://msedgedriver.azureedge.net/${EDGE_VERSION}/edgedriver_linux64.zip"
+            "https://msedgewebdriverstorage.z22.web.core.windows.net/${EDGE_VERSION}/edgedriver_linux64.zip"
+          )
           
-          if wget --timeout=30 --tries=3 -O edgedriver.zip "$DRIVER_URL"; then
-            echo "Successfully downloaded EdgeDriver"
-            unzip -q edgedriver.zip
-            sudo mv msedgedriver /usr/local/bin/
-            sudo chmod +x /usr/local/bin/msedgedriver
-          else
-            echo "Failed to download exact version, trying stable channel..."
-            # Fallback to stable version
-            STABLE_URL="https://msedgedriver.azureedge.net/LATEST_STABLE"
-            STABLE_VERSION=$(curl -s $STABLE_URL)
-            DRIVER_URL="https://msedgedriver.azureedge.net/${STABLE_VERSION}/edgedriver_linux64.zip"
-            
-            if wget --timeout=30 --tries=3 -O edgedriver.zip "$DRIVER_URL"; then
+          DRIVER_DOWNLOADED=false
+          
+          for URL in "${DRIVER_URLS[@]}"; do
+            echo "Attempting to download EdgeDriver from: $URL"
+            if wget --timeout=30 --tries=2 -O edgedriver.zip "$URL" 2>/dev/null; then
+              echo "Successfully downloaded EdgeDriver"
               unzip -q edgedriver.zip
-              sudo mv msedgedriver /usr/local/bin/
+              if [ -f "msedgedriver" ]; then
+                sudo mv msedgedriver /usr/local/bin/
+                sudo chmod +x /usr/local/bin/msedgedriver
+                DRIVER_DOWNLOADED=true
+                break
+              fi
+            fi
+          done
+          
+          # If specific version fails, try to get the latest stable version
+          if [ "$DRIVER_DOWNLOADED" = false ]; then
+            echo "Specific version download failed, trying latest stable..."
+            
+            # Get latest stable version from the API
+            LATEST_STABLE=$(curl -s "https://msedgewebdriverstorage.blob.core.windows.net/edgewebdriver/LATEST_STABLE" || echo "")
+            
+            if [ -n "$LATEST_STABLE" ]; then
+              echo "Latest stable version: $LATEST_STABLE"
+              STABLE_URL="https://msedgewebdriverstorage.blob.core.windows.net/edgewebdriver/${LATEST_STABLE}/edgedriver_linux64.zip"
+              
+              if wget --timeout=30 --tries=2 -O edgedriver.zip "$STABLE_URL"; then
+                echo "Successfully downloaded latest stable EdgeDriver"
+                unzip -q edgedriver.zip
+                if [ -f "msedgedriver" ]; then
+                  sudo mv msedgedriver /usr/local/bin/
+                  sudo chmod +x /usr/local/bin/msedgedriver
+                  DRIVER_DOWNLOADED=true
+                fi
+              fi
+            fi
+          fi
+          
+          # Final fallback: Use Python webdriver-manager
+          if [ "$DRIVER_DOWNLOADED" = false ]; then
+            echo "Direct download failed, using webdriver-manager..."
+            pip install webdriver-manager
+            
+            cat > install_edge_driver.py << 'PYEOF'
+          import os
+          import sys
+          from webdriver_manager.microsoft import EdgeChromiumDriverManager
+          
+          try:
+              # Try to install EdgeDriver
+              driver_path = EdgeChromiumDriverManager().install()
+              print(f'Driver installed at: {driver_path}')
+              
+              # Create symlink to standard location
+              import shutil
+              if os.path.exists(driver_path):
+                  shutil.copy2(driver_path, '/tmp/msedgedriver')
+                  os.chmod('/tmp/msedgedriver', 0o755)
+                  print('EdgeDriver copied to /tmp/msedgedriver')
+          except Exception as e:
+              print(f'webdriver-manager failed: {e}')
+              sys.exit(1)
+          PYEOF
+            
+            python install_edge_driver.py
+            
+            if [ -f "/tmp/msedgedriver" ]; then
+              sudo mv /tmp/msedgedriver /usr/local/bin/
               sudo chmod +x /usr/local/bin/msedgedriver
-            else
-              echo "ERROR: Failed to download EdgeDriver"
-              exit 1
+              DRIVER_DOWNLOADED=true
             fi
           fi
           
           # Verify installation
-          if command -v msedgedriver &> /dev/null; then
-            echo "EdgeDriver version: $(msedgedriver --version)"
+          if [ "$DRIVER_DOWNLOADED" = true ] && command -v msedgedriver &> /dev/null; then
+            echo "EdgeDriver version: $(msedgedriver --version || echo 'Version check failed')"
+            echo "EdgeDriver installation successful"
           else
-            echo "ERROR: EdgeDriver installation failed"
-            exit 1
+            echo "WARNING: EdgeDriver installation may have issues, but continuing..."
+            # Don't fail the job, let the test handle the missing driver
           fi
 
       - name: Install system dependencies for browser stability
@@ -167,8 +223,8 @@ jobs:
         run: |
           # Set environment variables for Edge driver location
           if [ "${{ matrix.browser }}" = "edge" ]; then
-            export EDGE_BINARY_PATH=$(which microsoft-edge)
-            export EDGE_DRIVER_PATH=$(which msedgedriver)
+            export EDGE_BINARY_PATH=$(which microsoft-edge || echo "")
+            export EDGE_DRIVER_PATH=$(which msedgedriver || echo "")
             echo "Edge binary: $EDGE_BINARY_PATH"
             echo "Edge driver: $EDGE_DRIVER_PATH"
           fi
@@ -200,6 +256,7 @@ jobs:
         with:
           name: html-test-report-${{ matrix.browser }}
           path: reports/test-report-${{ matrix.browser }}.html
+        continue-on-error: true
 
       - name: Upload Allure Results
         if: always()
@@ -207,6 +264,7 @@ jobs:
         with:
           name: allure-results-${{ matrix.browser }}
           path: reports/allure-results-${{ matrix.browser }}
+        continue-on-error: true
 
       - name: Upload Screenshots
         if: always()
@@ -226,7 +284,6 @@ jobs:
             reports/*.log
         continue-on-error: true
 
-  # Combine and deploy reports after all browser tests complete
   deploy-reports:
     needs: test
     runs-on: ubuntu-latest
@@ -244,6 +301,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: artifacts
+        continue-on-error: true
 
       - name: Get Allure history
         uses: actions/checkout@v4
@@ -256,19 +314,21 @@ jobs:
         run: |
           mkdir -p reports/allure-results
           # Merge all browser results
-          find artifacts -name "allure-results-*" -type d | while read dir; do
+          find artifacts -name "allure-results-*" -type d 2>/dev/null | while read dir; do
             cp -r "$dir"/* reports/allure-results/ 2>/dev/null || true
           done
           echo "Combined allure results from all browsers"
-          ls -la reports/allure-results/ || true
+          ls -la reports/allure-results/ 2>/dev/null || echo "No allure results found"
 
       - name: Generate Combined Allure Report
+        if: always()
         uses: simple-elf/allure-report-action@v1.7
         with:
           allure_results: reports/allure-results
           allure_history: allure-history
           keep_reports: 20
           gh_pages: gh-pages
+        continue-on-error: true
 
       - name: Upload Combined Allure Report
         if: always()
@@ -276,6 +336,7 @@ jobs:
         with:
           name: allure-report-combined
           path: allure-report
+        continue-on-error: true
 
       - name: Prepare Reports for GitHub Pages
         run: |
@@ -295,20 +356,19 @@ jobs:
               cp "artifacts/html-test-report-${browser}/test-report-${browser}.html" \
                  "deploy/html-reports/report-${browser}-${{ github.run_number }}.html"
               echo "Copied ${browser} HTML report"
+            else
+              echo "No HTML report found for ${browser}"
             fi
           done
           
           # Copy screenshots if available
           mkdir -p deploy/screenshots
-          find artifacts -name "screenshots-*" -type d | while read dir; do
+          find artifacts -name "screenshots-*" -type d 2>/dev/null | while read dir; do
             cp -r "$dir"/* deploy/screenshots/ 2>/dev/null || true
           done
           
-          # Get repository name for correct URLs
-          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
-          
-          # Create enhanced index page
-          cat > deploy/index.html <<'EOF'
+          # Create HTML index page
+          cat > deploy/index.html << 'HTMLEOF'
           <!DOCTYPE html>
           <html>
           <head>
@@ -316,11 +376,7 @@ jobs:
               <meta charset="utf-8">
               <meta name="viewport" content="width=device-width, initial-scale=1">
               <style>
-                  * {
-                      margin: 0;
-                      padding: 0;
-                      box-sizing: border-box;
-                  }
+                  * { margin: 0; padding: 0; box-sizing: border-box; }
                   body {
                       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                       line-height: 1.6;
@@ -365,18 +421,9 @@ jobs:
                       font-weight: 600;
                       margin: 0 5px;
                   }
-                  .badge-chrome {
-                      background: #4285f4;
-                      color: white;
-                  }
-                  .badge-edge {
-                      background: #0078d7;
-                      color: white;
-                  }
-                  .badge-parallel {
-                      background: #28a745;
-                      color: white;
-                  }
+                  .badge-chrome { background: #4285f4; color: white; }
+                  .badge-edge { background: #0078d7; color: white; }
+                  .badge-parallel { background: #28a745; color: white; }
                   .info-box {
                       background: #f8f9fa;
                       border-left: 4px solid #667eea;
@@ -384,13 +431,13 @@ jobs:
                       border-radius: 8px;
                       margin-bottom: 30px;
                   }
-                  .info-box p {
-                      margin: 5px 0;
-                      color: #555;
-                  }
-                  .info-box strong {
-                      color: #333;
-                      font-weight: 600;
+                  .info-box p { margin: 5px 0; color: #555; }
+                  .info-box strong { color: #333; font-weight: 600; }
+                  .info-box code {
+                      background: #f0f0f0;
+                      padding: 2px 6px;
+                      border-radius: 3px;
+                      font-size: 0.9em;
                   }
                   .reports-section {
                       display: grid;
@@ -460,10 +507,7 @@ jobs:
                       margin-top: 20px;
                       gap: 10px;
                   }
-                  .emoji {
-                      font-size: 1.5em;
-                      margin-bottom: 10px;
-                  }
+                  .emoji { font-size: 1.5em; margin-bottom: 10px; }
                   .timestamp {
                       text-align: center;
                       color: #95a5a6;
@@ -542,13 +586,13 @@ jobs:
                   </p>
                   
                   <div class="info-box">
-                      <p><strong>📦 Repository:</strong> ${{ github.repository }}</p>
-                      <p><strong>🏃 Run Number:</strong> #${{ github.run_number }}</p>
-                      <p><strong>🌿 Branch:</strong> ${{ github.ref_name }}</p>
-                      <p><strong>🔨 Commit:</strong> <code>${{ github.sha }}</code></p>
-                      <p><strong>👤 Actor:</strong> ${{ github.actor }}</p>
+                      <p><strong>📦 Repository:</strong> GITHUB_REPOSITORY_PLACEHOLDER</p>
+                      <p><strong>🏃 Run Number:</strong> #GITHUB_RUN_NUMBER_PLACEHOLDER</p>
+                      <p><strong>🌿 Branch:</strong> GITHUB_REF_NAME_PLACEHOLDER</p>
+                      <p><strong>🔨 Commit:</strong> <code>GITHUB_SHA_PLACEHOLDER</code></p>
+                      <p><strong>👤 Actor:</strong> GITHUB_ACTOR_PLACEHOLDER</p>
                   </div>
-
+          
                   <div class="feature-list">
                       <h4>🚀 Test Execution Features</h4>
                       <ul>
@@ -561,13 +605,13 @@ jobs:
                           <li>Automated report history tracking</li>
                       </ul>
                   </div>
-
+          
                   <div class="reports-section">
                       <div class="report-card">
                           <div class="emoji">📊</div>
                           <h3>Combined Allure Report</h3>
                           <p>Interactive test report combining results from all browsers with detailed execution info, trends, and history</p>
-                          <a href="${{ github.run_number }}/" class="btn btn-allure">Open Allure Report</a>
+                          <a href="GITHUB_RUN_NUMBER_PLACEHOLDER/" class="btn btn-allure">Open Allure Report</a>
                       </div>
                       
                       <div class="report-card">
@@ -575,45 +619,38 @@ jobs:
                           <h3>Browser-Specific HTML Reports</h3>
                           <p>Detailed HTML reports generated by pytest-html for each browser</p>
                           <div class="browser-reports">
-                              <a href="html-reports/report-chrome-${{ github.run_number }}.html" class="btn btn-chrome">
+                              <a href="html-reports/report-chrome-GITHUB_RUN_NUMBER_PLACEHOLDER.html" class="btn btn-chrome">
                                   Chrome Report
                               </a>
-                              <a href="html-reports/report-edge-${{ github.run_number }}.html" class="btn btn-edge">
+                              <a href="html-reports/report-edge-GITHUB_RUN_NUMBER_PLACEHOLDER.html" class="btn btn-edge">
                                   Edge Report
                               </a>
                           </div>
                       </div>
                   </div>
-
+          
                   <div class="history-section">
                       <h3>📚 Previous Reports</h3>
                       <div class="history-links" id="history-links">
                           <!-- Will be populated by JavaScript -->
                       </div>
                   </div>
-
+          
                   <div class="timestamp">
                       Generated on: <span id="timestamp"></span>
                   </div>
               </div>
-
+          
               <script>
-                  // Set timestamp
                   document.getElementById('timestamp').textContent = new Date().toLocaleString();
                   
-                  // Generate history links
-                  const currentRun = ${{ github.run_number }};
+                  const currentRun = GITHUB_RUN_NUMBER_PLACEHOLDER;
                   const historyContainer = document.getElementById('history-links');
                   
-                  // Show last 10 runs
                   for(let i = currentRun - 1; i > Math.max(0, currentRun - 10); i--) {
                       const linkDiv = document.createElement('div');
                       linkDiv.style.display = 'inline-block';
-                      linkDiv.innerHTML = `
-                          <a href="${i}/" class="history-link" title="View Run #${i}">
-                              Run #${i}
-                          </a>
-                      `;
+                      linkDiv.innerHTML = '<a href="' + i + '/" class="history-link" title="View Run #' + i + '">Run #' + i + '</a>';
                       historyContainer.appendChild(linkDiv);
                   }
                   
@@ -623,7 +660,14 @@ jobs:
               </script>
           </body>
           </html>
-          EOF
+          HTMLEOF
+          
+          # Replace placeholders with actual values
+          sed -i "s/GITHUB_REPOSITORY_PLACEHOLDER/${{ github.repository }}/g" deploy/index.html
+          sed -i "s/GITHUB_RUN_NUMBER_PLACEHOLDER/${{ github.run_number }}/g" deploy/index.html
+          sed -i "s/GITHUB_REF_NAME_PLACEHOLDER/${{ github.ref_name }}/g" deploy/index.html
+          sed -i "s/GITHUB_SHA_PLACEHOLDER/${{ github.sha }}/g" deploy/index.html
+          sed -i "s/GITHUB_ACTOR_PLACEHOLDER/${{ github.actor }}/g" deploy/index.html
           
           echo "Index page created successfully"
 
@@ -640,7 +684,7 @@ jobs:
         run: |
           # Extract repository name
           REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
-          OWNER=$(echo "${{ github.repository }}" | cut -d'/' -f1)
+          OWNER=$(echo "${{ github.repository }}" | cut -d'/' -f1 | tr '[:upper:]' '[:lower:]')
           
           echo "### 📊 Cross-Browser Test Reports Published! 🎉" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
