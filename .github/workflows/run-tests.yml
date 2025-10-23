@@ -45,24 +45,35 @@ jobs:
           chmod +x /usr/local/bin/chromedriver
           chromedriver --version
 
-      - name: Install Microsoft Edge (Driver Auto-Managed)
+      - name: Install Microsoft Edge with ChromeDriver
         if: matrix.browser == 'edge'
         run: |
-          # Remove any old EdgeDriver that might conflict
-          echo "Cleaning up old EdgeDriver..."
-          sudo rm -f /usr/bin/msedgedriver
-          sudo rm -f /usr/local/bin/msedgedriver
-          
-          # Install Microsoft Edge Browser
           echo "Installing Microsoft Edge..."
           curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-edge.gpg
           echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
           sudo apt-get update
-          sudo apt-get install -y microsoft-edge-stable
+          sudo apt-get install -y microsoft-edge-stable google-chrome-stable
           
-          # Verify installation
-          microsoft-edge --version
-          echo "✅ Edge installed - Selenium Manager will auto-download matching driver"
+          # Verify Edge installation
+          EDGE_VERSION=$(microsoft-edge --version)
+          echo "✅ Edge installed: $EDGE_VERSION"
+          
+          # Install ChromeDriver (compatible with Edge since both are Chromium-based)
+          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f1)
+          DRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_${CHROME_VERSION}")
+          echo "Installing ChromeDriver version: $DRIVER_VERSION"
+          
+          wget -O chromedriver.zip "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${DRIVER_VERSION}/linux64/chromedriver-linux64.zip"
+          unzip chromedriver.zip
+          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
+          sudo chmod +x /usr/local/bin/chromedriver
+          
+          # Create symlink for Edge to use ChromeDriver
+          sudo ln -sf /usr/local/bin/chromedriver /usr/local/bin/msedgedriver
+          
+          echo "✅ Edge setup complete with ChromeDriver"
+          echo "ChromeDriver version: $(chromedriver --version)"
+          echo "EdgeDriver symlink: $(msedgedriver --version)"
 
       - name: Install dependencies
         run: |
@@ -85,7 +96,7 @@ jobs:
           elif [ "${{ matrix.browser }}" == "edge" ]; then
             echo "Edge Setup:"
             microsoft-edge --version
-            echo "EdgeDriver will be managed by Selenium Manager"
+            echo "EdgeDriver (via ChromeDriver): $(msedgedriver --version)"
           fi
 
       - name: Run Pytest with Parallel Execution
@@ -730,7 +741,7 @@ jobs:
           echo "🔒 **Thread Safety:** Enabled for screenshots and logs" >> $GITHUB_STEP_SUMMARY
           echo "📸 **Artifacts:** Screenshots, logs, and reports uploaded" >> $GITHUB_STEP_SUMMARY
           echo "🐍 **Python Version:** 3.9" >> $GITHUB_STEP_SUMMARY
-          echo "🤖 **Selenium Manager:** Auto-managed drivers" >> $GITHUB_STEP_SUMMARY
+          echo "🤖 **Driver Management:** ChromeDriver for both browsers (Chromium-based)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
