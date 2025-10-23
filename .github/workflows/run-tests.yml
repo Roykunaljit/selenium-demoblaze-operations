@@ -156,6 +156,11 @@ jobs:
       - name: Install system dependencies for browser stability
         run: |
           sudo apt-get update
+          # Check Ubuntu version and install appropriate packages
+          UBUNTU_VERSION=$(lsb_release -rs)
+          echo "Ubuntu version: $UBUNTU_VERSION"
+          
+          # Common packages
           sudo apt-get install -y \
             xvfb \
             x11-utils \
@@ -173,7 +178,6 @@ jobs:
             libxtst6 \
             libnss3 \
             libnspr4 \
-            libasound2 \
             libatk-bridge2.0-0 \
             libgtk-3-0 \
             libgbm1 \
@@ -182,6 +186,13 @@ jobs:
             curl \
             wget \
             unzip || true
+          
+          # Version-specific packages
+          if [[ "$UBUNTU_VERSION" == "24.04" ]]; then
+            sudo apt-get install -y libasound2t64 || true
+          else
+            sudo apt-get install -y libasound2 || true
+          fi
 
       - name: Install dependencies
         run: |
@@ -284,6 +295,7 @@ jobs:
             reports/*.log
         continue-on-error: true
 
+  # Combine and deploy reports after all browser tests complete
   deploy-reports:
     needs: test
     runs-on: ubuntu-latest
@@ -662,7 +674,7 @@ jobs:
           </html>
           HTMLEOF
           
-          # Replace placeholders with actual values
+          # Replace placeholders with actual values - using | as delimiter to avoid conflicts with /
           sed -i "s|GITHUB_REPOSITORY_PLACEHOLDER|${{ github.repository }}|g" deploy/index.html
           sed -i "s|GITHUB_RUN_NUMBER_PLACEHOLDER|${{ github.run_number }}|g" deploy/index.html
           sed -i "s|GITHUB_REF_NAME_PLACEHOLDER|${{ github.ref_name }}|g" deploy/index.html
