@@ -1,0 +1,20 @@
+2025-10-23 17:58:11 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 17:58:15 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Logo element found
+2025-10-23 17:58:15 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Home menu element found
+2025-10-23 17:58:15 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Cart menu element found
+2025-10-23 17:58:15 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Login menu element found
+2025-10-23 17:58:15 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Single elements test passed
+2025-10-23 17:58:15 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 17:58:19 - TestPageFactory - INFO - test_page_factory_menu_navigation - Testing menu navigation...
+2025-10-23 17:58:19 - TestPageFactory - INFO - test_page_factory_menu_navigation - Navigating to Phones...
+2025-10-23 17:58:22 - TestPageFactory - INFO - test_page_factory_menu_navigation - [PASS] Navigated to Phones
+2025-10-23 17:58:22 - TestPageFactory - INFO - test_page_factory_menu_navigation - Navigating to Laptops...
+2025-10-23 17:58:24 - TestPageFactory - INFO - test_page_factory_menu_navigation - [PASS] Navigated to Laptops
+2025-10-23 17:58:24 - TestPageFactory - INFO - test_page_factory_menu_navigation - Navigating to Monitors...
+2025-10-23 17:58:26 - TestPageFactory - INFO - test_page_factory_menu_navigation - [PASS] Navigated to Monitors
+2025-10-23 17:58:26 - TestPageFactory - INFO - test_page_factory_menu_navigation - [PASS] Menu navigation test completed
+2025-10-23 17:58:26 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 17:58:34 - TestPageFactory - INFO - test_page_factory_product_details - [PASS] Product details test passed - Found 9 products
+2025-10-23 17:58:34 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 17:58:38 - TestPageFactory - INFO - test_page_factory_cart_navigation - Cart menu found, clicking...
+2025-10-23 17:58:41 - TestPageFactory - INFO - test_page_factory_cart_navigation - [PASS] Cart navigation test passed

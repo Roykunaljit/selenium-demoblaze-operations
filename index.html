@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Test Reports Dashboard - Selenium DemoBlaze</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Browser Test Reports - Selenium DemoBlaze</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -21,206 +22,446 @@
             justify-content: center;
             padding: 20px;
         }
+        
         .container {
             background: white;
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            max-width: 800px;
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.3);
+            max-width: 1100px;
             width: 100%;
-            animation: fadeIn 0.5s ease-in;
+            animation: fadeIn 0.6s ease-in;
         }
+        
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
         }
+        
         h1 {
             color: #2c3e50;
             text-align: center;
-            margin-bottom: 10px;
-            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-size: 2.8em;
+            font-weight: 700;
         }
+        
         .subtitle {
             text-align: center;
             color: #7f8c8d;
-            margin-bottom: 30px;
-            font-size: 1.1em;
+            margin-bottom: 35px;
+            font-size: 1.2em;
+            line-height: 1.8;
         }
-        .info-box {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        .info-box p {
-            margin: 5px 0;
-            color: #555;
-        }
-        .info-box strong {
-            color: #333;
+        
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
             font-weight: 600;
+            margin: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        .reports-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+        
+        .badge-chrome {
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+            color: white;
         }
-        .report-card {
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
+        
+        .badge-edge {
+            background: linear-gradient(135deg, #0078d7 0%, #00bcf2 100%);
+            color: white;
+        }
+        
+        .badge-parallel {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+        }
+        
+        .badge-selenium {
+            background: linear-gradient(135deg, #43B02A 0%, #2d7a1e 100%);
+            color: white;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 5px solid #667eea;
             padding: 25px;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
+            border-radius: 10px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
         }
-        .report-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            border-color: #667eea;
-        }
-        .report-card h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 1.5em;
-        }
-        .report-card p {
-            color: #7f8c8d;
-            margin-bottom: 20px;
+        
+        .info-box p {
+            margin: 8px 0;
+            color: #555;
             font-size: 0.95em;
         }
+        
+        .info-box strong {
+            color: #2c3e50;
+            font-weight: 600;
+            min-width: 120px;
+            display: inline-block;
+        }
+        
+        .info-box code {
+            background: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            color: #d63384;
+        }
+        
+        .reports-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 35px;
+        }
+        
+        .report-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .report-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .report-card:hover::before {
+            left: 100%;
+        }
+        
+        .report-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.25);
+            border-color: #667eea;
+        }
+        
+        .report-card h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+        
+        .report-card p {
+            color: #7f8c8d;
+            margin-bottom: 25px;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        
+        .emoji {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            display: block;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
         .btn {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 14px 32px;
             color: white;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: all 0.3s ease;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             font-size: 1em;
+            margin: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
+        
         .btn-allure {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
+        
         .btn-allure:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
         }
-        .btn-html {
-            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+        
+        .btn-chrome {
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
         }
-        .btn-html:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+        
+        .btn-chrome:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(66, 133, 244, 0.4);
         }
+        
+        .btn-edge {
+            background: linear-gradient(135deg, #0078d7 0%, #00bcf2 100%);
+        }
+        
+        .btn-edge:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(0, 120, 215, 0.4);
+        }
+        
+        .browser-reports {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        
+        .feature-list {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4edff 100%);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            border: 2px solid #b8daff;
+        }
+        
+        .feature-list h4 {
+            color: #2c3e50;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        
+        .feature-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            color: #555;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-list li:hover {
+            color: #2c3e50;
+            transform: translateX(5px);
+        }
+        
+        .feature-list li::before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
         .history-section {
-            margin-top: 30px;
-            padding-top: 30px;
-            border-top: 2px solid #e0e0e0;
+            margin-top: 35px;
+            padding-top: 35px;
+            border-top: 3px solid #e0e0e0;
         }
+        
         .history-section h3 {
             color: #2c3e50;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-align: center;
+            font-size: 1.6em;
+            font-weight: 600;
         }
+        
         .history-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
             justify-content: center;
         }
+        
         .history-link {
-            padding: 8px 16px;
-            background: #f8f9fa;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 2px solid #dee2e6;
+            border-radius: 6px;
             text-decoration: none;
             color: #555;
-            transition: all 0.3s ease;
-            font-size: 0.9em;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.95em;
+            font-weight: 500;
         }
+        
         .history-link:hover {
-            background: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border-color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
+        
         .timestamp {
             text-align: center;
             color: #95a5a6;
-            font-size: 0.85em;
-            margin-top: 20px;
+            font-size: 0.9em;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
         }
-        .emoji {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .subtitle {
+                font-size: 1em;
+            }
+            
+            .btn {
+                padding: 12px 24px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🧪 Test Reports Dashboard</h1>
-        <p class="subtitle">Selenium DemoBlaze Automation</p>
+        <h1>🧪 Cross-Browser Test Reports</h1>
+        <p class="subtitle">
+            Selenium DemoBlaze E2E Automation Framework
+            <br>
+            <span class="badge badge-chrome">Chrome</span>
+            <span class="badge badge-edge">Edge</span>
+            <span class="badge badge-parallel">Parallel</span>
+            <span class="badge badge-selenium">Selenium 4</span>
+        </p>
         
         <div class="info-box">
             <p><strong>📦 Repository:</strong> Roykunaljit/selenium-demoblaze-operations</p>
-            <p><strong>🏃 Run Number:</strong> #16</p>
+            <p><strong>🏃 Run Number:</strong> #4</p>
             <p><strong>🌿 Branch:</strong> main</p>
-            <p><strong>🔨 Commit:</strong> <code>717dd5f71ebe174f9e40d359e8d86b1ef3d99a04</code></p>
-            <p><strong>👤 Actor:</strong> Roykunaljit</p>
+            <p><strong>🔨 Commit:</strong> <code>23ef6bfc3f57996a5b8fd9524c4c8d5ecdf0a501</code></p>
+            <p><strong>👤 Triggered by:</strong> Roykunaljit</p>
+            <p><strong>📅 Timestamp:</strong> <span id="current-time"></span></p>
+        </div>
+
+        <div class="feature-list">
+            <h4>🚀 Framework Capabilities</h4>
+            <ul>
+                <li>Cross-browser testing on Chrome and Microsoft Edge</li>
+                <li>Parallel test execution with pytest-xdist (4 workers per browser)</li>
+                <li>Thread-safe screenshot capture on test failures</li>
+                <li>Comprehensive Allure reporting with trends and history</li>
+                <li>Browser-specific HTML reports with detailed logs</li>
+                <li>Automated report history tracking (last 20 runs)</li>
+                <li>Page Object Model with Page Factory pattern</li>
+                <li>Custom logger with file and console output</li>
+                <li>Keyword-driven testing support</li>
+                <li>Link checker utility for broken link detection</li>
+            </ul>
         </div>
 
         <div class="reports-section">
             <div class="report-card">
-                <div class="emoji">📊</div>
-                <h3>Allure Report</h3>
-                <p>Interactive test report with detailed execution info, trends, and history</p>
-                <a href="16/" class="btn btn-allure">Open Allure Report</a>
+                <span class="emoji">📊</span>
+                <h3>Combined Allure Report</h3>
+                <p>Interactive test execution report combining results from all browsers with detailed steps, screenshots, trends, and execution history</p>
+                <a href="4/" class="btn btn-allure">📈 Open Allure Dashboard</a>
             </div>
             
             <div class="report-card">
-                <div class="emoji">📄</div>
-                <h3>HTML Report</h3>
-                <p>Simple, self-contained HTML test report generated by pytest-html</p>
-                <a href="html-reports/report-16.html" class="btn btn-html">Open HTML Report</a>
+                <span class="emoji">🌐</span>
+                <h3>Browser-Specific HTML Reports</h3>
+                <p>Detailed pytest-html reports showing test results, execution times, and failures for each browser individually</p>
+                <div class="browser-reports">
+                    <a href="html-reports/report-chrome-4.html" class="btn btn-chrome">
+                        🔵 Chrome Report
+                    </a>
+                    <a href="html-reports/report-edge-4.html" class="btn btn-edge">
+                        🔷 Edge Report
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="history-section">
-            <h3>📚 Previous Reports</h3>
+            <h3>📚 Test Execution History</h3>
             <div class="history-links" id="history-links">
-                <!-- Will be populated by JavaScript -->
+                <p style="color: #95a5a6; text-align: center;">Loading previous reports...</p>
             </div>
         </div>
 
         <div class="timestamp">
-            Generated on: <span id="timestamp"></span>
+            ⏰ Report generated on: <strong id="timestamp"></strong>
         </div>
     </div>
 
     <script>
-        // Set timestamp
-        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+        // Set current timestamp
+        const now = new Date();
+        document.getElementById('timestamp').textContent = now.toLocaleString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            timeZoneName: 'short'
+        });
+        
+        document.getElementById('current-time').textContent = now.toLocaleString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
         
         // Generate history links
-        const currentRun = 16;
+        const currentRun = 4;
         const historyContainer = document.getElementById('history-links');
         
-        // Show last 10 runs
-        for(let i = currentRun - 1; i > Math.max(0, currentRun - 10); i--) {
-            const linkDiv = document.createElement('div');
-            linkDiv.style.display = 'inline-block';
-            linkDiv.innerHTML = `
-                <a href="${i}/" class="history-link" title="View Run #${i}">
-                    Run #${i}
-                </a>
-            `;
-            historyContainer.appendChild(linkDiv);
-        }
-        
-        if (currentRun <= 1) {
-            historyContainer.innerHTML = '<p style="color: #95a5a6;">No previous reports available</p>';
+        if (currentRun > 1) {
+            historyContainer.innerHTML = '';
+            const historyCount = Math.min(10, currentRun - 1);
+            
+            for(let i = currentRun - 1; i > currentRun - 1 - historyCount; i--) {
+                const link = document.createElement('a');
+                link.href = `${i}/`;
+                link.className = 'history-link';
+                link.textContent = `Run #${i}`;
+                link.title = `View test results from run #${i}`;
+                historyContainer.appendChild(link);
+            }
+        } else {
+            historyContainer.innerHTML = '<p style="color: #95a5a6; text-align: center;">No previous test runs available yet</p>';
         }
     </script>
 </body>

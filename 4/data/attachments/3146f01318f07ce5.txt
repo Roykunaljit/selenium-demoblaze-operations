@@ -1,0 +1,7 @@
+2025-10-23 17:58:11 - TestCheckboxes - INFO - setup_and_teardown - ==================================================
+2025-10-23 17:58:11 - TestCheckboxes - INFO - setup_and_teardown - Starting new LOCAL Checkbox Test
+2025-10-23 17:58:11 - TestCheckboxes - INFO - setup_and_teardown - Local test server running at: http://localhost:43835/checkbox_test.html
+2025-10-23 17:58:11 - TestCheckboxes - INFO - setup_and_teardown - Initializing browser: edge
+2025-10-23 17:58:15 - TestCheckboxes - INFO - test_local_checkbox_interaction - Navigating to local checkbox page: http://localhost:43835/checkbox_test.html
+2025-10-23 17:58:15 - TestCheckboxes - INFO - setup_and_teardown - Checkbox Test completed
+2025-10-23 17:58:15 - TestCheckboxes - INFO - setup_and_teardown - ==================================================

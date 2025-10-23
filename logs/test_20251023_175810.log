@@ -1,0 +1,21 @@
+2025-10-23 17:58:10 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 17:58:16 - TestPageFactory - INFO - test_page_factory_multiple_elements - Found 9 products
+2025-10-23 17:58:16 - TestPageFactory - INFO - test_page_factory_multiple_elements - [PASS] Multiple elements test passed
+2025-10-23 17:58:17 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 17:58:21 - TestPageFactory - INFO - test_page_factory_login_flow - Starting login flow test...
+2025-10-23 17:58:21 - TestPageFactory - INFO - test_page_factory_login_flow - Generated username: agdkj8ph
+2025-10-23 17:58:21 - TestPageFactory - INFO - test_page_factory_login_flow - Opening signup modal...
+2025-10-23 17:58:23 - TestPageFactory - INFO - test_page_factory_login_flow - Signing up with username: agdkj8ph
+2025-10-23 17:58:30 - TestPageFactory - INFO - test_page_factory_login_flow - Signup alert: Sign up successful.
+2025-10-23 17:58:30 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Signup successful
+2025-10-23 17:58:34 - TestPageFactory - INFO - test_page_factory_login_flow - Opening login modal...
+2025-10-23 17:58:35 - TestPageFactory - INFO - test_page_factory_login_flow - Logging in with username: agdkj8ph
+2025-10-23 17:58:40 - TestPageFactory - INFO - test_page_factory_login_flow - Verifying login...
+2025-10-23 17:58:40 - TestPageFactory - ERROR - test_page_factory_login_flow - [FAIL] Login flow test failed: User not logged in - login link still visible
+assert False
+2025-10-23 17:58:40 - TestPageFactory - ERROR - test_page_factory_login_flow - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/login_flow_failure_1761242320.png
+2025-10-23 17:58:41 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 17:58:51 - TestPageFactory - INFO - search_product - Found product: Samsung galaxy s6
+2025-10-23 17:58:51 - TestPageFactory - INFO - test_page_factory_search_functionality - Found product: Samsung
+2025-10-23 17:58:54 - TestPageFactory - INFO - search_product - Products on page: ['Samsung galaxy s6', 'Nokia lumia 1520', 'Nexus 6', 'Samsung galaxy s7', 'Iphone 6 32gb', 'Sony xperia z5', 'HTC One M9', 'Sony vaio i5', 'Sony vaio i7']
+2025-10-23 17:58:54 - TestPageFactory - INFO - test_page_factory_search_functionality - [PASS] Search functionality test passed
