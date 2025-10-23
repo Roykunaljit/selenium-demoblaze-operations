@@ -52,38 +52,68 @@ jobs:
 
       - name: Install Microsoft Edge and EdgeDriver
         if: matrix.browser == 'edge'
+        shell: bash
         run: |
+          set -euo pipefail
           echo "Installing Microsoft Edge..."
-          sudo apt-get update
-          sudo apt-get install -y wget gnupg
+          sudo apt-get update -y
+          sudo apt-get install -y wget gnupg unzip ca-certificates
 
-          # Add Microsoft Edge repo
-          curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-edge.gpg
+          # Add Microsoft Edge repo (ensure root perms on key install)
+          curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft-edge.gpg
           echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
-          sudo apt-get update
+          sudo apt-get update -y
           sudo apt-get install -y microsoft-edge-stable
 
-          # Get Edge version
-          EDGE_VERSION=$(microsoft-edge --version | grep -o '[0-9.]*' | head -n1)
-          EDGE_MAJOR=$(echo "$EDGE_VERSION" | cut -d. -f1)
+          # Get Edge version/major
+          EDGE_VERSION="$(microsoft-edge --version | grep -oE '[0-9.]+' | head -n1)"
+          EDGE_MAJOR="$(echo "$EDGE_VERSION" | cut -d. -f1)"
           echo "Edge version: $EDGE_VERSION (major: $EDGE_MAJOR)"
 
-          # ✅ CORRECT URL: NO _LINUX suffix
-          DRIVER_VERSION=$(curl -s "https://msedgedriver.azureedge.net/LATEST_RELEASE_${EDGE_MAJOR}")
-          if [ -z "$DRIVER_VERSION" ]; then
+          # Get matching EdgeDriver version with retries + fallback host
+          get_driver_version() {
+            local host="$1"
+            curl -fsSL --retry 5 --retry-all-errors --retry-delay 2 \
+              "$host/LATEST_RELEASE_${EDGE_MAJOR}" || true
+          }
+          DRIVER_VERSION="$(get_driver_version "https://msedgedriver.azureedge.net")"
+          if [ -z "${DRIVER_VERSION}" ]; then
+            echo "Primary host failed. Trying blob.core fallback..."
+            DRIVER_VERSION="$(get_driver_version "https://msedgewebdriverstorage.blob.core.windows.net/edgewebdriver")"
+          fi
+          if [ -z "${DRIVER_VERSION}" ]; then
             echo "❌ Failed to fetch EdgeDriver version for major version $EDGE_MAJOR"
             exit 1
           fi
-
           echo "Downloading msedgedriver version: $DRIVER_VERSION"
-          wget -O msedgedriver.zip "https://msedgedriver.azureedge.net/${DRIVER_VERSION}/edgedriver_linux64.zip"
-          unzip msedgedriver.zip
-          sudo mv msedgedriver /usr/local/bin/
+
+          # Download driver with retry + fallback URL
+          PRIMARY_URL="https://msedgedriver.azureedge.net/${DRIVER_VERSION}/edgedriver_linux64.zip"
+          FALLBACK_URL="https://msedgewebdriverstorage.blob.core.windows.net/edgewebdriver/${DRIVER_VERSION}/edgedriver_linux64.zip"
+
+          if ! curl -fL --retry 5 --retry-all-errors --retry-delay 2 -o msedgedriver.zip "$PRIMARY_URL"; then
+            echo "Primary download failed, trying fallback..."
+            curl -fL --retry 5 --retry-all-errors --retry-delay 2 -o msedgedriver.zip "$FALLBACK_URL"
+          fi
+
+          unzip -q msedgedriver.zip
+
+          # Support both archive layouts
+          if [ -f msedgedriver ]; then
+            sudo mv msedgedriver /usr/local/bin/
+          elif [ -f edgedriver_linux64/msedgedriver ]; then
+            sudo mv edgedriver_linux64/msedgedriver /usr/local/bin/
+          else
+            echo "❌ msedgedriver binary not found after unzip"
+            find . -maxdepth 3 -type f -name 'msedgedriver' -print
+            exit 1
+          fi
+
           sudo chmod +x /usr/local/bin/msedgedriver
 
           echo "✅ Edge and EdgeDriver installed:"
           microsoft-edge --version
-          msedgedriver --version
+          /usr/local/bin/msedgedriver --version
 
       - name: Install dependencies
         run: |
