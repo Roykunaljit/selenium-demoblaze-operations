@@ -663,11 +663,11 @@ jobs:
           HTMLEOF
           
           # Replace placeholders with actual values
-          sed -i "s/GITHUB_REPOSITORY_PLACEHOLDER/${{ github.repository }}|g" deploy/index.html
-          sed -i "s/GITHUB_RUN_NUMBER_PLACEHOLDER/${{ github.run_number }}|g" deploy/index.html
-          sed -i "s/GITHUB_REF_NAME_PLACEHOLDER/${{ github.ref_name }}|g" deploy/index.html
-          sed -i "s/GITHUB_SHA_PLACEHOLDER/${{ github.sha }}|g" deploy/index.html
-          sed -i "s/GITHUB_ACTOR_PLACEHOLDER/${{ github.actor }}|g" deploy/index.html
+          sed -i "s|GITHUB_REPOSITORY_PLACEHOLDER|${{ github.repository }}|g" deploy/index.html
+          sed -i "s|GITHUB_RUN_NUMBER_PLACEHOLDER|${{ github.run_number }}|g" deploy/index.html
+          sed -i "s|GITHUB_REF_NAME_PLACEHOLDER|${{ github.ref_name }}|g" deploy/index.html
+          sed -i "s|GITHUB_SHA_PLACEHOLDER|${{ github.sha }}|g" deploy/index.html
+          sed -i "s|GITHUB_ACTOR_PLACEHOLDER|${{ github.actor }}|g" deploy/index.html
           
           echo "Index page created successfully"
 
