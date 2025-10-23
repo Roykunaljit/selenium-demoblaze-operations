@@ -34,7 +34,7 @@ class TestDropdowns:
     """
 
     @pytest.fixture(autouse=True)
-    def setup_and_teardown(self):
+    def setup_and_teardown(self, request):  # ✅ ADDED: request parameter
         """
         Setup fixture: Creates a local web server with a dropdown page,
         initializes the WebDriver, and handles teardown.
@@ -87,7 +87,10 @@ class TestDropdowns:
         self.logger.info(f"Local test server running at: {self.test_url}")
 
         # --- WebDriver Setup ---
-        self.browser_config = BrowserConfig()
+        # ✅ CRITICAL FIX: Get browser from pytest command line and pass it to BrowserConfig
+        browser = request.config.getoption("--browser")
+        self.logger.info(f"Initializing browser: {browser}")
+        self.browser_config = BrowserConfig(browser_name=browser)
         self.driver = self.browser_config.get_driver()
         # We instantiate BasePage to get access to the dropdown methods
         self.base_page = BasePage(self.driver, self.logger)

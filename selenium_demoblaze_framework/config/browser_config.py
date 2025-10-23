@@ -11,11 +11,19 @@ import os
 
 
 class BrowserConfig:
-    def __init__(self):
+    def __init__(self, browser_name=None):
         """Initialize the BrowserConfig class and load config.ini."""
         self.config = configparser.ConfigParser()
         config_path = os.path.join(os.path.dirname(__file__), 'config.ini')
         self.config.read(config_path)
+
+        # CRITICAL FIX: Store browser_name to use later
+        # Priority: 1. Passed parameter, 2. Environment variable, 3. Config file
+        self.browser_name = (
+                browser_name or
+                os.getenv('BROWSER') or
+                self.config.get('DEFAULT', 'browser', fallback='chrome')
+        ).lower()
 
     def get_chrome_options(self):
         """Configure Chrome options with all possible settings."""
@@ -54,7 +62,7 @@ class BrowserConfig:
             'profile.content_settings.exceptions.automatic_downloads.*.setting': 1
         }
         options.add_experimental_option('prefs', prefs)
-        options.add_experimental_option('excludeSwitches', ['enable-logging'])
+        options.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
         options.add_experimental_option('useAutomationExtension', False)
 
         # Enable performance logging
@@ -109,6 +117,11 @@ class BrowserConfig:
         if self.config.getboolean('BROWSER_OPTIONS', 'disable_dev_shm'):
             options.add_argument('--disable-dev-shm-usage')
 
+        # Critical for CI environments
+        options.add_argument('--disable-software-rasterizer')
+        options.add_argument('--disable-blink-features=AutomationControlled')
+        options.add_argument('--remote-debugging-port=9222')
+
         options.add_argument('--disable-extensions')
         options.add_argument('--disable-popup-blocking')
         options.add_argument('--ignore-certificate-errors')
@@ -120,16 +133,23 @@ class BrowserConfig:
             'download.directory_upgrade': True,
             'safebrowsing.enabled': False,
             'profile.default_content_settings.popups': 0,
+            'profile.default_content_setting_values.notifications': 2,
         }
         options.add_experimental_option('prefs', prefs)
-        options.add_experimental_option('excludeSwitches', ['enable-logging'])
+        options.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
+        options.add_experimental_option('useAutomationExtension', False)
 
         return options
 
     def get_driver(self, browser_name=None):
         """Get configured WebDriver instance for the specified browser."""
+        # CRITICAL FIX: Use the stored browser_name if not explicitly passed
         if not browser_name:
-            browser_name = self.config.get('DEFAULT', 'browser').lower()
+            browser_name = self.browser_name
+
+        browser_name = browser_name.lower()
+
+        print(f"[BrowserConfig] Initializing {browser_name} driver...")
 
         if browser_name == 'chrome':
             if os.getenv("GITHUB_ACTIONS"):
@@ -155,9 +175,18 @@ class BrowserConfig:
 
         elif browser_name == 'edge':
             if os.getenv("GITHUB_ACTIONS"):
-                # Use Selenium Manager for Edge in CI
-                service = EdgeService()
-                driver = webdriver.Edge(service=service, options=self.get_edge_options())
+                # Use system-installed EdgeDriver in CI
+                try:
+                    # Try using msedgedriver from PATH
+                    service = EdgeService('/usr/local/bin/msedgedriver')
+                    driver = webdriver.Edge(service=service, options=self.get_edge_options())
+                    print("[BrowserConfig] Successfully initialized Edge with system driver")
+                except Exception as e:
+                    print(f"[BrowserConfig] Failed with system driver: {e}")
+                    # Fallback to Selenium Manager
+                    service = EdgeService()
+                    driver = webdriver.Edge(service=service, options=self.get_edge_options())
+                    print("[BrowserConfig] Successfully initialized Edge with Selenium Manager")
             else:
                 # For local Windows execution - check for local driver first
                 edge_driver_path = r"C:\webdrivers\msedgedriver.exe"
@@ -179,4 +208,5 @@ class BrowserConfig:
         driver.implicitly_wait(self.config.getint('DEFAULT', 'implicit_wait'))
         driver.set_page_load_timeout(self.config.getint('DEFAULT', 'page_load_timeout'))
 
+        print(f"[BrowserConfig] {browser_name.title()} driver initialized successfully")
         return driver

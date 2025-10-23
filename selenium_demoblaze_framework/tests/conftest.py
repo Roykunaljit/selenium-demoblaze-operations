@@ -1,4 +1,7 @@
 # conftest.py
+"""
+Pytest configuration file for handling browser parameters, fixtures, and Allure reporting.
+"""
 import pytest
 import allure
 from allure_commons.types import AttachmentType
@@ -17,7 +20,7 @@ def pytest_addoption(parser):
         "--browser",
         action="store",
         default="chrome",
-        help="Browser to run tests: chrome, edge, or all"
+        help="Browser to run tests: chrome, edge, firefox, or all"
     )
 
 
@@ -27,11 +30,47 @@ def pytest_generate_tests(metafunc):
         browser_option = metafunc.config.getoption("--browser").lower()
 
         if browser_option == "all":
-            browsers = ["chrome", "edge"]
+            browsers = ["chrome", "edge"]  # Add "firefox" here if needed: ["chrome", "edge", "firefox"]
         else:
             browsers = [browser_option]
 
         metafunc.parametrize("browser_name", browsers, scope="function")
+
+
+# ✅ FIXED: Renamed to avoid conflict with parametrized browser_name
+@pytest.fixture(scope="session")
+def session_browser(request):
+    """Get browser name from pytest command line option (session-level)."""
+    return request.config.getoption("--browser")
+
+
+@pytest.fixture(scope="session", autouse=True)
+def set_browser_env(session_browser):  # ✅ FIXED: Use renamed fixture
+    """Set BROWSER environment variable for all tests to use."""
+    # Only set env var if not using "all" option
+    if session_browser.lower() != "all":
+        os.environ['BROWSER'] = session_browser
+        print(f"\n{'=' * 60}")
+        print(f"PYTEST SESSION STARTED - Browser: {session_browser.upper()}")
+        print(f"{'=' * 60}\n")
+        yield
+        print(f"\n{'=' * 60}")
+        print(f"PYTEST SESSION ENDED - Browser: {session_browser.upper()}")
+        print(f"{'=' * 60}\n")
+    else:
+        print(f"\n{'=' * 60}")
+        print(f"PYTEST SESSION STARTED - Running on ALL browsers")
+        print(f"{'=' * 60}\n")
+        yield
+        print(f"\n{'=' * 60}")
+        print(f"PYTEST SESSION ENDED - ALL browsers")
+        print(f"{'=' * 60}\n")
+
+
+@pytest.fixture(scope="function")
+def get_browser_name(request):
+    """Function-level fixture to get browser name for individual tests."""
+    return request.config.getoption("--browser")
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
@@ -40,9 +79,13 @@ def pytest_runtest_makereport(item, call):
     Hook to take screenshot on test failure for Allure reports.
     Handles multiple fixture names and patterns.
     Thread-safe implementation for parallel execution.
+    Also makes test results available to fixtures.
     """
     outcome = yield
     report = outcome.get_result()
+
+    # Make test results available to fixtures
+    setattr(item, f"rep_{report.when}", report)
 
     if report.when == 'call' and report.failed:
         driver = None
@@ -124,6 +167,7 @@ def pytest_runtest_makereport(item, call):
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
     """Configure pytest with custom markers."""
+    # Original markers
     config.addinivalue_line(
         "markers", "chrome: mark test to run only on Chrome"
     )
@@ -136,3 +180,40 @@ def pytest_configure(config):
     config.addinivalue_line(
         "markers", "regression: mark test as regression test"
     )
+    # New browser-specific markers
+    config.addinivalue_line(
+        "markers", "chrome_only: mark test to run only on Chrome"
+    )
+    config.addinivalue_line(
+        "markers", "edge_only: mark test to run only on Edge"
+    )
+    config.addinivalue_line(
+        "markers", "firefox_only: mark test to run only on Firefox"
+    )
+
+
+def pytest_collection_modifyitems(config, items):
+    """Modify test collection based on browser-specific markers."""
+    browser = config.getoption("--browser").lower()
+
+    # Don't apply skipping logic when running "all" browsers
+    if browser == "all":
+        return
+
+    skip_markers = {
+        "chrome": pytest.mark.skip(reason="Test is not compatible with Chrome"),
+        "edge": pytest.mark.skip(reason="Test is not compatible with Edge"),
+        "firefox": pytest.mark.skip(reason="Test is not compatible with Firefox")
+    }
+
+    for item in items:
+        # Skip tests marked for specific browsers
+        if browser == "chrome":
+            if "edge_only" in item.keywords or "firefox_only" in item.keywords:
+                item.add_marker(skip_markers["chrome"])
+        elif browser == "edge":
+            if "chrome_only" in item.keywords or "firefox_only" in item.keywords:
+                item.add_marker(skip_markers["edge"])
+        elif browser == "firefox":
+            if "chrome_only" in item.keywords or "edge_only" in item.keywords:
+                item.add_marker(skip_markers["firefox"])

@@ -13,9 +13,13 @@ from selenium_demoblaze_framework.config.browser_config import BrowserConfig
 
 class TestKeywordDriven:
     @pytest.fixture
-    def setup(self):
+    def setup(self, request):  # ✅ ADDED: request parameter
         self.logger = CustomLogger.get_logger(self.__class__.__name__)
-        self.browser_config = BrowserConfig()
+
+        # ✅ CRITICAL FIX: Get browser from pytest command line and pass it to BrowserConfig
+        browser = request.config.getoption("--browser")
+        self.logger.info(f"Initializing browser: {browser}")
+        self.browser_config = BrowserConfig(browser_name=browser)
         self.driver = self.browser_config.get_driver()
         self.keyword_engine = KeywordEngine(self.driver)
 
