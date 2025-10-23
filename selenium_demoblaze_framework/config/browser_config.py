@@ -120,7 +120,10 @@ class BrowserConfig:
         # Critical for CI environments
         options.add_argument('--disable-software-rasterizer')
         options.add_argument('--disable-blink-features=AutomationControlled')
-        options.add_argument('--remote-debugging-port=9222')
+        options.add_argument('--single-process')
+        options.add_argument('--disable-features=VizDisplayCompositor')
+        options.add_argument('--disable-setuid-sandbox')
+       # options.add_argument('--remote-debugging-port=9222')
 
         options.add_argument('--disable-extensions')
         options.add_argument('--disable-popup-blocking')

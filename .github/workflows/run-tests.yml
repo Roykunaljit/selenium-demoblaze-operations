@@ -45,21 +45,24 @@ jobs:
           chmod +x /usr/local/bin/chromedriver
           chromedriver --version
 
-      # ✅ UPDATED: Simplified Edge installation using Selenium Manager
-      - name: Install Microsoft Edge Browser
+      - name: Install Microsoft Edge (Driver Auto-Managed)
         if: matrix.browser == 'edge'
         run: |
+          # Remove any old EdgeDriver that might conflict
+          echo "Cleaning up old EdgeDriver..."
+          sudo rm -f /usr/bin/msedgedriver
+          sudo rm -f /usr/local/bin/msedgedriver
+          
           # Install Microsoft Edge Browser
+          echo "Installing Microsoft Edge..."
           curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-edge.gpg
           echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
           sudo apt-get update
           sudo apt-get install -y microsoft-edge-stable
           
-          # Verify Edge installation
-          EDGE_VERSION=$(microsoft-edge --version)
-          echo "Edge version: $EDGE_VERSION"
-          echo "✅ Microsoft Edge installed successfully"
-          echo "ℹ️  EdgeDriver will be automatically managed by Selenium Manager"
+          # Verify installation
+          microsoft-edge --version
+          echo "✅ Edge installed - Selenium Manager will auto-download matching driver"
 
       - name: Install dependencies
         run: |
