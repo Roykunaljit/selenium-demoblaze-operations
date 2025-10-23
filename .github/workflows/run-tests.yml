@@ -34,7 +34,12 @@ jobs:
         if: matrix.browser == 'chrome'
         run: |
           sudo apt-get update
+          sudo apt-get install -y wget gnupg
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/google-chrome.gpg
+          echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
           sudo apt-get install -y google-chrome-stable
+
           CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f1)
           DRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_${CHROME_VERSION}")
           echo "Chrome version: $(google-chrome --version)"
@@ -45,35 +50,34 @@ jobs:
           chmod +x /usr/local/bin/chromedriver
           chromedriver --version
 
-      - name: Install Microsoft Edge with ChromeDriver
+      - name: Install Microsoft Edge and EdgeDriver
         if: matrix.browser == 'edge'
         run: |
           echo "Installing Microsoft Edge..."
+          sudo apt-get update
+          sudo apt-get install -y wget gnupg
+
           curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-edge.gpg
           echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
           sudo apt-get update
-          sudo apt-get install -y microsoft-edge-stable google-chrome-stable
-          
-          # Verify Edge installation
-          EDGE_VERSION=$(microsoft-edge --version)
-          echo "✅ Edge installed: $EDGE_VERSION"
-          
-          # Install ChromeDriver (compatible with Edge since both are Chromium-based)
-          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f1)
-          DRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_${CHROME_VERSION}")
-          echo "Installing ChromeDriver version: $DRIVER_VERSION"
-          
-          wget -O chromedriver.zip "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${DRIVER_VERSION}/linux64/chromedriver-linux64.zip"
-          unzip chromedriver.zip
-          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
-          sudo chmod +x /usr/local/bin/chromedriver
-          
-          # Create symlink for Edge to use ChromeDriver
-          sudo ln -sf /usr/local/bin/chromedriver /usr/local/bin/msedgedriver
-          
-          echo "✅ Edge setup complete with ChromeDriver"
-          echo "ChromeDriver version: $(chromedriver --version)"
-          echo "EdgeDriver symlink: $(msedgedriver --version)"
+          sudo apt-get install -y microsoft-edge-stable
+
+          # Get Edge version
+          EDGE_VERSION=$(microsoft-edge --version | grep -o '[0-9.]*' | head -n1)
+          EDGE_MAJOR=$(echo "$EDGE_VERSION" | cut -d. -f1)
+          echo "Edge version: $EDGE_VERSION (major: $EDGE_MAJOR)"
+
+          # Download matching msedgedriver
+          DRIVER_VERSION=$(curl -s "https://msedgedriver.azureedge.net/LATEST_RELEASE_${EDGE_MAJOR}_LINUX")
+          echo "Downloading msedgedriver version: $DRIVER_VERSION"
+          wget -O msedgedriver.zip "https://msedgedriver.azureedge.net/${DRIVER_VERSION}/edgedriver_linux64.zip"
+          unzip msedgedriver.zip
+          sudo mv msedgedriver /usr/local/bin/
+          sudo chmod +x /usr/local/bin/msedgedriver
+
+          echo "✅ Edge and EdgeDriver installed:"
+          microsoft-edge --version
+          msedgedriver --version
 
       - name: Install dependencies
         run: |
@@ -96,7 +100,7 @@ jobs:
           elif [ "${{ matrix.browser }}" == "edge" ]; then
             echo "Edge Setup:"
             microsoft-edge --version
-            echo "EdgeDriver (via ChromeDriver): $(msedgedriver --version)"
+            msedgedriver --version
           fi
 
       - name: Run Pytest with Parallel Execution
@@ -728,7 +732,7 @@ jobs:
           echo "| Report Type | URL |" >> $GITHUB_STEP_SUMMARY
           echo "|-------------|-----|" >> $GITHUB_STEP_SUMMARY
           echo "| 🏠 Main Dashboard | [Open Dashboard](https://roykunaljit.github.io/selenium-demoblaze-automations/) |" >> $GITHUB_STEP_SUMMARY
-          echo "| 📈 Combined Allure | [Open Allure Report](https://roykunaljit.github.io/selenium-demoblaze-automations/${{ github.run_number }}/) |" >> $GITHUB_STEP_SUMMARY
+          echo "| 📈 Combined Allure | [Open Allure Report](https://roykunaljit.github.io/selenium-demoblaze-automations/${{ github.run_number }}/ ) |" >> $GITHUB_STEP_SUMMARY
           echo "| 🔵 Chrome HTML | [Open Chrome Report](https://roykunaljit.github.io/selenium-demoblaze-automations/html-reports/report-chrome-${{ github.run_number }}.html) |" >> $GITHUB_STEP_SUMMARY
           echo "| 🔷 Edge HTML | [Open Edge Report](https://roykunaljit.github.io/selenium-demoblaze-automations/html-reports/report-edge-${{ github.run_number }}.html) |" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -741,7 +745,7 @@ jobs:
           echo "🔒 **Thread Safety:** Enabled for screenshots and logs" >> $GITHUB_STEP_SUMMARY
           echo "📸 **Artifacts:** Screenshots, logs, and reports uploaded" >> $GITHUB_STEP_SUMMARY
           echo "🐍 **Python Version:** 3.9" >> $GITHUB_STEP_SUMMARY
-          echo "🤖 **Driver Management:** ChromeDriver for both browsers (Chromium-based)" >> $GITHUB_STEP_SUMMARY
+          echo "🤖 **Driver Management:** ✅ Correct msedgedriver for Edge, Chromedriver for Chrome" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
