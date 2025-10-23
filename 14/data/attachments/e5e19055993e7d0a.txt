@@ -1,0 +1,11 @@
+2025-10-23 21:05:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:05:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 21:05:27 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 21:05:27 - TestDemoBlazeE2E_chrome - INFO - test_32_broken_links_check - Running broken links check
+2025-10-23 21:05:27 - TestDemoBlazeE2E_chrome - INFO - test_32_broken_links_check - Testing on W3.org
+2025-10-23 21:05:31 - TestDemoBlazeE2E_chrome - INFO - check_broken_links - Checking for broken links...
+2025-10-23 21:05:31 - TestDemoBlazeE2E_chrome - INFO - check_broken_links - Found 92 links
+2025-10-23 21:05:39 - TestDemoBlazeE2E_chrome - INFO - check_broken_links - Success: Broken Links Check Complete: 0 broken out of 91
+2025-10-23 21:05:39 - TestDemoBlazeE2E_chrome - INFO - test_32_broken_links_check - W3.org: Found 91 valid, 0 broken
+2025-10-23 21:05:39 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 21:05:39 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

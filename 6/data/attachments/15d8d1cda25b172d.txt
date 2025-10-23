@@ -1,0 +1,2 @@
+2025-10-23 18:19:12 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:12 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE

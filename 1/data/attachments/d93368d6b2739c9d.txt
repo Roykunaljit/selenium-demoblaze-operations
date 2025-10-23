@@ -1,0 +1,15 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:769 Testing log collection
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'login2')
+INFO     TestDemoBlazeE2E:home_page.py:175 Opened login modal
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'loginusername'): test
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'loginpassword'): test
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+INFO     TestDemoBlazeE2E:home_page.py:182 Logged in with username: test
+WARNING  TestDemoBlazeE2E:base_page.py:263 No alert present
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:777 Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761238094093}
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:777 Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761238096007}
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

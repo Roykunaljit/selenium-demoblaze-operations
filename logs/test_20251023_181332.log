@@ -1,0 +1,22 @@
+2025-10-23 18:13:32 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:13:36 - TestPageFactory - INFO - test_click_logo_using_page_factory - === Testing PURE Page Factory - Logo Click ===
+2025-10-23 18:13:36 - TestPageFactory - INFO - test_click_logo_using_page_factory - Step 1: Navigating to cart using Page Factory...
+2025-10-23 18:13:38 - TestPageFactory - INFO - test_click_logo_using_page_factory - ✓ Successfully navigated to cart
+2025-10-23 18:13:38 - TestPageFactory - INFO - test_click_logo_using_page_factory - Step 2: Clicking logo using Page Factory...
+2025-10-23 18:13:41 - TestPageFactory - INFO - test_click_logo_using_page_factory - Page title: STORE
+2025-10-23 18:13:41 - TestPageFactory - INFO - test_click_logo_using_page_factory - Current URL: https://www.demoblaze.com/index.html
+2025-10-23 18:13:41 - TestPageFactory - INFO - test_click_logo_using_page_factory - ✓ Logo click successful - returned to home page
+2025-10-23 18:13:41 - TestPageFactory - INFO - test_click_logo_using_page_factory - [PASS] Pure Page Factory logo click test passed! 🎉
+2025-10-23 18:13:42 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:13:48 - TestPageFactory - INFO - test_page_factory_multiple_elements - Found 9 products
+2025-10-23 18:13:48 - TestPageFactory - INFO - test_page_factory_multiple_elements - [PASS] Multiple elements test passed
+2025-10-23 18:13:48 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:13:56 - TestPageFactory - INFO - test_page_factory_product_details - [PASS] Product details test passed - Found 9 products
+2025-10-23 18:13:56 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:14:06 - TestPageFactory - INFO - search_product - Found product: Samsung galaxy s6
+2025-10-23 18:14:06 - TestPageFactory - INFO - test_page_factory_search_functionality - Found product: Samsung
+2025-10-23 18:14:09 - TestPageFactory - INFO - search_product - Products on page: ['Samsung galaxy s6', 'Nokia lumia 1520', 'Nexus 6', 'Samsung galaxy s7', 'Iphone 6 32gb', 'Sony xperia z5', 'HTC One M9', 'Sony vaio i5', 'Sony vaio i7']
+2025-10-23 18:14:09 - TestPageFactory - INFO - test_page_factory_search_functionality - [PASS] Search functionality test passed
+2025-10-23 18:14:09 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:14:13 - TestPageFactory - INFO - test_page_factory_cart_navigation - Cart menu found, clicking...
+2025-10-23 18:14:15 - TestPageFactory - INFO - test_page_factory_cart_navigation - [PASS] Cart navigation test passed

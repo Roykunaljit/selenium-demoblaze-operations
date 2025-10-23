@@ -1,0 +1,9 @@
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:46:06 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:46:06 - TestDemoBlazeE2E - INFO - test_14_storage_operations - Testing storage operations
+2025-10-23 16:46:06 - TestDemoBlazeE2E - INFO - test_14_storage_operations - Local storage: [['user_preference', 'dark_mode'], ['test_key', 'test_value']]
+2025-10-23 16:46:06 - TestDemoBlazeE2E - INFO - test_14_storage_operations - Session storage: [['session_key', 'session_value']]
+2025-10-23 16:46:06 - TestDemoBlazeE2E - INFO - test_14_storage_operations - Storage operations completed
+2025-10-23 16:46:06 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:46:06 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

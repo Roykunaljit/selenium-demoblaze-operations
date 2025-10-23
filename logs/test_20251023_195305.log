@@ -1,0 +1,113 @@
+2025-10-23 19:53:05 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:05 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:53:06 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:53:06 - TestDemoBlazeE2E_chrome - INFO - test_04_javascript_execution - Testing JavaScript execution
+2025-10-23 19:53:07 - TestDemoBlazeE2E_chrome - INFO - test_04_javascript_execution - Page height: 1872
+2025-10-23 19:53:07 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 19:53:08 - TestDemoBlazeE2E_chrome - INFO - test_04_javascript_execution - Logo text:  PRODUCT STORE
+2025-10-23 19:53:09 - TestDemoBlazeE2E_chrome - INFO - test_04_javascript_execution - Async result: Async execution complete
+2025-10-23 19:53:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:53:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:53:10 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:53:10 - TestDemoBlazeE2E_chrome - INFO - test_08_screenshot_operations - Testing screenshot operations on chrome
+2025-10-23 19:53:10 - TestDemoBlazeE2E_chrome - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/full_page_chrome_gw0_20251023_195310_469824_1_gw0_20251023_195310_469979_1.png
+2025-10-23 19:53:10 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 19:53:10 - TestDemoBlazeE2E_chrome - INFO - take_element_screenshot - Element screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/logo_screenshot_chrome_gw0_20251023_195310_779688_2_gw0_20251023_195310_779789_2.png
+2025-10-23 19:53:10 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 9 elements: ('class name', 'card')
+2025-10-23 19:53:12 - TestDemoBlazeE2E_chrome - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/highlighted_element_chrome_gw0_20251023_195312_001760_3_gw0_20251023_195312_001862_3.png
+2025-10-23 19:53:12 - TestDemoBlazeE2E_chrome - INFO - test_08_screenshot_operations - Screenshot operations completed
+2025-10-23 19:53:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:53:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:53:13 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:53:13 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Starting true data-driven test with Excel
+2025-10-23 19:53:13 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Testing with Excel data: {'product_name': 'Samsung galaxy s6', 'category': 'Phones', 'expected_price': '360'}
+2025-10-23 19:53:13 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 19:53:15 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 19:53:17 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 19:53:19 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 19:53:22 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:53:22 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 19:53:22 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 19:53:22 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Successfully verified product: Samsung galaxy s6
+2025-10-23 19:53:24 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Testing with Excel data: {'product_name': 'Nokia lumia 1520', 'category': 'Phones', 'expected_price': '820'}
+2025-10-23 19:53:24 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 19:53:26 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 19:53:28 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Nokia lumia 1520')]")
+2025-10-23 19:53:30 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Nokia lumia 1520
+2025-10-23 19:53:32 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:53:32 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Nokia lumia 1520
+2025-10-23 19:53:32 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Nokia lumia 1520
+2025-10-23 19:53:32 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Successfully verified product: Nokia lumia 1520
+2025-10-23 19:53:34 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Testing with Excel data: {'product_name': 'Sony vaio i5', 'category': 'Laptops', 'expected_price': '790'}
+2025-10-23 19:53:34 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 19:53:36 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 19:53:38 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Sony vaio i5')]")
+2025-10-23 19:53:40 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Sony vaio i5
+2025-10-23 19:53:43 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:53:43 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Sony vaio i5
+2025-10-23 19:53:43 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Sony vaio i5
+2025-10-23 19:53:43 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Successfully verified product: Sony vaio i5
+2025-10-23 19:53:45 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:53:45 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:45 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:45 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:53:46 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:53:46 - TestDemoBlazeE2E_chrome - INFO - test_11b_utility_demo_xml - Demonstrating XML write and read utility
+2025-10-23 19:53:46 - TestDemoBlazeE2E_chrome - INFO - test_11b_utility_demo_xml - Successfully wrote data to data/test_output.xml
+2025-10-23 19:53:46 - TestDemoBlazeE2E_chrome - INFO - test_11b_utility_demo_xml - Successfully read back 2 records from XML.
+2025-10-23 19:53:46 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:53:46 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:46 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:53:46 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:53:47 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:53:47 - TestDemoBlazeE2E_chrome - INFO - test_24_about_us_modal - Testing About Us modal
+2025-10-23 19:53:47 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'About us')]")
+2025-10-23 19:53:48 - TestDemoBlazeE2E_chrome - INFO - open_about_modal - Opened About Us modal
+2025-10-23 19:53:49 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'example-video')
+2025-10-23 19:54:09 - TestDemoBlazeE2E_chrome - ERROR - click - Failed to click element: ('class name', 'vjs-play-control'). Error: Message: 
+
+2025-10-23 19:54:09 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('class name', 'vjs-play-control')
+2025-10-23 19:54:09 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element using JavaScript: ('class name', 'vjs-play-control')
+2025-10-23 19:54:09 - TestDemoBlazeE2E_chrome - INFO - play_video - Playing video
+2025-10-23 19:54:11 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//div[@id='videoModal']//button[contains(text(),'Close')]")
+2025-10-23 19:54:11 - TestDemoBlazeE2E_chrome - INFO - close_about_modal - Closed About Us modal
+2025-10-23 19:54:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:54:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:54:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:54:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:54:13 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:54:13 - TestDemoBlazeE2E_chrome - INFO - test_25_pagination - Testing pagination
+2025-10-23 19:54:13 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Home')]")
+2025-10-23 19:54:13 - TestDemoBlazeE2E_chrome - INFO - navigate_to_home - Navigated to Home page
+2025-10-23 19:54:15 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 9 elements: ('class name', 'card')
+2025-10-23 19:54:16 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 9 products
+2025-10-23 19:54:16 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'next2')
+2025-10-23 19:54:18 - TestDemoBlazeE2E_chrome - INFO - go_to_next_page - Navigated to next page
+2025-10-23 19:54:20 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 6 elements: ('class name', 'card')
+2025-10-23 19:54:20 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 6 products
+2025-10-23 19:54:20 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'prev2')
+2025-10-23 19:54:22 - TestDemoBlazeE2E_chrome - INFO - go_to_previous_page - Navigated to previous page
+2025-10-23 19:54:24 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 9 elements: ('class name', 'card')
+2025-10-23 19:54:24 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 9 products
+2025-10-23 19:54:24 - TestDemoBlazeE2E_chrome - INFO - test_25_pagination - Pagination test passed: pages are non-empty and differ
+2025-10-23 19:54:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:54:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:54:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:54:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:54:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:54:26 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Testing log collection
+2025-10-23 19:54:26 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 19:54:27 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 19:54:27 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginusername'): test
+2025-10-23 19:54:27 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): test
+2025-10-23 19:54:27 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 19:54:27 - TestDemoBlazeE2E_chrome - INFO - login - Logged in with username: test
+2025-10-23 19:54:37 - TestDemoBlazeE2E_chrome - WARNING - accept_alert - No alert present
+2025-10-23 19:54:37 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761249266208}
+2025-10-23 19:54:37 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761249268215}
+2025-10-23 19:54:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:54:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

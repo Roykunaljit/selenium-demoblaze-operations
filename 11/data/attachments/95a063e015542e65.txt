@@ -1,0 +1,2 @@
+2025-10-23 20:24:06 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 20:24:14 - TestPageFactory - INFO - test_page_factory_product_details - [PASS] Product details test passed - Found 9 products

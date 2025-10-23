@@ -1,0 +1,1 @@
+INFO     TestPageFactory:test_page_factory.py:287 [PASS] Product details test passed - Found 9 products

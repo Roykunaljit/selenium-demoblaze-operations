@@ -1,0 +1,146 @@
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:1142 ==================================================
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:1143 Starting new test on EDGE
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:63 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.9.23/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:120 Executing process: /opt/hostedtoolcache/Python/3.9.23/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager --browser MicrosoftEdge --debug --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Found msedgedriver 140.0.3485.94 in PATH: /usr/bin/msedgedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 MicrosoftEdge detected at /usr/bin/microsoft-edge
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Running command: /usr/bin/microsoft-edge --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Output: "Microsoft Edge 141.0.3537.99 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Detected browser: MicrosoftEdge 141.0.3537.99
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Reading msedgedriver version from https://msedgedriver.azureedge.net/LATEST_RELEASE_141_LINUX
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:135 Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_141_LINUX): error trying to connect: dns error: failed to lookup address information: Name does not resolve
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:135 The msedgedriver version (140.0.3485.94) detected in PATH at /usr/bin/msedgedriver might not be compatible with the detected MicrosoftEdge version (141.0.3537.99); currently, msedgedriver  is recommended for MicrosoftEdge 141.*, so it is advised to delete the driver in PATH and retry
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Driver path: /usr/bin/msedgedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Browser path: /usr/bin/microsoft-edge
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:98 Using driver at: /usr/bin/msedgedriver
+DEBUG    selenium.webdriver.common.service:service.py:215 Started executable: `/usr/bin/msedgedriver` in a child process with pid: 8638
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "MicrosoftEdge", "pageLoadStrategy": "normal", "browserVersion": null, "ms:edgeOptions": {"prefs": {"download.default_directory": "/home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/downloads", "download.prompt_for_download": false, "download.directory_upgrade": true, "safebrowsing.enabled": false, "profile.default_content_settings.popups": 0, "profile.default_content_setting_values.notifications": 2}, "excludeSwitches": ["enable-logging", "enable-automation"], "useAutomationExtension": false, "extensions": [], "binary": "/usr/bin/microsoft-edge", "args": ["--headless=new", "--window-size=1920,1080", "--start-maximized", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--disable-software-rasterizer", "--disable-blink-features=AutomationControlled", "--single-process", "--disable-features=VizDisplayCompositor", "--disable-setuid-sandbox", "--disable-extensions", "--disable-popup-blocking", "--ignore-certificate-errors"]}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): localhost:37831
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"MicrosoftEdge","browserVersion":"141.0.3537.99","fedcm:accounts":true,"ms:edgeOptions":{"debuggerAddress":"localhost:38021"},"msedge":{"msedgedriverVersion":"140.0.3485.94 (9831641b47fbddfcc786ceb18c2e499530dc5e2b)","userDataDir":"/tmp/.com.microsoft.Edge.O0YxOZ"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f13b350aa445a6e47c59cf6257819519"}} | headers=HTTPHeaderDict({'Content-Length': '817', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/timeouts {"implicit": 10000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/timeouts HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/timeouts {"pageLoad": 60000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/timeouts HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG    faker.factory:factory.py:86 Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.passport`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.passport` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/url {"url": "https://www.demoblaze.com"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/url HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:1163 Navigated to DemoBlaze website on edge
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:2255 Testing radio button selection
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/timeouts {"pageLoad": 30000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/timeouts HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/url {"url": "https://demo.seleniumeasy.com/basic-radiobutton-demo.html"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/url HTTP/1.1" 500 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=500 | data={"value":{"error":"unknown error","message":"unknown error: net::ERR_NAME_NOT_RESOLVED\n  (Session info: MicrosoftEdge=141.0.3537.99)","stacktrace":"#0 0x561c8bc66cce \u003Cunknown>\n#1 0x561c8b6f0656 \u003Cunknown>\n#2 0x561c8b6eda09 \u003Cunknown>\n#3 0x561c8b6da1a9 \u003Cunknown>\n#4 0x561c8b6dbe05 \u003Cunknown>\n#5 0x561c8b6da4e3 \u003Cunknown>\n#6 0x561c8b6d9cd2 \u003Cunknown>\n#7 0x561c8b6d9c02 \u003Cunknown>\n#8 0x561c8b6d805c \u003Cunknown>\n#9 0x561c8b6d8357 \u003Cunknown>\n#10 0x561c8b6f3e63 \u003Cunknown>\n#11 0x561c8b78775e \u003Cunknown>\n#12 0x561c8b766802 \u003Cunknown>\n#13 0x561c8b78700c \u003Cunknown>\n#14 0x561c8b7665d3 \u003Cunknown>\n#15 0x561c8b734228 \u003Cunknown>\n#16 0x561c8b734e11 \u003Cunknown>\n#17 0x561c8bc3616e \u003Cunknown>\n#18 0x561c8bc392cb \u003Cunknown>\n#19 0x561c8bc38d2b \u003Cunknown>\n#20 0x561c8bc39785 \u003Cunknown>\n#21 0x561c8bc234e3 \u003Cunknown>\n#22 0x561c8bc39b52 \u003Cunknown>\n#23 0x561c8bc0d242 \u003Cunknown>\n#24 0x561c8bc55078 \u003Cunknown>\n#25 0x561c8bc5529c \u003Cunknown>\n#26 0x561c8bc65b59 \u003Cunknown>\n#27 0x7feb39a9caa4 \u003Cunknown>\n#28 0x7feb39b29c6c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '1157', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+WARNING  TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:2282 Selenium Easy failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=141.0.3537.99)
+Stacktrace:
+#0 0x561c8bc66cce <unknown>
+#1 0x561c8b6f0656 <unknown>
+#2 0x561c8b6eda09 <unknown>
+#3 0x561c8b6da1a9 <unknown>
+#4 0x561c8b6dbe05 <unknown>
+#5 0x561c8b6da4e3 <unknown>
+#6 0x561c8b6d9cd2 <unknown>
+#7 0x561c8b6d9c02 <unknown>
+#8 0x561c8b6d805c <unknown>
+#9 0x561c8b6d8357 <unknown>
+#10 0x561c8b6f3e63 <unknown>
+#11 0x561c8b78775e <unknown>
+#12 0x561c8b766802 <unknown>
+#13 0x561c8b78700c <unknown>
+#14 0x561c8b7665d3 <unknown>
+#15 0x561c8b734228 <unknown>
+#16 0x561c8b734e11 <unknown>
+#17 0x561c8bc3616e <unknown>
+#18 0x561c8bc392cb <unknown>
+#19 0x561c8bc38d2b <unknown>
+#20 0x561c8bc39785 <unknown>
+#21 0x561c8bc234e3 <unknown>
+#22 0x561c8bc39b52 <unknown>
+#23 0x561c8bc0d242 <unknown>
+#24 0x561c8bc55078 <unknown>
+#25 0x561c8bc5529c <unknown>
+#26 0x561c8bc65b59 <unknown>
+#27 0x7feb39a9caa4 <unknown>
+#28 0x7feb39b29c6c <unknown>
+
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/timeouts {"pageLoad": 59000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/timeouts HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/url {"url": "https://demoqa.com/radio-button"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/url HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/element {"using": "css selector", "value": "label[for='yesRadio']"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/element HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.09065B18589227FA6D6226B2CD931EC3.d.37B46F0475FE8E9E64F1418917BC80D7.e.71"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/element/f.09065B18589227FA6D6226B2CD931EC3.d.37B46F0475FE8E9E64F1418917BC80D7.e.71/click {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/element/f.09065B18589227FA6D6226B2CD931EC3.d.37B46F0475FE8E9E64F1418917BC80D7.e.71/click HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519/execute/sync {"script": "return document.getElementById('yesRadio').checked;", "args": []}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "POST /session/f13b350aa445a6e47c59cf6257819519/execute/sync HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:2309 Radio button test passed on demoqa
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:1168 Test completed on edge
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:1169 ==================================================
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 DELETE http://localhost:37831/session/f13b350aa445a6e47c59cf6257819519 {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:37831 "DELETE /session/f13b350aa445a6e47c59cf6257819519 HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request

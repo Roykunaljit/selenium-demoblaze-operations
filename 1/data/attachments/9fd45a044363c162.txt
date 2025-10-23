@@ -1,0 +1,9 @@
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - test_13_data_driven_csv - Testing with CSV data
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - test_13_data_driven_csv - Processing CSV data: {'username': 'csvuser1', 'password': 'csvpass1', 'product': 'iPhone 6 32gb'}
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - test_13_data_driven_csv - Processing CSV data: {'username': 'csvuser2', 'password': 'csvpass2', 'product': 'Sony xperia z5'}
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - test_13_data_driven_csv - CSV data testing completed
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:46:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

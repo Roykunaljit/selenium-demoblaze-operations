@@ -1,0 +1,16 @@
+2025-10-23 20:17:14 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 20:17:14 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 20:17:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 20:17:15 - TestDemoBlazeE2E_chrome - INFO - test_18_browser_navigation - Testing browser navigation
+2025-10-23 20:17:15 - TestDemoBlazeE2E_chrome - INFO - get_current_url - Current URL: https://www.demoblaze.com/
+2025-10-23 20:17:15 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 20:17:17 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 20:17:18 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 20:17:20 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 20:17:22 - TestDemoBlazeE2E_chrome - INFO - get_current_url - Current URL: https://www.demoblaze.com/prod.html?idp_=1
+2025-10-23 20:17:22 - TestDemoBlazeE2E_chrome - INFO - go_back - Navigated back
+2025-10-23 20:17:24 - TestDemoBlazeE2E_chrome - INFO - go_forward - Navigated forward
+2025-10-23 20:17:26 - TestDemoBlazeE2E_chrome - INFO - refresh_page - Page refreshed
+2025-10-23 20:17:28 - TestDemoBlazeE2E_chrome - INFO - test_18_browser_navigation - Browser navigation completed
+2025-10-23 20:17:28 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:17:28 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

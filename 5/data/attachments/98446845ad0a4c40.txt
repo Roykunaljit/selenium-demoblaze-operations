@@ -1,0 +1,21 @@
+2025-10-23 18:13:01 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:13:01 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:13:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:13:02 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Testing categories
+2025-10-23 18:13:02 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:13:04 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:13:06 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 7 elements: ('class name', 'card')
+2025-10-23 18:13:06 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 7 products
+2025-10-23 18:13:06 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Category Phones has 7 products
+2025-10-23 18:13:06 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 18:13:08 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 18:13:10 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 6 elements: ('class name', 'card')
+2025-10-23 18:13:10 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 6 products
+2025-10-23 18:13:10 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Category Laptops has 6 products
+2025-10-23 18:13:11 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Monitors')]")
+2025-10-23 18:13:13 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: monitors
+2025-10-23 18:13:15 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 2 elements: ('class name', 'card')
+2025-10-23 18:13:15 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 2 products
+2025-10-23 18:13:15 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Category Monitors has 2 products
+2025-10-23 18:13:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:13:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

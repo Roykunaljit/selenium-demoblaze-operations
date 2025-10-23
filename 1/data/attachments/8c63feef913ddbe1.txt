@@ -1,0 +1,2 @@
+INFO     TestLinkChecker:test_link_checker.py:81 Testing internal links on https://www.w3.org/
+INFO     TestLinkChecker:test_link_checker.py:100 [PASS] Found 87 internal links

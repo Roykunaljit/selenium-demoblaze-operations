@@ -1,0 +1,19 @@
+2025-10-23 16:47:40 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:47:40 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:47:41 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:47:41 - TestDemoBlazeE2E - INFO - test_25_pagination - Testing pagination
+2025-10-23 16:47:41 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Home')]")
+2025-10-23 16:47:41 - TestDemoBlazeE2E - INFO - navigate_to_home - Navigated to Home page
+2025-10-23 16:47:43 - TestDemoBlazeE2E - INFO - find_elements - Found 9 elements: ('class name', 'card')
+2025-10-23 16:47:43 - TestDemoBlazeE2E - INFO - get_all_products - Found 9 products
+2025-10-23 16:47:43 - TestDemoBlazeE2E - INFO - click - Clicked element: ('id', 'next2')
+2025-10-23 16:47:45 - TestDemoBlazeE2E - INFO - go_to_next_page - Navigated to next page
+2025-10-23 16:47:47 - TestDemoBlazeE2E - INFO - find_elements - Found 6 elements: ('class name', 'card')
+2025-10-23 16:47:47 - TestDemoBlazeE2E - INFO - get_all_products - Found 6 products
+2025-10-23 16:47:47 - TestDemoBlazeE2E - INFO - click - Clicked element: ('id', 'prev2')
+2025-10-23 16:47:49 - TestDemoBlazeE2E - INFO - go_to_previous_page - Navigated to previous page
+2025-10-23 16:47:51 - TestDemoBlazeE2E - INFO - find_elements - Found 9 elements: ('class name', 'card')
+2025-10-23 16:47:52 - TestDemoBlazeE2E - INFO - get_all_products - Found 9 products
+2025-10-23 16:47:52 - TestDemoBlazeE2E - INFO - test_25_pagination - Pagination test passed: pages are non-empty and differ
+2025-10-23 16:47:52 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:47:52 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

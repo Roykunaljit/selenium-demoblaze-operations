@@ -1,0 +1,15 @@
+2025-10-23 16:47:03 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:47:03 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:47:04 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:47:04 - TestDemoBlazeE2E - INFO - test_21_invalid_login - Testing invalid login
+2025-10-23 16:47:04 - TestDemoBlazeE2E - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 16:47:05 - TestDemoBlazeE2E - INFO - open_login_modal - Opened login modal
+2025-10-23 16:47:06 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'loginusername'): invaliduser
+2025-10-23 16:47:06 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): wrongpass
+2025-10-23 16:47:06 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 16:47:06 - TestDemoBlazeE2E - INFO - login - Logged in with username: invaliduser
+2025-10-23 16:47:07 - TestDemoBlazeE2E - INFO - accept_alert - Accepted alert with text: Wrong password.
+2025-10-23 16:47:07 - TestDemoBlazeE2E - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 16:47:07 - TestDemoBlazeE2E - INFO - get_text - Got text from element ('id', 'nameofuser'): 
+2025-10-23 16:47:07 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:47:07 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

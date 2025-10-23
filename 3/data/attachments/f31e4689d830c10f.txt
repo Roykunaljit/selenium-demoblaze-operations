@@ -1,0 +1,41 @@
+2025-10-23 18:00:06 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:00:06 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:00:07 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:00:07 - TestDemoBlazeE2E_chrome - INFO - test_18_browser_navigation - Testing browser navigation
+2025-10-23 18:00:07 - TestDemoBlazeE2E_chrome - INFO - get_current_url - Current URL: https://www.demoblaze.com/
+2025-10-23 18:00:07 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:00:09 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:00:24 - TestDemoBlazeE2E_chrome - ERROR - click - Failed to click element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]"). Error: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x557c52d55fba <unknown>
+#1 0x557c527da6d0 <unknown>
+#2 0x557c527e1358 <unknown>
+#3 0x557c527e3e9a <unknown>
+#4 0x557c52878b3e <unknown>
+#5 0x557c52851e32 <unknown>
+#6 0x557c52877b54 <unknown>
+#7 0x557c52851c03 <unknown>
+#8 0x557c5281e7a8 <unknown>
+#9 0x557c5281f421 <unknown>
+#10 0x557c52d1ab28 <unknown>
+#11 0x557c52d1e87f <unknown>
+#12 0x557c52d02c49 <unknown>
+#13 0x557c52d1f405 <unknown>
+#14 0x557c52ce84ff <unknown>
+#15 0x557c52d43258 <unknown>
+#16 0x557c52d43432 <unknown>
+#17 0x557c52d54fa3 <unknown>
+#18 0x7f5a46c9caa4 <unknown>
+#19 0x7f5a46d29c6c <unknown>
+
+2025-10-23 18:00:24 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 18:00:25 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element using JavaScript: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 18:00:27 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 18:00:29 - TestDemoBlazeE2E_chrome - INFO - get_current_url - Current URL: https://www.demoblaze.com/prod.html?idp_=1
+2025-10-23 18:00:29 - TestDemoBlazeE2E_chrome - INFO - go_back - Navigated back
+2025-10-23 18:00:31 - TestDemoBlazeE2E_chrome - INFO - go_forward - Navigated forward
+2025-10-23 18:00:33 - TestDemoBlazeE2E_chrome - INFO - refresh_page - Page refreshed
+2025-10-23 18:00:35 - TestDemoBlazeE2E_chrome - INFO - test_18_browser_navigation - Browser navigation completed
+2025-10-23 18:00:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:00:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

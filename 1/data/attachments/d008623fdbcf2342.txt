@@ -1,0 +1,1 @@
+INFO     TestPageFactory:test_page_factory.py:60 [PASS] Single elements test passed

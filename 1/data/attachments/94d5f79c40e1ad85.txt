@@ -1,0 +1,57 @@
+INFO     KeywordEngine:keyword_engine.py:55 Excel columns: ['Test_Step_ID', 'Action', 'Locator_Type', 'Locator_Value', 'Value', 'Expected_Result']
+INFO     KeywordEngine:keyword_engine.py:56 Number of rows: 16
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 1: navigate_to_url | Locator:  | Data: https://www.demoblaze.com
+INFO     KeywordEngine:keyword_engine.py:128 Navigating to: https://www.demoblaze.com
+INFO     KeywordEngine:keyword_engine.py:95 Step 1 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 2: wait | Locator:  | Data: 2
+INFO     KeywordEngine:keyword_engine.py:231 Waiting for 2.0 seconds
+INFO     KeywordEngine:keyword_engine.py:95 Step 2 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 3: click_element | Locator: id=signin2 | Data: 
+INFO     KeywordEngine:keyword_engine.py:133 Clicking element: id=signin2
+INFO     KeywordEngine:keyword_engine.py:95 Step 3 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 4: wait_for_element | Locator: id=sign-username | Data: 
+INFO     KeywordEngine:keyword_engine.py:236 Waiting for element to be present: id=sign-username
+INFO     KeywordEngine:keyword_engine.py:95 Step 4 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 5: enter_text | Locator: id=sign-username | Data: user1644496613
+INFO     KeywordEngine:keyword_engine.py:162 Entering text in: id=sign-username
+INFO     KeywordEngine:keyword_engine.py:95 Step 5 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 6: enter_text | Locator: id=sign-password | Data: Test@123
+INFO     KeywordEngine:keyword_engine.py:162 Entering text in: id=sign-password
+INFO     KeywordEngine:keyword_engine.py:95 Step 6 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 7: click_element | Locator: xpath=//button[text()="Sign up"] | Data: 
+INFO     KeywordEngine:keyword_engine.py:133 Clicking element: xpath=//button[text()="Sign up"]
+INFO     KeywordEngine:keyword_engine.py:95 Step 7 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 8: handle_alert | Locator:  | Data: accept
+WARNING  KeywordEngine:keyword_engine.py:28 Unexpected alert found: 'Sign up successful.' - Auto-accepting
+INFO     KeywordEngine:keyword_engine.py:261 Handling alert with action: accept
+WARNING  KeywordEngine:keyword_engine.py:326 No alert present to handle after multiple attempts
+INFO     KeywordEngine:keyword_engine.py:95 Step 8 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 9: wait | Locator:  | Data: 2
+INFO     KeywordEngine:keyword_engine.py:231 Waiting for 2.0 seconds
+INFO     KeywordEngine:keyword_engine.py:95 Step 9 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 10: click_element | Locator: id=login2 | Data: 
+INFO     KeywordEngine:keyword_engine.py:133 Clicking element: id=login2
+INFO     KeywordEngine:keyword_engine.py:95 Step 10 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 11: wait_for_element | Locator: id=loginusername | Data: 
+INFO     KeywordEngine:keyword_engine.py:236 Waiting for element to be present: id=loginusername
+INFO     KeywordEngine:keyword_engine.py:95 Step 11 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 12: enter_text | Locator: id=loginusername | Data: user1644496613
+INFO     KeywordEngine:keyword_engine.py:162 Entering text in: id=loginusername
+INFO     KeywordEngine:keyword_engine.py:95 Step 12 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 13: enter_text | Locator: id=loginpassword | Data: Test@123
+INFO     KeywordEngine:keyword_engine.py:162 Entering text in: id=loginpassword
+INFO     KeywordEngine:keyword_engine.py:95 Step 13 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 14: click_element | Locator: xpath=//button[text()="Log in"] | Data: 
+INFO     KeywordEngine:keyword_engine.py:133 Clicking element: xpath=//button[text()="Log in"]
+INFO     KeywordEngine:keyword_engine.py:95 Step 14 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 15: wait | Locator:  | Data: 3
+INFO     KeywordEngine:keyword_engine.py:231 Waiting for 3.0 seconds
+INFO     KeywordEngine:keyword_engine.py:95 Step 15 passed
+INFO     KeywordEngine:keyword_engine.py:83 Executing Step 16: verify_text | Locator: id=nameofuser | Data: Welcome user1644496613
+INFO     KeywordEngine:keyword_engine.py:178 Verifying text: Welcome user1644496613 in id=nameofuser
+INFO     KeywordEngine:keyword_engine.py:210 Actual text found: 'Welcome user1644496613'
+INFO     KeywordEngine:keyword_engine.py:95 Step 16 passed
+INFO     KeywordEngine:keyword_engine.py:531 Test report generated: reports/keyword_test_report_20251023_164931.html
+INFO     TestKeywordDriven:test_keyword_driven.py:54 Test completed: 16 passed, 0 failed
+INFO     TestKeywordDriven:test_keyword_driven.py:55 Report generated at: reports/keyword_test_report_20251023_164931.html
+INFO     TestKeywordDriven:test_keyword_driven.py:62 Keyword-driven test completed successfully

@@ -1,0 +1,72 @@
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG    faker.factory:factory.py:86 Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.passport`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.passport` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+INFO     TestCheckboxes:test_checkboxes.py:43 ==================================================
+INFO     TestCheckboxes:test_checkboxes.py:44 Starting new LOCAL Checkbox Test
+INFO     TestCheckboxes:test_checkboxes.py:86 Local test server running at: http://localhost:44613/checkbox_test.html
+INFO     TestCheckboxes:test_checkboxes.py:91 Initializing browser: edge
+DEBUG    selenium.webdriver.common.service:service.py:215 Started executable: `/usr/local/bin/msedgedriver` in a child process with pid: 3489
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:35913/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "MicrosoftEdge", "pageLoadStrategy": "normal", "ms:edgeOptions": {"prefs": {"download.default_directory": "/home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/downloads", "download.prompt_for_download": false, "download.directory_upgrade": true, "safebrowsing.enabled": false, "profile.default_content_settings.popups": 0, "profile.default_content_setting_values.notifications": 2}, "excludeSwitches": ["enable-logging", "enable-automation"], "useAutomationExtension": false, "extensions": [], "args": ["--headless=new", "--window-size=1920,1080", "--start-maximized", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--disable-software-rasterizer", "--disable-blink-features=AutomationControlled", "--single-process", "--disable-features=VizDisplayCompositor", "--disable-setuid-sandbox", "--disable-extensions", "--disable-popup-blocking", "--ignore-certificate-errors"]}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): localhost:35913
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:35913 "POST /session HTTP/1.1" 500 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: No matching capabilities found","stacktrace":"#0 0x55be060a5fba \u003Cunknown>\n#1 0x55be05b2a6d0 \u003Cunknown>\n#2 0x55be05baee12 \u003Cunknown>\n#3 0x55be05badf9e \u003Cunknown>\n#4 0x55be05bafb72 \u003Cunknown>\n#5 0x55be05baf946 \u003Cunknown>\n#6 0x55be05ba1c03 \u003Cunknown>\n#7 0x55be05b6e7a8 \u003Cunknown>\n#8 0x55be05b6f421 \u003Cunknown>\n#9 0x55be0606ab28 \u003Cunknown>\n#10 0x55be0606e87f \u003Cunknown>\n#11 0x55be06052c49 \u003Cunknown>\n#12 0x55be0606f405 \u003Cunknown>\n#13 0x55be060384ff \u003Cunknown>\n#14 0x55be06093258 \u003Cunknown>\n#15 0x55be06093432 \u003Cunknown>\n#16 0x55be060a4fa3 \u003Cunknown>\n#17 0x7f488569caa4 \u003Cunknown>\n#18 0x7f4885729c6c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '776', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:63 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.9.23/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:120 Executing process: /opt/hostedtoolcache/Python/3.9.23/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager --browser MicrosoftEdge --debug --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Found msedgedriver 140.0.7339.207 in PATH: /usr/local/bin/msedgedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 MicrosoftEdge detected at /usr/bin/microsoft-edge
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Running command: /usr/bin/microsoft-edge --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Output: "Microsoft Edge 141.0.3537.99 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Detected browser: MicrosoftEdge 141.0.3537.99
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Reading msedgedriver version from https://msedgedriver.azureedge.net/LATEST_RELEASE_141_LINUX
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:135 Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_141_LINUX): error trying to connect: dns error: failed to lookup address information: Name does not resolve
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:135 The msedgedriver version (140.0.7339.207) detected in PATH at /usr/local/bin/msedgedriver might not be compatible with the detected MicrosoftEdge version (141.0.3537.99); currently, msedgedriver  is recommended for MicrosoftEdge 141.*, so it is advised to delete the driver in PATH and retry
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Driver path: /usr/local/bin/msedgedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Browser path: /usr/bin/microsoft-edge
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:98 Using driver at: /usr/local/bin/msedgedriver
+DEBUG    selenium.webdriver.common.service:service.py:215 Started executable: `/usr/local/bin/msedgedriver` in a child process with pid: 3601
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:49291/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "MicrosoftEdge", "pageLoadStrategy": "normal", "browserVersion": null, "ms:edgeOptions": {"prefs": {"download.default_directory": "/home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/downloads", "download.prompt_for_download": false, "download.directory_upgrade": true, "safebrowsing.enabled": false, "profile.default_content_settings.popups": 0, "profile.default_content_setting_values.notifications": 2}, "excludeSwitches": ["enable-logging", "enable-automation"], "useAutomationExtension": false, "extensions": [], "binary": "/usr/bin/microsoft-edge", "args": ["--headless=new", "--window-size=1920,1080", "--start-maximized", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--disable-software-rasterizer", "--disable-blink-features=AutomationControlled", "--single-process", "--disable-features=VizDisplayCompositor", "--disable-setuid-sandbox", "--disable-extensions", "--disable-popup-blocking", "--ignore-certificate-errors"]}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): localhost:49291
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:49291 "POST /session HTTP/1.1" 500 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: No matching capabilities found","stacktrace":"#0 0x56263ed3efba \u003Cunknown>\n#1 0x56263e7c36d0 \u003Cunknown>\n#2 0x56263e847e12 \u003Cunknown>\n#3 0x56263e846f9e \u003Cunknown>\n#4 0x56263e848b72 \u003Cunknown>\n#5 0x56263e848946 \u003Cunknown>\n#6 0x56263e83ac03 \u003Cunknown>\n#7 0x56263e8077a8 \u003Cunknown>\n#8 0x56263e808421 \u003Cunknown>\n#9 0x56263ed03b28 \u003Cunknown>\n#10 0x56263ed0787f \u003Cunknown>\n#11 0x56263ecebc49 \u003Cunknown>\n#12 0x56263ed08405 \u003Cunknown>\n#13 0x56263ecd14ff \u003Cunknown>\n#14 0x56263ed2c258 \u003Cunknown>\n#15 0x56263ed2c432 \u003Cunknown>\n#16 0x56263ed3dfa3 \u003Cunknown>\n#17 0x7f64b049caa4 \u003Cunknown>\n#18 0x7f64b0529c6c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '776', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request

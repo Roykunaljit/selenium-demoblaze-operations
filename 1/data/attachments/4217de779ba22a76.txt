@@ -1,0 +1,14 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:381 Testing with data: {'username': 'user1', 'password': 'pass1', 'product': 'Samsung galaxy s6'}
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+INFO     TestDemoBlazeE2E:home_page.py:86 Selected category: phones
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+INFO     TestDemoBlazeE2E:home_page.py:113 Clicked on product: Samsung galaxy s6
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('xpath', "//h2[@class='name']")
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+INFO     TestDemoBlazeE2E:product_page.py:22 Retrieved product name: Samsung galaxy s6
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:392 Data driven test completed for: Samsung galaxy s6
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

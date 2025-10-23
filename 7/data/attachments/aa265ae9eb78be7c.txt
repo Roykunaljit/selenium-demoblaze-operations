@@ -1,0 +1,7 @@
+[BrowserConfig] Initializing chrome driver...
+[BrowserConfig] Chrome driver initialized successfully
+
+============================================================
+PYTEST SESSION ENDED - Browser: CHROME
+============================================================
+

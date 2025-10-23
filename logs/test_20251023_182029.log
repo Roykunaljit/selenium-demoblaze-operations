@@ -1,0 +1,13 @@
+2025-10-23 18:20:29 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:20:33 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Logo element found
+2025-10-23 18:20:33 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Home menu element found
+2025-10-23 18:20:33 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Cart menu element found
+2025-10-23 18:20:33 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Login menu element found
+2025-10-23 18:20:33 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Single elements test passed
+2025-10-23 18:20:33 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:20:39 - TestPageFactory - INFO - test_page_factory_multiple_elements - Found 9 products
+2025-10-23 18:20:39 - TestPageFactory - INFO - test_page_factory_multiple_elements - [PASS] Multiple elements test passed
+2025-10-23 18:20:39 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:20:51 - TestPageFactory - INFO - test_page_factory_category_navigation - [PASS] Category navigation test passed
+2025-10-23 18:20:52 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:21:00 - TestPageFactory - INFO - test_page_factory_product_details - [PASS] Product details test passed - Found 9 products

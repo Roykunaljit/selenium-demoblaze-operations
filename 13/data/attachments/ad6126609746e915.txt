@@ -1,0 +1,47 @@
+2025-10-23 20:33:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 20:33:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 20:33:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 20:33:35 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Starting complete E2E shopping flow on chrome
+2025-10-23 20:33:36 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'signin2')
+2025-10-23 20:33:37 - TestDemoBlazeE2E_chrome - INFO - open_signup_modal - Opened signup modal
+2025-10-23 20:33:38 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-username'): 4qa0MMwm_chrome
+2025-10-23 20:33:38 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-password'): Test@1234
+2025-10-23 20:33:38 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+2025-10-23 20:33:38 - TestDemoBlazeE2E_chrome - INFO - signup - Signed up with username: 4qa0MMwm_chrome
+2025-10-23 20:33:40 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Sign up successful.
+2025-10-23 20:33:40 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Signup successful for user: 4qa0MMwm_chrome
+2025-10-23 20:33:42 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 20:33:43 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 20:33:44 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginusername'): 4qa0MMwm_chrome
+2025-10-23 20:33:44 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): Test@1234
+2025-10-23 20:33:44 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 20:33:44 - TestDemoBlazeE2E_chrome - INFO - login - Logged in with username: 4qa0MMwm_chrome
+2025-10-23 20:33:45 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Login modal closed successfully
+2025-10-23 20:33:48 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 20:33:48 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('id', 'nameofuser'): Welcome 4qa0MMwm_chrome
+2025-10-23 20:33:48 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - User is logged in successfully
+2025-10-23 20:33:48 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 20:33:48 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('id', 'nameofuser'): Welcome 4qa0MMwm_chrome
+2025-10-23 20:33:48 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Welcome message verified for user: 4qa0MMwm_chrome
+2025-10-23 20:33:48 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 20:33:50 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 20:33:52 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 20:33:54 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 20:33:56 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 20:33:56 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 20:33:56 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 20:33:56 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h3[@class='price-container']")
+2025-10-23 20:33:56 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h3[@class='price-container']"): $360 *includes tax
+2025-10-23 20:33:56 - TestDemoBlazeE2E_chrome - INFO - get_product_price - Retrieved and cleaned product price: 360
+2025-10-23 20:33:56 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Product verified: Samsung galaxy s6 - $360
+2025-10-23 20:33:56 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Add to cart')]")
+2025-10-23 20:33:57 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Product added.
+2025-10-23 20:33:57 - TestDemoBlazeE2E_chrome - INFO - add_to_cart - Product added to cart. Alert: Product added.
+2025-10-23 20:33:59 - TestDemoBlazeE2E_chrome - INFO - add_to_cart - Completed 'Add to cart' action
+2025-10-23 20:33:59 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Product added to cart successfully
+2025-10-23 20:33:59 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'cartur')
+2025-10-23 20:34:01 - TestDemoBlazeE2E_chrome - INFO - go_to_cart - Navigated to cart
+2025-10-23 20:34:34 - TestDemoBlazeE2E_chrome - ERROR - find_elements - Elements not found: ('xpath', "//tbody[@id='tbodyid']//tr")
+2025-10-23 20:34:34 - TestDemoBlazeE2E_chrome - INFO - get_cart_items_count - Cart contains 0 item(s)
+2025-10-23 20:34:34 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:34:34 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

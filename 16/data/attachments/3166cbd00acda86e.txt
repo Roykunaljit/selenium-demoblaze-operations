@@ -1,0 +1,14 @@
+2025-10-23 21:12:02 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:12:02 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - test_17_css_properties - Testing CSS properties
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - get_css_property - Got CSS property 'font-size' from element ('id', 'nava'): 20px
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - get_css_property - Got CSS property 'color' from element ('id', 'nava'): rgba(255, 255, 255, 1)
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - get_css_property - Got CSS property 'display' from element ('id', 'nava'): block
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - test_17_css_properties - Logo font size: 20px, color: rgba(255, 255, 255, 1), display: block
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - test_17_css_properties - CSS property validations completed
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

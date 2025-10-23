@@ -1,0 +1,86 @@
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1142 ==================================================
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1143 Starting new test on CHROME
+DEBUG    selenium.webdriver.common.service:service.py:215 Started executable: `/usr/local/bin/chromedriver` in a child process with pid: 4493
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:34055/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:loggingPrefs": {"performance": "ALL"}, "goog:chromeOptions": {"prefs": {"download.default_directory": "/home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/downloads", "download.prompt_for_download": false, "download.directory_upgrade": true, "safebrowsing.enabled": false, "profile.default_content_settings.popups": 0, "profile.content_settings.exceptions.automatic_downloads.*.setting": 1}, "excludeSwitches": ["enable-logging", "enable-automation"], "useAutomationExtension": false, "extensions": [], "args": ["--headless=new", "--window-size=1920,1080", "--start-maximized", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--disable-extensions", "--disable-popup-blocking", "--ignore-certificate-errors", "--disable-web-security", "--allow-running-insecure-content"]}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): localhost:34055
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:34055 "POST /session HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"140.0.7339.207","chrome":{"chromedriverVersion":"140.0.7339.207 (17230b545fd18b35aad49122e5af97a463bc7a9c-refs/branch-heads/7339@{#2364})","userDataDir":"/tmp/.org.chromium.Chromium.LT42nE"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:45517"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"587070f2ef4849bd7eb37a645d216cf5"}} | headers=HTTPHeaderDict({'Content-Length': '850', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:34055/session/587070f2ef4849bd7eb37a645d216cf5/timeouts {"implicit": 10000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:34055 "POST /session/587070f2ef4849bd7eb37a645d216cf5/timeouts HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:34055/session/587070f2ef4849bd7eb37a645d216cf5/timeouts {"pageLoad": 60000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:34055 "POST /session/587070f2ef4849bd7eb37a645d216cf5/timeouts HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG    faker.factory:factory.py:86 Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.passport`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.passport` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:34055/session/587070f2ef4849bd7eb37a645d216cf5/url {"url": "https://www.demoblaze.com"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:34055 "POST /session/587070f2ef4849bd7eb37a645d216cf5/url HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1163 Navigated to DemoBlaze website on chrome
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1736 Testing performance metrics
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:34055/session/587070f2ef4849bd7eb37a645d216cf5/url {"url": "https://www.demoblaze.com"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:34055 "POST /session/587070f2ef4849bd7eb37a645d216cf5/url HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:34055/session/587070f2ef4849bd7eb37a645d216cf5/execute/sync {"script": "return window.performance.getEntriesByType('navigation')[0];", "args": []}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:34055 "POST /session/587070f2ef4849bd7eb37a645d216cf5/execute/sync HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":{"activationStart":0,"connectEnd":0.6000000000058208,"connectStart":0.6000000000058208,"criticalCHRestart":0,"decodedBodySize":17232,"deliveryType":"cache","domComplete":75.60000000000582,"domContentLoadedEventEnd":74.10000000000582,"domContentLoadedEventStart":73.89999999999418,"domInteractive":73.89999999999418,"domainLookupEnd":0.6000000000058208,"domainLookupStart":0.6000000000058208,"duration":76.5,"encodedBodySize":17232,"entryType":"navigation","fetchStart":0.6000000000058208,"finalResponseHeadersStart":0,"firstInterimResponseStart":2.7999999999883585,"initiatorType":"navigation","loadEventEnd":76.5,"loadEventStart":75.60000000000582,"name":"https://www.demoblaze.com/","nextHopProtocol":"h2","notRestoredReasons":null,"redirectCount":0,"redirectEnd":0,"redirectStart":0,"renderBlockingStatus":"non-blocking","requestStart":2.1999999999825377,"responseEnd":4.7999999999883585,"responseStart":2.7999999999883585,"responseStatus":200,"secureConnectionStart":0.6000000000058208,"serverTiming":[],"startTime":0,"toJSON":{},"transferSize":0,"type":"navigate","unloadEventEnd":22.699999999982538,"unloadEventStart":22.699999999982538,"workerCacheLookupStart":0,"workerFinalSourceType":"","workerMatchedSourceType":"","workerRouterEvaluationStart":0,"workerStart":0}} | headers=HTTPHeaderDict({'Content-Length': '1284', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1744 Page load time: 75.89999999999418 ms
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:34055/session/587070f2ef4849bd7eb37a645d216cf5/se/log {"type": "browser"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:34055 "POST /session/587070f2ef4849bd7eb37a645d216cf5/se/log HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":[{"level":"WARNING","message":"https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 \"VIDEOJS:\" \"WARN:\" \"A plugin named \\\"reloadSourceOnError\\\" already exists. You may want to avoid re-registering plugins!\"","source":"console-api","timestamp":1761243548050},{"level":"WARNING","message":"https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 \"VIDEOJS:\" \"WARN:\" \"A plugin named \\\"reloadSourceOnError\\\" already exists. You may want to avoid re-registering plugins!\"","source":"console-api","timestamp":1761243548244}]} | headers=HTTPHeaderDict({'Content-Length': '583', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1747 Browser logs count: 2
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1749 Performance metrics collected
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1168 Test completed on chrome
+INFO     TestDemoBlazeE2E_chrome:test_demoblaze_e2e.py:1169 ==================================================
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 DELETE http://localhost:34055/session/587070f2ef4849bd7eb37a645d216cf5 {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:34055 "DELETE /session/587070f2ef4849bd7eb37a645d216cf5 HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request

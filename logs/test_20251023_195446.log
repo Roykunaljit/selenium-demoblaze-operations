@@ -1,0 +1,23 @@
+2025-10-23 19:54:46 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 19:54:52 - TestPageFactory - INFO - test_page_factory_multiple_elements - Found 9 products
+2025-10-23 19:54:52 - TestPageFactory - INFO - test_page_factory_multiple_elements - [PASS] Multiple elements test passed
+2025-10-23 19:54:52 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 19:55:05 - TestPageFactory - INFO - test_page_factory_category_navigation - [PASS] Category navigation test passed
+2025-10-23 19:55:05 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 19:55:09 - TestPageFactory - INFO - test_page_factory_login_flow - Starting login flow test...
+2025-10-23 19:55:09 - TestPageFactory - INFO - test_page_factory_login_flow - Generated username: 41u697im
+2025-10-23 19:55:09 - TestPageFactory - INFO - test_page_factory_login_flow - Opening signup modal...
+2025-10-23 19:55:12 - TestPageFactory - INFO - test_page_factory_login_flow - Signing up with username: 41u697im
+2025-10-23 19:55:15 - TestPageFactory - INFO - test_page_factory_login_flow - Signup alert: Sign up successful.
+2025-10-23 19:55:15 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Signup successful
+2025-10-23 19:55:19 - TestPageFactory - INFO - test_page_factory_login_flow - Opening login modal...
+2025-10-23 19:55:21 - TestPageFactory - INFO - test_page_factory_login_flow - Logging in with username: 41u697im
+2025-10-23 19:55:26 - TestPageFactory - INFO - test_page_factory_login_flow - Verifying login...
+2025-10-23 19:55:26 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User is logged in
+2025-10-23 19:55:26 - TestPageFactory - INFO - test_page_factory_login_flow - Welcome message: Welcome 41u697im
+2025-10-23 19:55:26 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Welcome message contains username
+2025-10-23 19:55:26 - TestPageFactory - INFO - test_page_factory_login_flow - Logging out...
+2025-10-23 19:55:29 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User logged out successfully
+2025-10-23 19:55:29 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Login flow test completed successfully
+2025-10-23 19:55:29 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 19:55:33 - TestPageFactory - INFO - test_page_factory_element_caching - [PASS] Element caching test passed

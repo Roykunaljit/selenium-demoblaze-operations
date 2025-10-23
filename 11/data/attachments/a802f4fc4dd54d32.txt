@@ -1,0 +1,2 @@
+2025-10-23 20:23:19 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 20:23:31 - TestPageFactory - INFO - test_page_factory_category_navigation - [PASS] Category navigation test passed

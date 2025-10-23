@@ -1,0 +1,12 @@
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:10:55 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:10:55 - TestDemoBlazeE2E_edge - INFO - test_08_screenshot_operations - Testing screenshot operations on edge
+2025-10-23 21:10:55 - TestDemoBlazeE2E_edge - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/full_page_edge_gw1_20251023_211055_043928_1_gw1_20251023_211055_044034_1.png
+2025-10-23 21:10:55 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 21:10:55 - TestDemoBlazeE2E_edge - INFO - take_element_screenshot - Element screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/logo_screenshot_edge_gw1_20251023_211055_280533_2_gw1_20251023_211055_280607_2.png
+2025-10-23 21:10:55 - TestDemoBlazeE2E_edge - INFO - find_elements - Found 9 elements: ('class name', 'card')
+2025-10-23 21:10:56 - TestDemoBlazeE2E_edge - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/highlighted_element_edge_gw1_20251023_211056_410521_3_gw1_20251023_211056_410618_3.png
+2025-10-23 21:10:56 - TestDemoBlazeE2E_edge - INFO - test_08_screenshot_operations - Screenshot operations completed
+2025-10-23 21:10:56 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:10:56 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

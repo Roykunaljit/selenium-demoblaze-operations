@@ -1,0 +1,11 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:349 Testing wait strategies
+INFO     TestDemoBlazeE2E:base_page.py:185 Element is visible: ('id', 'nava')
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+INFO     TestDemoBlazeE2E:home_page.py:86 Selected category: phones
+INFO     TestDemoBlazeE2E:base_page.py:185 Element is visible: ('xpath', "//a[contains(text(),'Samsung galaxy s6')]")
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:371 Wait strategies tested successfully
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

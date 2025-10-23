@@ -1,0 +1,9 @@
+2025-10-23 16:45:35 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:45:35 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:45:36 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:45:36 - TestDemoBlazeE2E - INFO - test_07_scrolling_operations - Testing scrolling operations
+2025-10-23 16:45:39 - TestDemoBlazeE2E - INFO - find_element - Found element: ('id', 'next2')
+2025-10-23 16:45:40 - TestDemoBlazeE2E - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/screenshots/after_scroll.png
+2025-10-23 16:45:40 - TestDemoBlazeE2E - INFO - test_07_scrolling_operations - Scrolling operations completed
+2025-10-23 16:45:40 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:45:40 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

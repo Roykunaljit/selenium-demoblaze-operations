@@ -1,0 +1,24 @@
+2025-10-23 21:11:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:11:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 21:11:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 21:11:12 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Starting true data-driven test with JSON
+2025-10-23 21:11:12 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Testing with JSON data: {'name': 'Samsung galaxy s6', 'category': 'Phones', 'price': '360'}
+2025-10-23 21:11:12 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 21:11:14 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 21:11:16 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 21:11:18 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 21:11:20 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 21:11:20 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 21:11:20 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 21:11:20 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Successfully verified product: Samsung galaxy s6
+2025-10-23 21:11:22 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Testing with JSON data: {'name': 'Nokia lumia 1520', 'category': 'Phones', 'price': '820'}
+2025-10-23 21:11:22 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 21:11:24 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 21:11:26 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Nokia lumia 1520')]")
+2025-10-23 21:11:28 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Nokia lumia 1520
+2025-10-23 21:11:30 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 21:11:31 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Nokia lumia 1520
+2025-10-23 21:11:31 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Nokia lumia 1520
+2025-10-23 21:11:31 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Successfully verified product: Nokia lumia 1520
+2025-10-23 21:11:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 21:11:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

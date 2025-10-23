@@ -1,0 +1,24 @@
+2025-10-23 18:18:58 - TestCheckboxes - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:58 - TestCheckboxes - INFO - setup_and_teardown - Starting new LOCAL Checkbox Test
+2025-10-23 18:18:58 - TestCheckboxes - INFO - setup_and_teardown - Local test server running at: http://localhost:50349/checkbox_test.html
+2025-10-23 18:18:58 - TestCheckboxes - INFO - setup_and_teardown - Initializing browser: chrome
+2025-10-23 18:19:06 - TestCheckboxes - INFO - test_local_checkbox_interaction - Navigating to local checkbox page: http://localhost:50349/checkbox_test.html
+127.0.0.1 - - [23/Oct/2025 18:19:06] "GET /checkbox_test.html HTTP/1.1" 200 -
+2025-10-23 18:19:07 - TestCheckboxes - INFO - test_local_checkbox_interaction - Verifying initial checkbox states
+127.0.0.1 - - [23/Oct/2025 18:19:07] code 404, message File not found
+127.0.0.1 - - [23/Oct/2025 18:19:07] "GET /favicon.ico HTTP/1.1" 404 -
+2025-10-23 18:19:07 - TestCheckboxes - INFO - find_element - Found element: ('id', 'checkbox1')
+2025-10-23 18:19:07 - TestCheckboxes - INFO - find_element - Found element: ('id', 'checkbox2')
+2025-10-23 18:19:07 - TestCheckboxes - INFO - test_local_checkbox_interaction - Initial states verified successfully.
+2025-10-23 18:19:07 - TestCheckboxes - INFO - test_local_checkbox_interaction - Clicking the first checkbox to select it
+2025-10-23 18:19:07 - TestCheckboxes - INFO - click - Clicked element: ('id', 'checkbox1')
+2025-10-23 18:19:07 - TestCheckboxes - INFO - test_local_checkbox_interaction - Clicking the second checkbox to deselect it
+2025-10-23 18:19:07 - TestCheckboxes - INFO - click - Clicked element: ('id', 'checkbox2')
+2025-10-23 18:19:08 - TestCheckboxes - INFO - test_local_checkbox_interaction - Verifying final checkbox states
+2025-10-23 18:19:08 - TestCheckboxes - INFO - find_element - Found element: ('id', 'checkbox1')
+2025-10-23 18:19:08 - TestCheckboxes - INFO - find_element - Found element: ('id', 'checkbox2')
+2025-10-23 18:19:08 - TestCheckboxes - INFO - find_element - Found element: ('id', 'status-message')
+2025-10-23 18:19:08 - TestCheckboxes - INFO - get_text - Got text from element ('id', 'status-message'): Checkbox 1 is Checked, Checkbox 2 is Unchecked.
+2025-10-23 18:19:08 - TestCheckboxes - INFO - test_local_checkbox_interaction - Final states verified successfully. Status: 'Checkbox 1 is Checked, Checkbox 2 is Unchecked.'
+2025-10-23 18:19:08 - TestCheckboxes - INFO - setup_and_teardown - Checkbox Test completed
+2025-10-23 18:19:08 - TestCheckboxes - INFO - setup_and_teardown - ==================================================

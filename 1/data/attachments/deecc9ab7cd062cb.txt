@@ -1,0 +1,21 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:727 Testing categories
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+INFO     TestDemoBlazeE2E:home_page.py:86 Selected category: phones
+INFO     TestDemoBlazeE2E:base_page.py:48 Found 7 elements: ('class name', 'card')
+INFO     TestDemoBlazeE2E:home_page.py:104 Found 7 products
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:735 Category Phones has 7 products
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+INFO     TestDemoBlazeE2E:home_page.py:86 Selected category: laptops
+INFO     TestDemoBlazeE2E:base_page.py:48 Found 6 elements: ('class name', 'card')
+INFO     TestDemoBlazeE2E:home_page.py:104 Found 6 products
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:735 Category Laptops has 6 products
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Monitors')]")
+INFO     TestDemoBlazeE2E:home_page.py:86 Selected category: monitors
+INFO     TestDemoBlazeE2E:base_page.py:48 Found 2 elements: ('class name', 'card')
+INFO     TestDemoBlazeE2E:home_page.py:104 Found 2 products
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:735 Category Monitors has 2 products
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

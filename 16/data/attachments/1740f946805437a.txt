@@ -1,0 +1,2 @@
+2025-10-23 21:15:44 - TestPageFactory - INFO - setup - Initializing browser: edge
+2025-10-23 21:15:48 - TestPageFactory - INFO - test_page_factory_element_caching - [PASS] Element caching test passed

@@ -1,0 +1,16 @@
+2025-10-23 20:19:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 20:19:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 20:19:36 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 20:19:36 - TestDemoBlazeE2E_chrome - INFO - test_24_about_us_modal - Testing About Us modal
+2025-10-23 20:19:36 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'About us')]")
+2025-10-23 20:19:37 - TestDemoBlazeE2E_chrome - INFO - open_about_modal - Opened About Us modal
+2025-10-23 20:19:38 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'example-video')
+2025-10-23 20:19:58 - TestDemoBlazeE2E_chrome - ERROR - click - Failed to click element: ('class name', 'vjs-play-control'). Error: Message: 
+
+2025-10-23 20:19:58 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('class name', 'vjs-play-control')
+2025-10-23 20:19:58 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element using JavaScript: ('class name', 'vjs-play-control')
+2025-10-23 20:19:58 - TestDemoBlazeE2E_chrome - INFO - play_video - Playing video
+2025-10-23 20:20:00 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//div[@id='videoModal']//button[contains(text(),'Close')]")
+2025-10-23 20:20:00 - TestDemoBlazeE2E_chrome - INFO - close_about_modal - Closed About Us modal
+2025-10-23 20:20:00 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:20:00 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

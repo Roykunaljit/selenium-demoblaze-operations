@@ -1,0 +1,62 @@
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:12:04 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:12:05 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:12:05 - TestDemoBlazeE2E_edge - INFO - test_20_complete_e2e_flow - Starting complete E2E shopping flow on edge
+2025-10-23 21:12:05 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('id', 'signin2')
+2025-10-23 21:12:06 - TestDemoBlazeE2E_edge - INFO - open_signup_modal - Opened signup modal
+2025-10-23 21:12:07 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'sign-username'): PbMIHrFI_edge
+2025-10-23 21:12:07 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'sign-password'): Test@1234
+2025-10-23 21:12:07 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+2025-10-23 21:12:07 - TestDemoBlazeE2E_edge - INFO - signup - Signed up with username: PbMIHrFI_edge
+2025-10-23 21:12:09 - TestDemoBlazeE2E_edge - INFO - accept_alert - Accepted alert with text: Sign up successful.
+2025-10-23 21:12:09 - TestDemoBlazeE2E_edge - INFO - test_20_complete_e2e_flow - Signup successful for user: PbMIHrFI_edge
+2025-10-23 21:12:11 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 21:12:12 - TestDemoBlazeE2E_edge - INFO - open_login_modal - Opened login modal
+2025-10-23 21:12:13 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'loginusername'): PbMIHrFI_edge
+2025-10-23 21:12:14 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): Test@1234
+2025-10-23 21:12:14 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 21:12:14 - TestDemoBlazeE2E_edge - INFO - login - Logged in with username: PbMIHrFI_edge
+2025-10-23 21:12:14 - TestDemoBlazeE2E_edge - INFO - test_20_complete_e2e_flow - Login modal closed successfully
+2025-10-23 21:12:17 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 21:12:17 - TestDemoBlazeE2E_edge - INFO - get_text - Got text from element ('id', 'nameofuser'): Welcome PbMIHrFI_edge
+2025-10-23 21:12:17 - TestDemoBlazeE2E_edge - INFO - test_20_complete_e2e_flow - User is logged in successfully
+2025-10-23 21:12:17 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 21:12:17 - TestDemoBlazeE2E_edge - INFO - get_text - Got text from element ('id', 'nameofuser'): Welcome PbMIHrFI_edge
+2025-10-23 21:12:17 - TestDemoBlazeE2E_edge - INFO - test_20_complete_e2e_flow - Welcome message verified for user: PbMIHrFI_edge
+2025-10-23 21:12:17 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 21:12:19 - TestDemoBlazeE2E_edge - INFO - select_category - Selected category: phones
+2025-10-23 21:12:22 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 21:12:24 - TestDemoBlazeE2E_edge - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('xpath', "//h3[@class='price-container']")
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - get_text - Got text from element ('xpath', "//h3[@class='price-container']"): $360 *includes tax
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - get_product_price - Retrieved and cleaned product price: 360
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - test_20_complete_e2e_flow - Product verified: Samsung galaxy s6 - $360
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Add to cart')]")
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - accept_alert - Accepted alert with text: Product added.
+2025-10-23 21:12:26 - TestDemoBlazeE2E_edge - INFO - add_to_cart - Product added to cart. Alert: Product added.
+2025-10-23 21:12:28 - TestDemoBlazeE2E_edge - INFO - add_to_cart - Completed 'Add to cart' action
+2025-10-23 21:12:28 - TestDemoBlazeE2E_edge - INFO - test_20_complete_e2e_flow - Product added to cart successfully
+2025-10-23 21:12:29 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('id', 'cartur')
+2025-10-23 21:12:31 - TestDemoBlazeE2E_edge - INFO - go_to_cart - Navigated to cart
+2025-10-23 21:12:33 - TestDemoBlazeE2E_edge - INFO - find_elements - Found 1 elements: ('xpath', "//tbody[@id='tbodyid']//tr")
+2025-10-23 21:12:33 - TestDemoBlazeE2E_edge - INFO - get_cart_items_count - Cart contains 1 item(s)
+2025-10-23 21:12:33 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'totalp')
+2025-10-23 21:12:33 - TestDemoBlazeE2E_edge - INFO - get_text - Got text from element ('id', 'totalp'): 360
+2025-10-23 21:12:33 - TestDemoBlazeE2E_edge - INFO - get_total_price - Cart total price: $360
+2025-10-23 21:12:33 - TestDemoBlazeE2E_edge - INFO - test_20_complete_e2e_flow - Cart verified: 1 item(s), Total: $360
+2025-10-23 21:12:33 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Place Order')]")
+2025-10-23 21:12:34 - TestDemoBlazeE2E_edge - INFO - place_order - Clicked 'Place Order'
+2025-10-23 21:12:35 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'name'): Jennifer Mendoza MD
+2025-10-23 21:12:35 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'country'): USA
+2025-10-23 21:12:35 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'city'): New York
+2025-10-23 21:12:35 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'card'): 1968968627387167
+2025-10-23 21:12:35 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'month'): 12
+2025-10-23 21:12:35 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'year'): 2025
+2025-10-23 21:12:35 - TestDemoBlazeE2E_edge - INFO - fill_order_form - Filled order form with shipping and payment details
+2025-10-23 21:12:35 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Purchase')]")
+2025-10-23 21:12:37 - TestDemoBlazeE2E_edge - INFO - complete_purchase - Completed purchase
+2025-10-23 21:12:42 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:12:42 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

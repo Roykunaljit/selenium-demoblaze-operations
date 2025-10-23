@@ -1,0 +1,13 @@
+2025-10-23 21:11:58 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:11:58 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:12:00 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:12:00 - TestDemoBlazeE2E_edge - INFO - test_16_element_states - Testing element states
+2025-10-23 21:12:00 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 21:12:00 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'cartur')
+2025-10-23 21:12:00 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 21:12:01 - TestDemoBlazeE2E_edge - INFO - open_login_modal - Opened login modal
+2025-10-23 21:12:02 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 21:12:02 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//div[@id='logInModal']//button[contains(text(),'Close')]")
+2025-10-23 21:12:02 - TestDemoBlazeE2E_edge - INFO - test_16_element_states - Element state validations completed
+2025-10-23 21:12:02 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:12:02 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

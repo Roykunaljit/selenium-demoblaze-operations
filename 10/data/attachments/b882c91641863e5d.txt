@@ -1,0 +1,13 @@
+2025-10-23 19:58:11 - TestPageFactory - INFO - setup - Initializing browser: edge
+2025-10-23 19:58:15 - TestPageFactory - INFO - test_page_factory_login_flow - Starting login flow test...
+2025-10-23 19:58:15 - TestPageFactory - INFO - test_page_factory_login_flow - Generated username: oanf5i1j
+2025-10-23 19:58:15 - TestPageFactory - INFO - test_page_factory_login_flow - Opening signup modal...
+2025-10-23 19:58:18 - TestPageFactory - INFO - test_page_factory_login_flow - Signing up with username: oanf5i1j
+2025-10-23 19:58:21 - TestPageFactory - INFO - test_page_factory_login_flow - Signup alert: Sign up successful.
+2025-10-23 19:58:21 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Signup successful
+2025-10-23 19:58:25 - TestPageFactory - INFO - test_page_factory_login_flow - Opening login modal...
+2025-10-23 19:58:27 - TestPageFactory - INFO - test_page_factory_login_flow - Logging in with username: oanf5i1j
+2025-10-23 19:58:32 - TestPageFactory - INFO - test_page_factory_login_flow - Verifying login...
+2025-10-23 19:58:32 - TestPageFactory - ERROR - test_page_factory_login_flow - [FAIL] Login flow test failed: User not logged in - login link still visible
+assert False
+2025-10-23 19:58:32 - TestPageFactory - ERROR - test_page_factory_login_flow - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/login_flow_failure_1761249512.png

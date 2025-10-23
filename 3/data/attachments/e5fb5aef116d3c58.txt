@@ -1,0 +1,16 @@
+2025-10-23 17:51:19 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 17:51:23 - TestPageFactory - INFO - test_page_factory_login_flow - Starting login flow test...
+2025-10-23 17:51:23 - TestPageFactory - INFO - test_page_factory_login_flow - Generated username: cntz0rj0
+2025-10-23 17:51:23 - TestPageFactory - INFO - test_page_factory_login_flow - Opening signup modal...
+2025-10-23 17:51:25 - TestPageFactory - INFO - test_page_factory_login_flow - Signing up with username: cntz0rj0
+2025-10-23 17:51:29 - TestPageFactory - INFO - test_page_factory_login_flow - Signup alert: Sign up successful.
+2025-10-23 17:51:29 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Signup successful
+2025-10-23 17:51:33 - TestPageFactory - INFO - test_page_factory_login_flow - Opening login modal...
+2025-10-23 17:51:34 - TestPageFactory - INFO - test_page_factory_login_flow - Logging in with username: cntz0rj0
+2025-10-23 17:51:40 - TestPageFactory - INFO - test_page_factory_login_flow - Verifying login...
+2025-10-23 17:51:40 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User is logged in
+2025-10-23 17:51:40 - TestPageFactory - INFO - test_page_factory_login_flow - Welcome message: Welcome cntz0rj0
+2025-10-23 17:51:40 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Welcome message contains username
+2025-10-23 17:51:40 - TestPageFactory - INFO - test_page_factory_login_flow - Logging out...
+2025-10-23 17:51:43 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User logged out successfully
+2025-10-23 17:51:43 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Login flow test completed successfully

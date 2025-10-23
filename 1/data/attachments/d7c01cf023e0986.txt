@@ -1,0 +1,14 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:514 Testing CSS properties
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nava')
+INFO     TestDemoBlazeE2E:base_page.py:159 Got CSS property 'font-size' from element ('id', 'nava'): 20px
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nava')
+INFO     TestDemoBlazeE2E:base_page.py:159 Got CSS property 'color' from element ('id', 'nava'): rgba(255, 255, 255, 1)
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nava')
+INFO     TestDemoBlazeE2E:base_page.py:159 Got CSS property 'display' from element ('id', 'nava'): block
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:520 Logo font size: 20px, color: rgba(255, 255, 255, 1), display: block
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:521 CSS property validations completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

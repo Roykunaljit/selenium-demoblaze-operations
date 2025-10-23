@@ -1,0 +1,6 @@
+2025-10-23 20:37:31 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 20:37:35 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Logo element found
+2025-10-23 20:37:35 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Home menu element found
+2025-10-23 20:37:35 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Cart menu element found
+2025-10-23 20:37:35 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Login menu element found
+2025-10-23 20:37:35 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Single elements test passed

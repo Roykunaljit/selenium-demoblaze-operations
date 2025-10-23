@@ -1,0 +1,58 @@
+2025-10-23 20:00:51 - TestKeywordDriven - INFO - setup - Initializing browser: chrome
+2025-10-23 20:00:51 - KeywordEngine - INFO - execute_test_case - Excel columns: ['Test_Step_ID', 'Action', 'Locator_Type', 'Locator_Value', 'Value', 'Expected_Result']
+2025-10-23 20:00:51 - KeywordEngine - INFO - execute_test_case - Number of rows: 16
+2025-10-23 20:00:51 - KeywordEngine - INFO - execute_test_case - Executing Step 1: navigate_to_url | Locator:  | Data: https://www.demoblaze.com
+2025-10-23 20:00:52 - KeywordEngine - INFO - execute_keyword - Navigating to: https://www.demoblaze.com
+2025-10-23 20:00:52 - KeywordEngine - INFO - execute_test_case - Step 1 passed
+2025-10-23 20:00:52 - KeywordEngine - INFO - execute_test_case - Executing Step 2: wait | Locator:  | Data: 2
+2025-10-23 20:00:53 - KeywordEngine - INFO - execute_keyword - Waiting for 2.0 seconds
+2025-10-23 20:00:55 - KeywordEngine - INFO - execute_test_case - Step 2 passed
+2025-10-23 20:00:55 - KeywordEngine - INFO - execute_test_case - Executing Step 3: click_element | Locator: id=signin2 | Data: 
+2025-10-23 20:00:55 - KeywordEngine - INFO - execute_keyword - Clicking element: id=signin2
+2025-10-23 20:00:56 - KeywordEngine - INFO - execute_test_case - Step 3 passed
+2025-10-23 20:00:56 - KeywordEngine - INFO - execute_test_case - Executing Step 4: wait_for_element | Locator: id=sign-username | Data: 
+2025-10-23 20:00:57 - KeywordEngine - INFO - execute_keyword - Waiting for element to be present: id=sign-username
+2025-10-23 20:00:57 - KeywordEngine - INFO - execute_test_case - Step 4 passed
+2025-10-23 20:00:57 - KeywordEngine - INFO - execute_test_case - Executing Step 5: enter_text | Locator: id=sign-username | Data: user1954443659
+2025-10-23 20:00:57 - KeywordEngine - INFO - execute_keyword - Entering text in: id=sign-username
+2025-10-23 20:00:58 - KeywordEngine - INFO - execute_test_case - Step 5 passed
+2025-10-23 20:00:58 - KeywordEngine - INFO - execute_test_case - Executing Step 6: enter_text | Locator: id=sign-password | Data: Test@123
+2025-10-23 20:00:58 - KeywordEngine - INFO - execute_keyword - Entering text in: id=sign-password
+2025-10-23 20:00:58 - KeywordEngine - INFO - execute_test_case - Step 6 passed
+2025-10-23 20:00:58 - KeywordEngine - INFO - execute_test_case - Executing Step 7: click_element | Locator: xpath=//button[text()="Sign up"] | Data: 
+2025-10-23 20:00:59 - KeywordEngine - INFO - execute_keyword - Clicking element: xpath=//button[text()="Sign up"]
+2025-10-23 20:01:00 - KeywordEngine - INFO - execute_test_case - Step 7 passed
+2025-10-23 20:01:00 - KeywordEngine - INFO - execute_test_case - Executing Step 8: handle_alert | Locator:  | Data: accept
+2025-10-23 20:01:00 - KeywordEngine - WARNING - check_and_handle_unexpected_alert - Unexpected alert found: 'Sign up successful.' - Auto-accepting
+2025-10-23 20:01:00 - KeywordEngine - INFO - execute_keyword - Handling alert with action: accept
+2025-10-23 20:01:17 - KeywordEngine - WARNING - execute_keyword - No alert present to handle after multiple attempts
+2025-10-23 20:01:17 - KeywordEngine - INFO - execute_test_case - Step 8 passed
+2025-10-23 20:01:17 - KeywordEngine - INFO - execute_test_case - Executing Step 9: wait | Locator:  | Data: 2
+2025-10-23 20:01:18 - KeywordEngine - INFO - execute_keyword - Waiting for 2.0 seconds
+2025-10-23 20:01:20 - KeywordEngine - INFO - execute_test_case - Step 9 passed
+2025-10-23 20:01:20 - KeywordEngine - INFO - execute_test_case - Executing Step 10: click_element | Locator: id=login2 | Data: 
+2025-10-23 20:01:20 - KeywordEngine - INFO - execute_keyword - Clicking element: id=login2
+2025-10-23 20:01:21 - KeywordEngine - INFO - execute_test_case - Step 10 passed
+2025-10-23 20:01:21 - KeywordEngine - INFO - execute_test_case - Executing Step 11: wait_for_element | Locator: id=loginusername | Data: 
+2025-10-23 20:01:22 - KeywordEngine - INFO - execute_keyword - Waiting for element to be present: id=loginusername
+2025-10-23 20:01:22 - KeywordEngine - INFO - execute_test_case - Step 11 passed
+2025-10-23 20:01:22 - KeywordEngine - INFO - execute_test_case - Executing Step 12: enter_text | Locator: id=loginusername | Data: user1954443659
+2025-10-23 20:01:22 - KeywordEngine - INFO - execute_keyword - Entering text in: id=loginusername
+2025-10-23 20:01:23 - KeywordEngine - INFO - execute_test_case - Step 12 passed
+2025-10-23 20:01:23 - KeywordEngine - INFO - execute_test_case - Executing Step 13: enter_text | Locator: id=loginpassword | Data: Test@123
+2025-10-23 20:01:23 - KeywordEngine - INFO - execute_keyword - Entering text in: id=loginpassword
+2025-10-23 20:01:23 - KeywordEngine - INFO - execute_test_case - Step 13 passed
+2025-10-23 20:01:23 - KeywordEngine - INFO - execute_test_case - Executing Step 14: click_element | Locator: xpath=//button[text()="Log in"] | Data: 
+2025-10-23 20:01:24 - KeywordEngine - INFO - execute_keyword - Clicking element: xpath=//button[text()="Log in"]
+2025-10-23 20:01:25 - KeywordEngine - INFO - execute_test_case - Step 14 passed
+2025-10-23 20:01:25 - KeywordEngine - INFO - execute_test_case - Executing Step 15: wait | Locator:  | Data: 3
+2025-10-23 20:01:25 - KeywordEngine - INFO - execute_keyword - Waiting for 3.0 seconds
+2025-10-23 20:01:28 - KeywordEngine - INFO - execute_test_case - Step 15 passed
+2025-10-23 20:01:28 - KeywordEngine - INFO - execute_test_case - Executing Step 16: verify_text | Locator: id=nameofuser | Data: Welcome user1954443659
+2025-10-23 20:01:29 - KeywordEngine - INFO - execute_keyword - Verifying text: Welcome user1954443659 in id=nameofuser
+2025-10-23 20:01:31 - KeywordEngine - INFO - execute_keyword - Actual text found: 'Welcome user1954443659'
+2025-10-23 20:01:31 - KeywordEngine - INFO - execute_test_case - Step 16 passed
+2025-10-23 20:01:31 - KeywordEngine - INFO - generate_test_report - Test report generated: reports/keyword_test_report_20251023_200131.html
+2025-10-23 20:01:31 - TestKeywordDriven - INFO - test_keyword_driven_execution - Test completed: 16 passed, 0 failed
+2025-10-23 20:01:31 - TestKeywordDriven - INFO - test_keyword_driven_execution - Report generated at: reports/keyword_test_report_20251023_200131.html
+2025-10-23 20:01:31 - TestKeywordDriven - INFO - test_keyword_driven_execution - Keyword-driven test completed successfully

@@ -1,0 +1,23 @@
+[BrowserConfig] Initializing edge driver...
+[BrowserConfig] Failed with system driver: Message: session not created: No matching capabilities found
+Stacktrace:
+#0 0x55d300fdcfba <unknown>
+#1 0x55d300a616d0 <unknown>
+#2 0x55d300ae5e12 <unknown>
+#3 0x55d300ae4f9e <unknown>
+#4 0x55d300ae6b72 <unknown>
+#5 0x55d300ae6946 <unknown>
+#6 0x55d300ad8c03 <unknown>
+#7 0x55d300aa57a8 <unknown>
+#8 0x55d300aa6421 <unknown>
+#9 0x55d300fa1b28 <unknown>
+#10 0x55d300fa587f <unknown>
+#11 0x55d300f89c49 <unknown>
+#12 0x55d300fa6405 <unknown>
+#13 0x55d300f6f4ff <unknown>
+#14 0x55d300fca258 <unknown>
+#15 0x55d300fca432 <unknown>
+#16 0x55d300fdbfa3 <unknown>
+#17 0x7f5fcac9caa4 <unknown>
+#18 0x7f5fcad29c6c <unknown>
+

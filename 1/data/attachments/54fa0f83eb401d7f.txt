@@ -1,0 +1,9 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:439 Testing with CSV data
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:450 Processing CSV data: {'username': 'csvuser1', 'password': 'csvpass1', 'product': 'iPhone 6 32gb'}
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:450 Processing CSV data: {'username': 'csvuser2', 'password': 'csvpass2', 'product': 'Sony xperia z5'}
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:452 CSV data testing completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

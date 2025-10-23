@@ -1,0 +1,26 @@
+2025-10-23 19:38:26 - TestDropdowns - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:38:26 - TestDropdowns - INFO - setup_and_teardown - Starting new LOCAL Dropdown Test
+2025-10-23 19:38:26 - TestDropdowns - INFO - setup_and_teardown - Local test server running at: http://localhost:46573/dropdown_test.html
+2025-10-23 19:38:26 - TestDropdowns - INFO - setup_and_teardown - Initializing browser: chrome
+2025-10-23 19:38:27 - TestDropdowns - INFO - test_dropdown_selection_methods - Navigating to local dropdown page: http://localhost:46573/dropdown_test.html
+2025-10-23 19:38:27 - TestDropdowns - INFO - test_dropdown_selection_methods - Step 1: Selecting option by value: 'saab'
+2025-10-23 19:38:27 - TestDropdowns - INFO - find_element - Found element: ('id', 'car-select')
+2025-10-23 19:38:27 - TestDropdowns - INFO - select_dropdown_by_value - Selected dropdown option by value 'saab': ('id', 'car-select')
+2025-10-23 19:38:27 - TestDropdowns - INFO - find_element - Found element: ('id', 'status-message')
+2025-10-23 19:38:27 - TestDropdowns - INFO - get_text - Got text from element ('id', 'status-message'): Selected car: Saab (value: saab)
+2025-10-23 19:38:27 - TestDropdowns - INFO - test_dropdown_selection_methods - Verification PASSED. Status: 'Selected car: Saab (value: saab)'
+2025-10-23 19:38:27 - TestDropdowns - INFO - test_dropdown_selection_methods - Step 2: Selecting option by visible text: 'Mercedes'
+2025-10-23 19:38:27 - TestDropdowns - INFO - find_element - Found element: ('id', 'car-select')
+2025-10-23 19:38:27 - TestDropdowns - INFO - select_dropdown_by_text - Selected dropdown option by text 'Mercedes': ('id', 'car-select')
+2025-10-23 19:38:28 - TestDropdowns - INFO - find_element - Found element: ('id', 'status-message')
+2025-10-23 19:38:28 - TestDropdowns - INFO - get_text - Got text from element ('id', 'status-message'): Selected car: Mercedes (value: mercedes)
+2025-10-23 19:38:28 - TestDropdowns - INFO - test_dropdown_selection_methods - Verification PASSED. Status: 'Selected car: Mercedes (value: mercedes)'
+2025-10-23 19:38:28 - TestDropdowns - INFO - test_dropdown_selection_methods - Step 3: Selecting option by index: 4 (Audi)
+2025-10-23 19:38:28 - TestDropdowns - INFO - find_element - Found element: ('id', 'car-select')
+2025-10-23 19:38:28 - TestDropdowns - INFO - select_dropdown_by_index - Selected dropdown option by index 4: ('id', 'car-select')
+2025-10-23 19:38:28 - TestDropdowns - INFO - find_element - Found element: ('id', 'status-message')
+2025-10-23 19:38:28 - TestDropdowns - INFO - get_text - Got text from element ('id', 'status-message'): Selected car: Audi (value: audi)
+2025-10-23 19:38:28 - TestDropdowns - INFO - test_dropdown_selection_methods - Verification PASSED. Status: 'Selected car: Audi (value: audi)'
+2025-10-23 19:38:28 - TestDropdowns - INFO - test_dropdown_selection_methods - All dropdown selection methods verified successfully!
+2025-10-23 19:38:28 - TestDropdowns - INFO - setup_and_teardown - Dropdown Test completed
+2025-10-23 19:38:28 - TestDropdowns - INFO - setup_and_teardown - ==================================================

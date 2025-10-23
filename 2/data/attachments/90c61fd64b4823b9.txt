@@ -1,0 +1,6 @@
+2025-10-23 17:54:08 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 17:54:08 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 17:54:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 17:54:09 - TestDemoBlazeE2E_chrome - INFO - test_28_mobile_emulation - Mobile emulation test skipped - enable in browser_config.py
+2025-10-23 17:54:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 17:54:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

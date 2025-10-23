@@ -1,0 +1,11 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:893 Running broken links check
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:897 Testing on W3.org
+INFO     TestDemoBlazeE2E:utility_methods.py:245 Checking for broken links...
+INFO     TestDemoBlazeE2E:utility_methods.py:247 Found 92 links
+INFO     TestDemoBlazeE2E:utility_methods.py:289 Success: Broken Links Check Complete: 0 broken out of 91
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:912 ✅ W3.org: Found 91 valid, 0 broken
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

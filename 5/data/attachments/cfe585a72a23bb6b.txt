@@ -1,0 +1,16 @@
+2025-10-23 18:27:56 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:28:00 - TestPageFactory - INFO - test_page_factory_login_flow - Starting login flow test...
+2025-10-23 18:28:00 - TestPageFactory - INFO - test_page_factory_login_flow - Generated username: 49vanmdi
+2025-10-23 18:28:00 - TestPageFactory - INFO - test_page_factory_login_flow - Opening signup modal...
+2025-10-23 18:28:03 - TestPageFactory - INFO - test_page_factory_login_flow - Signing up with username: 49vanmdi
+2025-10-23 18:28:06 - TestPageFactory - INFO - test_page_factory_login_flow - Signup alert: Sign up successful.
+2025-10-23 18:28:06 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Signup successful
+2025-10-23 18:28:10 - TestPageFactory - INFO - test_page_factory_login_flow - Opening login modal...
+2025-10-23 18:28:12 - TestPageFactory - INFO - test_page_factory_login_flow - Logging in with username: 49vanmdi
+2025-10-23 18:28:17 - TestPageFactory - INFO - test_page_factory_login_flow - Verifying login...
+2025-10-23 18:28:17 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User is logged in
+2025-10-23 18:28:17 - TestPageFactory - INFO - test_page_factory_login_flow - Welcome message: Welcome 49vanmdi
+2025-10-23 18:28:17 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Welcome message contains username
+2025-10-23 18:28:17 - TestPageFactory - INFO - test_page_factory_login_flow - Logging out...
+2025-10-23 18:28:20 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User logged out successfully
+2025-10-23 18:28:20 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Login flow test completed successfully

@@ -1,0 +1,14 @@
+2025-10-23 20:11:48 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 20:11:48 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 20:11:49 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 20:11:49 - TestDemoBlazeE2E_chrome - INFO - test_17_css_properties - Testing CSS properties
+2025-10-23 20:11:49 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 20:11:49 - TestDemoBlazeE2E_chrome - INFO - get_css_property - Got CSS property 'font-size' from element ('id', 'nava'): 20px
+2025-10-23 20:11:49 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 20:11:49 - TestDemoBlazeE2E_chrome - INFO - get_css_property - Got CSS property 'color' from element ('id', 'nava'): rgba(255, 255, 255, 1)
+2025-10-23 20:11:49 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 20:11:50 - TestDemoBlazeE2E_chrome - INFO - get_css_property - Got CSS property 'display' from element ('id', 'nava'): block
+2025-10-23 20:11:50 - TestDemoBlazeE2E_chrome - INFO - test_17_css_properties - Logo font size: 20px, color: rgba(255, 255, 255, 1), display: block
+2025-10-23 20:11:50 - TestDemoBlazeE2E_chrome - INFO - test_17_css_properties - CSS property validations completed
+2025-10-23 20:11:50 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:11:50 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

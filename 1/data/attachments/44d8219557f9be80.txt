@@ -1,0 +1,16 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:686 Testing About Us modal
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'About us')]")
+INFO     TestDemoBlazeE2E:home_page.py:159 Opened About Us modal
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'example-video')
+ERROR    TestDemoBlazeE2E:base_page.py:63 Failed to click element: ('class name', 'vjs-play-control'). Error: Message: 
+
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('class name', 'vjs-play-control')
+INFO     TestDemoBlazeE2E:base_page.py:67 Clicked element using JavaScript: ('class name', 'vjs-play-control')
+INFO     TestDemoBlazeE2E:home_page.py:164 Playing video
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//div[@id='videoModal']//button[contains(text(),'Close')]")
+INFO     TestDemoBlazeE2E:home_page.py:169 Closed About Us modal
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

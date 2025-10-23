@@ -1,0 +1,13 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:658 Testing duplicate signup
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'signin2')
+INFO     TestDemoBlazeE2E:home_page.py:188 Opened signup modal
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'sign-username'): testuser2024
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'sign-password'): Test@1234
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+INFO     TestDemoBlazeE2E:home_page.py:195 Signed up with username: testuser2024
+INFO     TestDemoBlazeE2E:base_page.py:260 Accepted alert with text: This user already exist.
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

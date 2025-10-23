@@ -1,0 +1,33 @@
+2025-10-23 19:54:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:54:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:54:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:54:04 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Starting true data-driven test with CSV
+2025-10-23 19:54:04 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser1', 'password': 'Test@123', 'product': 'Samsung galaxy s6', 'category': 'Phones'}
+2025-10-23 19:54:04 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 19:54:06 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 19:54:08 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 19:54:10 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 19:54:12 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:54:12 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 19:54:12 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 19:54:12 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: Samsung galaxy s6
+2025-10-23 19:54:14 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser2', 'password': 'Test@456', 'product': 'MacBook air', 'category': 'Laptops'}
+2025-10-23 19:54:14 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 19:54:16 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 19:54:18 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'MacBook air')]")
+2025-10-23 19:54:20 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: MacBook air
+2025-10-23 19:54:22 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:54:22 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): MacBook air
+2025-10-23 19:54:22 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: MacBook air
+2025-10-23 19:54:22 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: MacBook air
+2025-10-23 19:54:25 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser3', 'password': 'Test@789', 'product': 'ASUS Full HD', 'category': 'Monitors'}
+2025-10-23 19:54:25 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Monitors')]")
+2025-10-23 19:54:27 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: monitors
+2025-10-23 19:54:29 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'ASUS Full HD')]")
+2025-10-23 19:54:31 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: ASUS Full HD
+2025-10-23 19:54:33 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:54:33 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): ASUS Full HD
+2025-10-23 19:54:33 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: ASUS Full HD
+2025-10-23 19:54:33 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: ASUS Full HD
+2025-10-23 19:54:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:54:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

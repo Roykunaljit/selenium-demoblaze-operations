@@ -1,0 +1,15 @@
+2025-10-23 18:24:07 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:24:07 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:24:08 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:24:08 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Testing log collection
+2025-10-23 18:24:08 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 18:24:09 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 18:24:09 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginusername'): test
+2025-10-23 18:24:10 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): test
+2025-10-23 18:24:10 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 18:24:10 - TestDemoBlazeE2E_chrome - INFO - login - Logged in with username: test
+2025-10-23 18:24:20 - TestDemoBlazeE2E_chrome - WARNING - accept_alert - No alert present
+2025-10-23 18:24:20 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761243848707}
+2025-10-23 18:24:20 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761243850637}
+2025-10-23 18:24:20 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:24:20 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

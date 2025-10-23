@@ -1,0 +1,24 @@
+2025-10-23 19:56:10 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:56:10 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:56:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:56:11 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Starting true data-driven test with XML
+2025-10-23 19:56:11 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Testing with XML data: {'username': 'testuser1', 'password': 'Test@123', 'product': 'Samsung galaxy s6', 'category': 'Phones'}
+2025-10-23 19:56:11 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 19:56:13 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 19:56:15 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 19:56:17 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 19:56:19 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:56:19 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 19:56:19 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 19:56:19 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Successfully verified product: Samsung galaxy s6
+2025-10-23 19:56:22 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Testing with XML data: {'username': 'testuser2', 'password': 'Test@456', 'product': 'Sony vaio i5', 'category': 'Laptops'}
+2025-10-23 19:56:22 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 19:56:24 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 19:56:26 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Sony vaio i5')]")
+2025-10-23 19:56:28 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Sony vaio i5
+2025-10-23 19:56:30 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:56:30 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Sony vaio i5
+2025-10-23 19:56:30 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Sony vaio i5
+2025-10-23 19:56:30 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Successfully verified product: Sony vaio i5
+2025-10-23 19:56:32 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:56:32 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

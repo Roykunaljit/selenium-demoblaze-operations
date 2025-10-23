@@ -1,0 +1,4 @@
+2025-10-23 18:20:01 - TestKeywordDriven - INFO - setup - Initializing browser: chrome
+2025-10-23 18:20:42 - TestKeywordDriven - INFO - test_keyword_driven_execution - Test completed: 16 passed, 0 failed
+2025-10-23 18:20:42 - TestKeywordDriven - INFO - test_keyword_driven_execution - Report generated at: reports/keyword_test_report_20251023_182042.html
+2025-10-23 18:20:42 - TestKeywordDriven - INFO - test_keyword_driven_execution - Keyword-driven test completed successfully

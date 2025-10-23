@@ -1,0 +1,16 @@
+2025-10-23 21:25:53 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 21:25:57 - TestPageFactory - INFO - test_page_factory_login_flow - Starting login flow test...
+2025-10-23 21:25:57 - TestPageFactory - INFO - test_page_factory_login_flow - Generated username: 6wawzmu9
+2025-10-23 21:25:57 - TestPageFactory - INFO - test_page_factory_login_flow - Opening signup modal...
+2025-10-23 21:25:59 - TestPageFactory - INFO - test_page_factory_login_flow - Signing up with username: 6wawzmu9
+2025-10-23 21:26:03 - TestPageFactory - INFO - test_page_factory_login_flow - Signup alert: Sign up successful.
+2025-10-23 21:26:03 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Signup successful
+2025-10-23 21:26:07 - TestPageFactory - INFO - test_page_factory_login_flow - Opening login modal...
+2025-10-23 21:26:08 - TestPageFactory - INFO - test_page_factory_login_flow - Logging in with username: 6wawzmu9
+2025-10-23 21:26:14 - TestPageFactory - INFO - test_page_factory_login_flow - Verifying login...
+2025-10-23 21:26:14 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User is logged in
+2025-10-23 21:26:14 - TestPageFactory - INFO - test_page_factory_login_flow - Welcome message: Welcome 6wawzmu9
+2025-10-23 21:26:14 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Welcome message contains username
+2025-10-23 21:26:14 - TestPageFactory - INFO - test_page_factory_login_flow - Logging out...
+2025-10-23 21:26:17 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User logged out successfully
+2025-10-23 21:26:17 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Login flow test completed successfully

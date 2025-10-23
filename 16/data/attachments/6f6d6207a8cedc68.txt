@@ -1,0 +1,9 @@
+2025-10-23 21:14:53 - TestPageFactory - INFO - setup - Initializing browser: edge
+2025-10-23 21:14:57 - TestPageFactory - INFO - test_click_logo_using_page_factory - === Testing PURE Page Factory - Logo Click ===
+2025-10-23 21:14:57 - TestPageFactory - INFO - test_click_logo_using_page_factory - Step 1: Navigating to cart using Page Factory...
+2025-10-23 21:14:59 - TestPageFactory - INFO - test_click_logo_using_page_factory - ✓ Successfully navigated to cart
+2025-10-23 21:14:59 - TestPageFactory - INFO - test_click_logo_using_page_factory - Step 2: Clicking logo using Page Factory...
+2025-10-23 21:15:01 - TestPageFactory - INFO - test_click_logo_using_page_factory - Page title: STORE
+2025-10-23 21:15:01 - TestPageFactory - INFO - test_click_logo_using_page_factory - Current URL: https://www.demoblaze.com/index.html
+2025-10-23 21:15:01 - TestPageFactory - INFO - test_click_logo_using_page_factory - ✓ Logo click successful - returned to home page
+2025-10-23 21:15:01 - TestPageFactory - INFO - test_click_logo_using_page_factory - [PASS] Pure Page Factory logo click test passed! 🎉

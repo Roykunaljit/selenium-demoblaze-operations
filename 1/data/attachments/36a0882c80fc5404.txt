@@ -1,0 +1,2 @@
+INFO     TestPageFactory:test_page_factory.py:82 Found 9 products
+INFO     TestPageFactory:test_page_factory.py:83 [PASS] Multiple elements test passed

@@ -1,0 +1,11 @@
+2025-10-23 16:48:28 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:48:28 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:48:29 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:48:29 - TestDemoBlazeE2E - INFO - test_32_broken_links_check - Running broken links check
+2025-10-23 16:48:29 - TestDemoBlazeE2E - INFO - test_32_broken_links_check - Testing on W3.org
+2025-10-23 16:48:32 - TestDemoBlazeE2E - INFO - check_broken_links - Checking for broken links...
+2025-10-23 16:48:32 - TestDemoBlazeE2E - INFO - check_broken_links - Found 92 links
+2025-10-23 16:48:44 - TestDemoBlazeE2E - INFO - check_broken_links - Success: Broken Links Check Complete: 0 broken out of 91
+2025-10-23 16:48:44 - TestDemoBlazeE2E - INFO - test_32_broken_links_check - ✅ W3.org: Found 91 valid, 0 broken
+2025-10-23 16:48:44 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:48:44 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

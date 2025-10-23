@@ -1,0 +1,8 @@
+
+============================================================
+PYTEST SESSION STARTED - Browser: EDGE
+============================================================
+
+[BrowserConfig] Initializing edge driver...
+[BrowserConfig] Failed with system driver: Message: Unable to locate or obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+

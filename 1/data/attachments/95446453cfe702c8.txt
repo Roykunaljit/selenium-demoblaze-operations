@@ -1,0 +1,24 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:253 Testing alert handling
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Contact')]")
+INFO     TestDemoBlazeE2E:home_page.py:141 Opened contact modal
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'recipient-email'): test@example.com
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'recipient-name'): Test User
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'message-text'): Test message
+INFO     TestDemoBlazeE2E:home_page.py:148 Filled contact form with email: test@example.com, name: Test User
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Send message')]")
+INFO     TestDemoBlazeE2E:home_page.py:153 Sent contact message
+INFO     TestDemoBlazeE2E:base_page.py:260 Accepted alert with text: Thanks for the message!!
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:266 Alert handled with text: Thanks for the message!!
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'signin2')
+INFO     TestDemoBlazeE2E:home_page.py:188 Opened signup modal
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'sign-username'): FCycbVDiZh
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'sign-password'): Test@123
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+INFO     TestDemoBlazeE2E:home_page.py:195 Signed up with username: FCycbVDiZh
+INFO     TestDemoBlazeE2E:base_page.py:260 Accepted alert with text: Sign up successful.
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:273 Signup alert: Sign up successful.
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

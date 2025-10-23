@@ -1,0 +1,12 @@
+2025-10-23 19:52:29 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:52:29 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:52:30 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:52:30 - TestDemoBlazeE2E_chrome - INFO - test_08_screenshot_operations - Testing screenshot operations on chrome
+2025-10-23 19:52:30 - TestDemoBlazeE2E_chrome - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/full_page_chrome_master_20251023_195230_731630_1_master_20251023_195230_731734_2.png
+2025-10-23 19:52:31 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 19:52:31 - TestDemoBlazeE2E_chrome - INFO - take_element_screenshot - Element screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/logo_screenshot_chrome_master_20251023_195231_009408_2_master_20251023_195231_009557_3.png
+2025-10-23 19:52:34 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 9 elements: ('class name', 'card')
+2025-10-23 19:52:35 - TestDemoBlazeE2E_chrome - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/highlighted_element_chrome_master_20251023_195235_630395_3_master_20251023_195235_630497_4.png
+2025-10-23 19:52:35 - TestDemoBlazeE2E_chrome - INFO - test_08_screenshot_operations - Screenshot operations completed
+2025-10-23 19:52:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:52:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

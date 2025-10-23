@@ -1,0 +1,23 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:107 Testing mouse operations on DemoBlaze
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:129 Hovering over: Home
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:134 Hovered over 'Home' — color should be blue now
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:129 Hovering over: Contact
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:134 Hovered over 'Contact' — color should be blue now
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:129 Hovering over: About us
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:134 Hovered over 'About us' — color should be blue now
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:129 Hovering over: Cart
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:134 Hovered over 'Cart' — color should be blue now
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:129 Hovering over: Log in
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:134 Hovered over 'Log in' — color should be blue now
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:129 Hovering over: Sign up
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:134 Hovered over 'Sign up' — color should be blue now
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:139 Performing right-click on logo
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:145 Right-click performed and canceled
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:150 Double-clicking first product title
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:165 Double-clicked first product title — page should have changed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:169 All mouse operations completed successfully
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

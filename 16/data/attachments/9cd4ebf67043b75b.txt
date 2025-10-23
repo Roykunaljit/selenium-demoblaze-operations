@@ -1,0 +1,15 @@
+2025-10-23 21:13:27 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:13:27 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:13:28 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:13:28 - TestDemoBlazeE2E_edge - INFO - test_29_log_collection - Testing log collection
+2025-10-23 21:13:28 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 21:13:29 - TestDemoBlazeE2E_edge - INFO - open_login_modal - Opened login modal
+2025-10-23 21:13:29 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'loginusername'): test
+2025-10-23 21:13:29 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): test
+2025-10-23 21:13:29 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 21:13:29 - TestDemoBlazeE2E_edge - INFO - login - Logged in with username: test
+2025-10-23 21:13:40 - TestDemoBlazeE2E_edge - WARNING - accept_alert - No alert present
+2025-10-23 21:13:40 - TestDemoBlazeE2E_edge - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761254008513}
+2025-10-23 21:13:40 - TestDemoBlazeE2E_edge - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761254010456}
+2025-10-23 21:13:40 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:13:40 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

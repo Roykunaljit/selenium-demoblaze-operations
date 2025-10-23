@@ -1,0 +1,5 @@
+INFO     TestLinkChecker:test_link_checker.py:122 Testing external links on https://www.w3.org/
+WARNING  TestLinkChecker:test_link_checker.py:150 Failed on https://www.w3.org/: Internal link found in external check: https://auth.w3.org/?url=https://www.w3.org/
+assert False
+INFO     TestLinkChecker:test_link_checker.py:122 Testing external links on https://www.demoblaze.com
+INFO     TestLinkChecker:test_link_checker.py:145 [INFO] No external links found on https://www.demoblaze.com

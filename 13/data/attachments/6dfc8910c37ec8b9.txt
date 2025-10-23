@@ -1,0 +1,3 @@
+2025-10-23 20:56:00 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 20:56:04 - TestPageFactory - INFO - test_page_factory_cart_navigation - Cart menu found, clicking...
+2025-10-23 20:56:06 - TestPageFactory - INFO - test_page_factory_cart_navigation - [PASS] Cart navigation test passed

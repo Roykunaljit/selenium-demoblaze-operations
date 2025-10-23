@@ -1,0 +1,21 @@
+2025-10-23 16:47:52 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:47:52 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:47:53 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:47:53 - TestDemoBlazeE2E - INFO - test_26_categories - Testing categories
+2025-10-23 16:47:53 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 16:47:55 - TestDemoBlazeE2E - INFO - select_category - Selected category: phones
+2025-10-23 16:47:57 - TestDemoBlazeE2E - INFO - find_elements - Found 7 elements: ('class name', 'card')
+2025-10-23 16:47:57 - TestDemoBlazeE2E - INFO - get_all_products - Found 7 products
+2025-10-23 16:47:57 - TestDemoBlazeE2E - INFO - test_26_categories - Category Phones has 7 products
+2025-10-23 16:47:57 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 16:47:59 - TestDemoBlazeE2E - INFO - select_category - Selected category: laptops
+2025-10-23 16:48:01 - TestDemoBlazeE2E - INFO - find_elements - Found 6 elements: ('class name', 'card')
+2025-10-23 16:48:01 - TestDemoBlazeE2E - INFO - get_all_products - Found 6 products
+2025-10-23 16:48:01 - TestDemoBlazeE2E - INFO - test_26_categories - Category Laptops has 6 products
+2025-10-23 16:48:01 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Monitors')]")
+2025-10-23 16:48:03 - TestDemoBlazeE2E - INFO - select_category - Selected category: monitors
+2025-10-23 16:48:05 - TestDemoBlazeE2E - INFO - find_elements - Found 2 elements: ('class name', 'card')
+2025-10-23 16:48:05 - TestDemoBlazeE2E - INFO - get_all_products - Found 2 products
+2025-10-23 16:48:05 - TestDemoBlazeE2E - INFO - test_26_categories - Category Monitors has 2 products
+2025-10-23 16:48:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:48:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

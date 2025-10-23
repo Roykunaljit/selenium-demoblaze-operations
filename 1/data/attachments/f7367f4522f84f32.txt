@@ -1,0 +1,2 @@
+2025-10-23 16:50:39 - TestPageFactory - INFO - test_page_factory_multiple_elements - Found 9 products
+2025-10-23 16:50:39 - TestPageFactory - INFO - test_page_factory_multiple_elements - [PASS] Multiple elements test passed

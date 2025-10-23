@@ -1,0 +1,251 @@
+2025-10-23 19:59:44 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:59:44 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:59:45 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:59:45 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Testing categories
+2025-10-23 19:59:45 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 19:59:47 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 9 elements: ('class name', 'card')
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - WARNING - get_all_products - Could not parse product card: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55fddb50ffba <unknown>
+#1 0x55fddaf946d0 <unknown>
+#2 0x55fddaf9b358 <unknown>
+#3 0x55fddaf9dbe8 <unknown>
+#4 0x55fddaf9dc73 <unknown>
+#5 0x55fddafe083d <unknown>
+#6 0x55fddb00be32 <unknown>
+#7 0x55fddafd9f47 <unknown>
+#8 0x55fddb00bffe <unknown>
+#9 0x55fddb031b54 <unknown>
+#10 0x55fddb00bc03 <unknown>
+#11 0x55fddafd87a8 <unknown>
+#12 0x55fddafd9421 <unknown>
+#13 0x55fddb4d4b28 <unknown>
+#14 0x55fddb4d887f <unknown>
+#15 0x55fddb4bcc49 <unknown>
+#16 0x55fddb4d9405 <unknown>
+#17 0x55fddb4a24ff <unknown>
+#18 0x55fddb4fd258 <unknown>
+#19 0x55fddb4fd432 <unknown>
+#20 0x55fddb50efa3 <unknown>
+#21 0x7feceba9caa4 <unknown>
+#22 0x7fecebb29c6c <unknown>
+
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - WARNING - get_all_products - Could not parse product card: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55fddb50ffba <unknown>
+#1 0x55fddaf946d0 <unknown>
+#2 0x55fddaf9b358 <unknown>
+#3 0x55fddaf9dbe8 <unknown>
+#4 0x55fddaf9dc73 <unknown>
+#5 0x55fddafe5d85 <unknown>
+#6 0x55fddafe6541 <unknown>
+#7 0x55fddafda056 <unknown>
+#8 0x55fddb00be5d <unknown>
+#9 0x55fddafd9f47 <unknown>
+#10 0x55fddb00bffe <unknown>
+#11 0x55fddb031b54 <unknown>
+#12 0x55fddb00bc03 <unknown>
+#13 0x55fddafd87a8 <unknown>
+#14 0x55fddafd9421 <unknown>
+#15 0x55fddb4d4b28 <unknown>
+#16 0x55fddb4d887f <unknown>
+#17 0x55fddb4bcc49 <unknown>
+#18 0x55fddb4d9405 <unknown>
+#19 0x55fddb4a24ff <unknown>
+#20 0x55fddb4fd258 <unknown>
+#21 0x55fddb4fd432 <unknown>
+#22 0x55fddb50efa3 <unknown>
+#23 0x7feceba9caa4 <unknown>
+#24 0x7fecebb29c6c <unknown>
+
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - WARNING - get_all_products - Could not parse product card: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55fddb50ffba <unknown>
+#1 0x55fddaf946d0 <unknown>
+#2 0x55fddaf9b358 <unknown>
+#3 0x55fddaf9dbe8 <unknown>
+#4 0x55fddaf9dc73 <unknown>
+#5 0x55fddafe5d85 <unknown>
+#6 0x55fddafe6541 <unknown>
+#7 0x55fddafda056 <unknown>
+#8 0x55fddb00be5d <unknown>
+#9 0x55fddafd9f47 <unknown>
+#10 0x55fddb00bffe <unknown>
+#11 0x55fddb031b54 <unknown>
+#12 0x55fddb00bc03 <unknown>
+#13 0x55fddafd87a8 <unknown>
+#14 0x55fddafd9421 <unknown>
+#15 0x55fddb4d4b28 <unknown>
+#16 0x55fddb4d887f <unknown>
+#17 0x55fddb4bcc49 <unknown>
+#18 0x55fddb4d9405 <unknown>
+#19 0x55fddb4a24ff <unknown>
+#20 0x55fddb4fd258 <unknown>
+#21 0x55fddb4fd432 <unknown>
+#22 0x55fddb50efa3 <unknown>
+#23 0x7feceba9caa4 <unknown>
+#24 0x7fecebb29c6c <unknown>
+
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - WARNING - get_all_products - Could not parse product card: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55fddb50ffba <unknown>
+#1 0x55fddaf946d0 <unknown>
+#2 0x55fddaf9b358 <unknown>
+#3 0x55fddaf9dbe8 <unknown>
+#4 0x55fddaf9dc73 <unknown>
+#5 0x55fddafe5d85 <unknown>
+#6 0x55fddafe6541 <unknown>
+#7 0x55fddafda056 <unknown>
+#8 0x55fddb00be5d <unknown>
+#9 0x55fddafd9f47 <unknown>
+#10 0x55fddb00bffe <unknown>
+#11 0x55fddb031b54 <unknown>
+#12 0x55fddb00bc03 <unknown>
+#13 0x55fddafd87a8 <unknown>
+#14 0x55fddafd9421 <unknown>
+#15 0x55fddb4d4b28 <unknown>
+#16 0x55fddb4d887f <unknown>
+#17 0x55fddb4bcc49 <unknown>
+#18 0x55fddb4d9405 <unknown>
+#19 0x55fddb4a24ff <unknown>
+#20 0x55fddb4fd258 <unknown>
+#21 0x55fddb4fd432 <unknown>
+#22 0x55fddb50efa3 <unknown>
+#23 0x7feceba9caa4 <unknown>
+#24 0x7fecebb29c6c <unknown>
+
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - WARNING - get_all_products - Could not parse product card: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55fddb50ffba <unknown>
+#1 0x55fddaf946d0 <unknown>
+#2 0x55fddaf9b358 <unknown>
+#3 0x55fddaf9dbe8 <unknown>
+#4 0x55fddaf9dc73 <unknown>
+#5 0x55fddafe5d85 <unknown>
+#6 0x55fddafe6541 <unknown>
+#7 0x55fddafda056 <unknown>
+#8 0x55fddb00be5d <unknown>
+#9 0x55fddafd9f47 <unknown>
+#10 0x55fddb00bffe <unknown>
+#11 0x55fddb031b54 <unknown>
+#12 0x55fddb00bc03 <unknown>
+#13 0x55fddafd87a8 <unknown>
+#14 0x55fddafd9421 <unknown>
+#15 0x55fddb4d4b28 <unknown>
+#16 0x55fddb4d887f <unknown>
+#17 0x55fddb4bcc49 <unknown>
+#18 0x55fddb4d9405 <unknown>
+#19 0x55fddb4a24ff <unknown>
+#20 0x55fddb4fd258 <unknown>
+#21 0x55fddb4fd432 <unknown>
+#22 0x55fddb50efa3 <unknown>
+#23 0x7feceba9caa4 <unknown>
+#24 0x7fecebb29c6c <unknown>
+
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - WARNING - get_all_products - Could not parse product card: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55fddb50ffba <unknown>
+#1 0x55fddaf946d0 <unknown>
+#2 0x55fddaf9b358 <unknown>
+#3 0x55fddaf9dbe8 <unknown>
+#4 0x55fddaf9dc73 <unknown>
+#5 0x55fddafe5d85 <unknown>
+#6 0x55fddafe6541 <unknown>
+#7 0x55fddafda056 <unknown>
+#8 0x55fddb00be5d <unknown>
+#9 0x55fddafd9f47 <unknown>
+#10 0x55fddb00bffe <unknown>
+#11 0x55fddb031b54 <unknown>
+#12 0x55fddb00bc03 <unknown>
+#13 0x55fddafd87a8 <unknown>
+#14 0x55fddafd9421 <unknown>
+#15 0x55fddb4d4b28 <unknown>
+#16 0x55fddb4d887f <unknown>
+#17 0x55fddb4bcc49 <unknown>
+#18 0x55fddb4d9405 <unknown>
+#19 0x55fddb4a24ff <unknown>
+#20 0x55fddb4fd258 <unknown>
+#21 0x55fddb4fd432 <unknown>
+#22 0x55fddb50efa3 <unknown>
+#23 0x7feceba9caa4 <unknown>
+#24 0x7fecebb29c6c <unknown>
+
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - WARNING - get_all_products - Could not parse product card: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55fddb50ffba <unknown>
+#1 0x55fddaf946d0 <unknown>
+#2 0x55fddaf9b358 <unknown>
+#3 0x55fddaf9dbe8 <unknown>
+#4 0x55fddaf9dc73 <unknown>
+#5 0x55fddafe5d85 <unknown>
+#6 0x55fddafe6541 <unknown>
+#7 0x55fddafda056 <unknown>
+#8 0x55fddb00be5d <unknown>
+#9 0x55fddafd9f47 <unknown>
+#10 0x55fddb00bffe <unknown>
+#11 0x55fddb031b54 <unknown>
+#12 0x55fddb00bc03 <unknown>
+#13 0x55fddafd87a8 <unknown>
+#14 0x55fddafd9421 <unknown>
+#15 0x55fddb4d4b28 <unknown>
+#16 0x55fddb4d887f <unknown>
+#17 0x55fddb4bcc49 <unknown>
+#18 0x55fddb4d9405 <unknown>
+#19 0x55fddb4a24ff <unknown>
+#20 0x55fddb4fd258 <unknown>
+#21 0x55fddb4fd432 <unknown>
+#22 0x55fddb50efa3 <unknown>
+#23 0x7feceba9caa4 <unknown>
+#24 0x7fecebb29c6c <unknown>
+
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - WARNING - get_all_products - Could not parse product card: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55fddb50ffba <unknown>
+#1 0x55fddaf946d0 <unknown>
+#2 0x55fddaf9b358 <unknown>
+#3 0x55fddaf9dbe8 <unknown>
+#4 0x55fddaf9dc73 <unknown>
+#5 0x55fddafe5d85 <unknown>
+#6 0x55fddafe6541 <unknown>
+#7 0x55fddafda056 <unknown>
+#8 0x55fddb00be5d <unknown>
+#9 0x55fddafd9f47 <unknown>
+#10 0x55fddb00bffe <unknown>
+#11 0x55fddb031b54 <unknown>
+#12 0x55fddb00bc03 <unknown>
+#13 0x55fddafd87a8 <unknown>
+#14 0x55fddafd9421 <unknown>
+#15 0x55fddb4d4b28 <unknown>
+#16 0x55fddb4d887f <unknown>
+#17 0x55fddb4bcc49 <unknown>
+#18 0x55fddb4d9405 <unknown>
+#19 0x55fddb4a24ff <unknown>
+#20 0x55fddb4fd258 <unknown>
+#21 0x55fddb4fd432 <unknown>
+#22 0x55fddb50efa3 <unknown>
+#23 0x7feceba9caa4 <unknown>
+#24 0x7fecebb29c6c <unknown>
+
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 1 products
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Category Phones has 1 products
+2025-10-23 19:59:53 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 19:59:55 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 19:59:57 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 7 elements: ('class name', 'card')
+2025-10-23 19:59:57 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 7 products
+2025-10-23 19:59:57 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Category Laptops has 7 products
+2025-10-23 19:59:57 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Monitors')]")
+2025-10-23 19:59:59 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: monitors
+2025-10-23 20:00:01 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 6 elements: ('class name', 'card')
+2025-10-23 20:00:02 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 6 products
+2025-10-23 20:00:02 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Category Monitors has 6 products
+2025-10-23 20:00:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:00:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

@@ -1,0 +1,8 @@
+2025-10-23 18:02:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:02:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:02:44 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:02:44 - TestDemoBlazeE2E_chrome - INFO - test_27_network_emulation - Testing network emulation
+2025-10-23 18:02:44 - TestDemoBlazeE2E_chrome - INFO - set_network_conditions - Network conditions set: offline=False, latency=100ms
+2025-10-23 18:02:49 - TestDemoBlazeE2E_chrome - INFO - set_network_conditions - Network conditions set: offline=False, latency=0ms
+2025-10-23 18:02:49 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:02:49 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

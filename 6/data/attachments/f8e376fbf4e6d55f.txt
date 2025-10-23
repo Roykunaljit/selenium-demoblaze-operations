@@ -1,0 +1,9 @@
+2025-10-23 19:40:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:40:09 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:40:10 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:40:10 - TestDemoBlazeE2E_chrome - INFO - test_30_cleanup - Performing cleanup
+2025-10-23 19:40:10 - TestDemoBlazeE2E_chrome - INFO - delete_all_cookies - Deleted all cookies
+2025-10-23 19:40:10 - TestDemoBlazeE2E_chrome - INFO - refresh_page - Page refreshed
+2025-10-23 19:40:10 - TestDemoBlazeE2E_chrome - INFO - test_30_cleanup - Cleanup completed
+2025-10-23 19:40:10 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:40:10 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

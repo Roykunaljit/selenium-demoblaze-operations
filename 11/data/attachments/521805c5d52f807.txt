@@ -1,0 +1,6 @@
+2025-10-23 20:22:30 - TestLinkChecker - INFO - setup - Initializing browser: chrome
+2025-10-23 20:22:31 - TestLinkChecker - INFO - test_check_external_links - Testing external links on https://www.w3.org/
+2025-10-23 20:22:35 - TestLinkChecker - WARNING - test_check_external_links - Failed on https://www.w3.org/: Internal link found in external check: https://auth.w3.org/?url=https://www.w3.org/
+assert False
+2025-10-23 20:22:35 - TestLinkChecker - INFO - test_check_external_links - Testing external links on https://www.demoblaze.com
+2025-10-23 20:22:38 - TestLinkChecker - INFO - test_check_external_links - [INFO] No external links found on https://www.demoblaze.com

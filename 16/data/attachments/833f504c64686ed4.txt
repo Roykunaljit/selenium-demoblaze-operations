@@ -1,0 +1,8 @@
+2025-10-23 21:13:19 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:13:19 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:13:21 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:13:21 - TestDemoBlazeE2E_edge - INFO - test_27_network_emulation - Testing network emulation
+2025-10-23 21:13:21 - TestDemoBlazeE2E_edge - INFO - set_network_conditions - Network conditions set: offline=False, latency=100ms
+2025-10-23 21:13:26 - TestDemoBlazeE2E_edge - INFO - set_network_conditions - Network conditions set: offline=False, latency=0ms
+2025-10-23 21:13:26 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:13:26 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

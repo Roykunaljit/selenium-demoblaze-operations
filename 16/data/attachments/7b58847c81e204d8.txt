@@ -1,0 +1,8 @@
+
+============================================================
+PYTEST SESSION STARTED - Browser: EDGE
+============================================================
+
+[BrowserConfig] Initializing edge driver...
+[BrowserConfig] Successfully initialized Edge with system driver
+[BrowserConfig] Edge driver initialized successfully

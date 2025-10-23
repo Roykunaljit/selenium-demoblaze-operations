@@ -1,0 +1,11 @@
+2025-10-23 21:13:41 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:13:41 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:13:42 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:13:42 - TestDemoBlazeE2E_edge - INFO - test_31_file_upload - Testing file upload using local server
+127.0.0.1 - - [23/Oct/2025 21:13:42] "GET /upload.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2025 21:13:42] code 404, message File not found
+127.0.0.1 - - [23/Oct/2025 21:13:42] "GET /favicon.ico HTTP/1.1" 404 -
+2025-10-23 21:13:42 - TestDemoBlazeE2E_edge - INFO - test_31_file_upload - Uploaded file: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/upload_test.txt
+2025-10-23 21:13:42 - TestDemoBlazeE2E_edge - INFO - test_31_file_upload - Local file upload test passed
+2025-10-23 21:13:43 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:13:43 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

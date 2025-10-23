@@ -1,0 +1,66 @@
+2025-10-23 18:24:40 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:24:40 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:24:41 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:24:41 - TestDemoBlazeE2E_chrome - INFO - test_33_radio_button_demo - Testing radio button selection
+2025-10-23 18:24:41 - TestDemoBlazeE2E_chrome - WARNING - test_33_radio_button_demo - Selenium Easy failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=140.0.7339.207)
+Stacktrace:
+#0 0x55ad1d861fba <unknown>
+#1 0x55ad1d2e66d0 <unknown>
+#2 0x55ad1d2dd8f8 <unknown>
+#3 0x55ad1d2cecb6 <unknown>
+#4 0x55ad1d2d0a00 <unknown>
+#5 0x55ad1d2cf05e <unknown>
+#6 0x55ad1d2ce9dc <unknown>
+#7 0x55ad1d2ce6b5 <unknown>
+#8 0x55ad1d2cc53b <unknown>
+#9 0x55ad1d2ccd1a <unknown>
+#10 0x55ad1d2e9be9 <unknown>
+#11 0x55ad1d384715 <unknown>
+#12 0x55ad1d35de32 <unknown>
+#13 0x55ad1d383b54 <unknown>
+#14 0x55ad1d35dc03 <unknown>
+#15 0x55ad1d32a7a8 <unknown>
+#16 0x55ad1d32b421 <unknown>
+#17 0x55ad1d826b28 <unknown>
+#18 0x55ad1d82a87f <unknown>
+#19 0x55ad1d80ec49 <unknown>
+#20 0x55ad1d82b405 <unknown>
+#21 0x55ad1d7f44ff <unknown>
+#22 0x55ad1d84f258 <unknown>
+#23 0x55ad1d84f432 <unknown>
+#24 0x55ad1d860fa3 <unknown>
+#25 0x7fd858e9caa4 <unknown>
+#26 0x7fd858f29c6c <unknown>
+
+2025-10-23 18:25:40 - TestDemoBlazeE2E_chrome - WARNING - test_33_radio_button_demo - Demoqa failed: Message: timeout: Timed out receiving message from renderer: 58.507
+  (Session info: chrome=140.0.7339.207)
+Stacktrace:
+#0 0x55ad1d861fba <unknown>
+#1 0x55ad1d2e66d0 <unknown>
+#2 0x55ad1d2ce9ae <unknown>
+#3 0x55ad1d2ce6b5 <unknown>
+#4 0x55ad1d2cc53b <unknown>
+#5 0x55ad1d2cce8f <unknown>
+#6 0x55ad1d2db7f3 <unknown>
+#7 0x55ad1d2f4c5b <unknown>
+#8 0x55ad1d2fb44b <unknown>
+#9 0x55ad1d2cd5cd <unknown>
+#10 0x55ad1d2f4988 <unknown>
+#11 0x55ad1d383eba <unknown>
+#12 0x55ad1d35dc03 <unknown>
+#13 0x55ad1d32a7a8 <unknown>
+#14 0x55ad1d32b421 <unknown>
+#15 0x55ad1d826b28 <unknown>
+#16 0x55ad1d82a87f <unknown>
+#17 0x55ad1d80ec49 <unknown>
+#18 0x55ad1d82b405 <unknown>
+#19 0x55ad1d7f44ff <unknown>
+#20 0x55ad1d84f258 <unknown>
+#21 0x55ad1d84f432 <unknown>
+#22 0x55ad1d860fa3 <unknown>
+#23 0x7fd858e9caa4 <unknown>
+#24 0x7fd858f29c6c <unknown>
+
+2025-10-23 18:25:40 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:25:40 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

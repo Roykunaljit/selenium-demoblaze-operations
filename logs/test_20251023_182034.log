@@ -1,0 +1,28 @@
+2025-10-23 18:20:34 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:20:38 - TestPageFactory - INFO - test_click_logo_using_page_factory - === Testing PURE Page Factory - Logo Click ===
+2025-10-23 18:20:38 - TestPageFactory - INFO - test_click_logo_using_page_factory - Step 1: Navigating to cart using Page Factory...
+2025-10-23 18:20:40 - TestPageFactory - INFO - test_click_logo_using_page_factory - ✓ Successfully navigated to cart
+2025-10-23 18:20:40 - TestPageFactory - INFO - test_click_logo_using_page_factory - Step 2: Clicking logo using Page Factory...
+2025-10-23 18:20:42 - TestPageFactory - INFO - test_click_logo_using_page_factory - Page title: STORE
+2025-10-23 18:20:42 - TestPageFactory - INFO - test_click_logo_using_page_factory - Current URL: https://www.demoblaze.com/index.html
+2025-10-23 18:20:42 - TestPageFactory - INFO - test_click_logo_using_page_factory - ✓ Logo click successful - returned to home page
+2025-10-23 18:20:42 - TestPageFactory - INFO - test_click_logo_using_page_factory - [PASS] Pure Page Factory logo click test passed! 🎉
+2025-10-23 18:20:42 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:20:46 - TestPageFactory - INFO - test_page_factory_login_flow - Starting login flow test...
+2025-10-23 18:20:46 - TestPageFactory - INFO - test_page_factory_login_flow - Generated username: 6ajwccuf
+2025-10-23 18:20:46 - TestPageFactory - INFO - test_page_factory_login_flow - Opening signup modal...
+2025-10-23 18:20:49 - TestPageFactory - INFO - test_page_factory_login_flow - Signing up with username: 6ajwccuf
+2025-10-23 18:20:52 - TestPageFactory - INFO - test_page_factory_login_flow - Signup alert: Sign up successful.
+2025-10-23 18:20:52 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Signup successful
+2025-10-23 18:20:56 - TestPageFactory - INFO - test_page_factory_login_flow - Opening login modal...
+2025-10-23 18:20:58 - TestPageFactory - INFO - test_page_factory_login_flow - Logging in with username: 6ajwccuf
+2025-10-23 18:21:03 - TestPageFactory - INFO - test_page_factory_login_flow - Verifying login...
+2025-10-23 18:21:03 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User is logged in
+2025-10-23 18:21:03 - TestPageFactory - INFO - test_page_factory_login_flow - Welcome message: Welcome 6ajwccuf
+2025-10-23 18:21:03 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Welcome message contains username
+2025-10-23 18:21:03 - TestPageFactory - INFO - test_page_factory_login_flow - Logging out...
+2025-10-23 18:21:06 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User logged out successfully
+2025-10-23 18:21:06 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Login flow test completed successfully
+2025-10-23 18:21:06 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:21:10 - TestPageFactory - INFO - test_page_factory_cart_navigation - Cart menu found, clicking...
+2025-10-23 18:21:13 - TestPageFactory - INFO - test_page_factory_cart_navigation - [PASS] Cart navigation test passed

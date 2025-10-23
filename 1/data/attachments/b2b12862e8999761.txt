@@ -1,0 +1,3 @@
+INFO     TestPageFactory:test_page_factory.py:425 Current URL before cart navigation: https://www.demoblaze.com/
+INFO     TestPageFactory:test_page_factory.py:438 Cart menu found, clicking...
+INFO     TestPageFactory:test_page_factory.py:446 [PASS] Cart navigation test passed

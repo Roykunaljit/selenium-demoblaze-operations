@@ -1,0 +1,10 @@
+2025-10-23 19:56:25 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:56:25 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 19:56:26 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 19:56:26 - TestDemoBlazeE2E_edge - INFO - test_04_javascript_execution - Testing JavaScript execution
+2025-10-23 19:56:27 - TestDemoBlazeE2E_edge - INFO - test_04_javascript_execution - Page height: 1872
+2025-10-23 19:56:27 - TestDemoBlazeE2E_edge - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 19:56:28 - TestDemoBlazeE2E_edge - INFO - test_04_javascript_execution - Logo text:  PRODUCT STORE
+2025-10-23 19:56:29 - TestDemoBlazeE2E_edge - INFO - test_04_javascript_execution - Async result: Async execution complete
+2025-10-23 19:56:29 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 19:56:29 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

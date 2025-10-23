@@ -1,0 +1,2 @@
+2025-10-23 21:08:44 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 21:08:48 - TestPageFactory - INFO - test_page_factory_element_caching - [PASS] Element caching test passed

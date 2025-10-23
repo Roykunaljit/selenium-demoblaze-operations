@@ -1,0 +1,13 @@
+2025-10-23 19:57:07 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:57:07 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 19:57:08 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 19:57:08 - TestDemoBlazeE2E_edge - INFO - test_21_invalid_login - Testing invalid login
+2025-10-23 19:57:08 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 19:57:09 - TestDemoBlazeE2E_edge - INFO - open_login_modal - Opened login modal
+2025-10-23 19:57:10 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'loginusername'): invaliduser
+2025-10-23 19:57:10 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): wrongpass
+2025-10-23 19:57:11 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 19:57:11 - TestDemoBlazeE2E_edge - INFO - login - Logged in with username: invaliduser
+2025-10-23 19:57:11 - TestDemoBlazeE2E_edge - INFO - accept_alert - Accepted alert with text: Wrong password.
+2025-10-23 19:57:11 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 19:57:11 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

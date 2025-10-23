@@ -1,0 +1,8 @@
+2025-10-23 16:48:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:48:05 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:48:06 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:48:06 - TestDemoBlazeE2E - INFO - test_27_network_emulation - Testing network emulation
+2025-10-23 16:48:06 - TestDemoBlazeE2E - INFO - set_network_conditions - Network conditions set: offline=False, latency=100ms
+2025-10-23 16:48:11 - TestDemoBlazeE2E - INFO - set_network_conditions - Network conditions set: offline=False, latency=0ms
+2025-10-23 16:48:11 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:48:11 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

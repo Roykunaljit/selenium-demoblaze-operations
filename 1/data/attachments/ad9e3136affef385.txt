@@ -1,0 +1,9 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:458 Testing storage operations
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:464 Local storage: [['user_preference', 'dark_mode'], ['test_key', 'test_value']]
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:468 Session storage: [['session_key', 'session_value']]
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:473 Storage operations completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

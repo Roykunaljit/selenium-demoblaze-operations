@@ -1,0 +1,18 @@
+2025-10-23 20:50:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 20:50:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 20:50:16 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 20:50:16 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Testing with Faker generated data
+2025-10-23 20:50:16 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Generated email: crystal79@example.net
+2025-10-23 20:50:16 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Generated name: Samantha Jacobs
+2025-10-23 20:50:16 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Contact')]")
+2025-10-23 20:50:17 - TestDemoBlazeE2E_chrome - INFO - open_contact_modal - Opened contact modal
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-email'): crystal79@example.net
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-name'): Samantha Jacobs
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'message-text'): Message from Samantha Jacobs
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - fill_contact_form - Filled contact form with email: crystal79@example.net, name: Samantha Jacobs
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Send message')]")
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - send_contact_message - Sent contact message
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Thanks for the message!!
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Faker data testing completed
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:50:19 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

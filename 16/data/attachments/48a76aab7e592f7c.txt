@@ -1,0 +1,6 @@
+2025-10-23 21:13:26 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:13:26 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:13:27 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:13:27 - TestDemoBlazeE2E_edge - INFO - test_28_mobile_emulation - Mobile emulation test skipped - enable in browser_config.py
+2025-10-23 21:13:27 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:13:27 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

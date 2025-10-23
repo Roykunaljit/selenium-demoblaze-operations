@@ -1,0 +1,9 @@
+2025-10-23 16:46:02 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:46:02 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - test_11_data_driven_xml - Testing with XML data
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - test_11_data_driven_xml - Processing XML data: {'username': 'xmluser1', 'password': 'xmlpass1', 'product': 'Sony vaio i5'}
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - test_11_data_driven_xml - Processing XML data: {'username': 'xmluser2', 'password': 'xmlpass2', 'product': 'MacBook air'}
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - test_11_data_driven_xml - XML data testing completed
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

@@ -1,0 +1,18 @@
+2025-10-23 18:00:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:00:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:00:36 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:00:36 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Testing with Faker generated data
+2025-10-23 18:00:36 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Generated email: qcook@example.com
+2025-10-23 18:00:36 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Generated name: Vanessa Scott
+2025-10-23 18:00:36 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Contact')]")
+2025-10-23 18:00:37 - TestDemoBlazeE2E_chrome - INFO - open_contact_modal - Opened contact modal
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-email'): qcook@example.com
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-name'): Vanessa Scott
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'message-text'): Message from Vanessa Scott
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - fill_contact_form - Filled contact form with email: qcook@example.com, name: Vanessa Scott
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Send message')]")
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - send_contact_message - Sent contact message
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Thanks for the message!!
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Faker data testing completed
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:00:38 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

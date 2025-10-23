@@ -1,0 +1,24 @@
+2025-10-23 16:45:27 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:45:27 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:45:28 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:45:28 - TestDemoBlazeE2E - INFO - test_05_alerts_handling - Testing alert handling
+2025-10-23 16:45:28 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Contact')]")
+2025-10-23 16:45:29 - TestDemoBlazeE2E - INFO - open_contact_modal - Opened contact modal
+2025-10-23 16:45:30 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'recipient-email'): test@example.com
+2025-10-23 16:45:30 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'recipient-name'): Test User
+2025-10-23 16:45:30 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'message-text'): Test message
+2025-10-23 16:45:30 - TestDemoBlazeE2E - INFO - fill_contact_form - Filled contact form with email: test@example.com, name: Test User
+2025-10-23 16:45:30 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Send message')]")
+2025-10-23 16:45:30 - TestDemoBlazeE2E - INFO - send_contact_message - Sent contact message
+2025-10-23 16:45:30 - TestDemoBlazeE2E - INFO - accept_alert - Accepted alert with text: Thanks for the message!!
+2025-10-23 16:45:30 - TestDemoBlazeE2E - INFO - test_05_alerts_handling - Alert handled with text: Thanks for the message!!
+2025-10-23 16:45:31 - TestDemoBlazeE2E - INFO - click - Clicked element: ('id', 'signin2')
+2025-10-23 16:45:32 - TestDemoBlazeE2E - INFO - open_signup_modal - Opened signup modal
+2025-10-23 16:45:33 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'sign-username'): FCycbVDiZh
+2025-10-23 16:45:33 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'sign-password'): Test@123
+2025-10-23 16:45:33 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+2025-10-23 16:45:33 - TestDemoBlazeE2E - INFO - signup - Signed up with username: FCycbVDiZh
+2025-10-23 16:45:33 - TestDemoBlazeE2E - INFO - accept_alert - Accepted alert with text: Sign up successful.
+2025-10-23 16:45:33 - TestDemoBlazeE2E - INFO - test_05_alerts_handling - Signup alert: Sign up successful.
+2025-10-23 16:45:33 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:45:33 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

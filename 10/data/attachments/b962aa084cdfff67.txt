@@ -1,0 +1,11 @@
+2025-10-23 19:57:37 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:57:37 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 19:57:39 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 19:57:39 - TestDemoBlazeE2E_edge - INFO - test_32_broken_links_check - Running broken links check
+2025-10-23 19:57:39 - TestDemoBlazeE2E_edge - INFO - test_32_broken_links_check - Testing on W3.org
+2025-10-23 19:57:42 - TestDemoBlazeE2E_edge - INFO - check_broken_links - Checking for broken links...
+2025-10-23 19:57:42 - TestDemoBlazeE2E_edge - INFO - check_broken_links - Found 92 links
+2025-10-23 19:57:55 - TestDemoBlazeE2E_edge - INFO - check_broken_links - Success: Broken Links Check Complete: 0 broken out of 91
+2025-10-23 19:57:55 - TestDemoBlazeE2E_edge - INFO - test_32_broken_links_check - W3.org: Found 91 valid, 0 broken
+2025-10-23 19:57:55 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 19:57:55 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

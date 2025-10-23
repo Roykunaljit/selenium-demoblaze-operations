@@ -1,0 +1,13 @@
+2025-10-23 21:12:20 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:12:20 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:12:21 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:12:21 - TestDemoBlazeE2E_edge - INFO - test_22_duplicate_signup - Testing duplicate signup
+2025-10-23 21:12:21 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('id', 'signin2')
+2025-10-23 21:12:22 - TestDemoBlazeE2E_edge - INFO - open_signup_modal - Opened signup modal
+2025-10-23 21:12:23 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'sign-username'): testuser2024
+2025-10-23 21:12:23 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'sign-password'): Test@1234
+2025-10-23 21:12:23 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+2025-10-23 21:12:23 - TestDemoBlazeE2E_edge - INFO - signup - Signed up with username: testuser2024
+2025-10-23 21:12:24 - TestDemoBlazeE2E_edge - INFO - accept_alert - Accepted alert with text: This user already exist.
+2025-10-23 21:12:24 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:12:24 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

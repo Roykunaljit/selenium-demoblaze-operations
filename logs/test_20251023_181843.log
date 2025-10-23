@@ -1,0 +1,525 @@
+2025-10-23 18:18:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:18:43 - TestCheckboxes - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:43 - TestCheckboxes - INFO - setup_and_teardown - Starting new LOCAL Checkbox Test
+2025-10-23 18:18:43 - TestCheckboxes - INFO - setup_and_teardown - Local test server running at: http://localhost:46451/checkbox_test.html
+2025-10-23 18:18:43 - TestCheckboxes - INFO - setup_and_teardown - Initializing browser: chrome
+2025-10-23 18:18:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:18:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:18:49 - TestCheckboxes - INFO - test_local_checkbox_interaction - Navigating to local checkbox page: http://localhost:46451/checkbox_test.html
+2025-10-23 18:18:49 - TestCheckboxes - INFO - test_local_checkbox_interaction - Verifying initial checkbox states
+2025-10-23 18:18:49 - TestCheckboxes - INFO - find_element - Found element: ('id', 'checkbox1')
+2025-10-23 18:18:49 - TestCheckboxes - INFO - find_element - Found element: ('id', 'checkbox2')
+2025-10-23 18:18:49 - TestCheckboxes - INFO - test_local_checkbox_interaction - Initial states verified successfully.
+2025-10-23 18:18:49 - TestCheckboxes - INFO - test_local_checkbox_interaction - Clicking the first checkbox to select it
+2025-10-23 18:18:50 - TestCheckboxes - INFO - click - Clicked element: ('id', 'checkbox1')
+2025-10-23 18:18:50 - TestCheckboxes - INFO - test_local_checkbox_interaction - Clicking the second checkbox to deselect it
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - test_01_browser_windows_and_tabs - Testing browser windows and tabs on chrome
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - test_01_browser_windows_and_tabs - Main window handle: 0AA4B5CE89644E7B24336CA894348478
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Testing mouse operations on DemoBlaze - chrome
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - test_03_keyboard_operations - Testing keyboard operations
+2025-10-23 18:18:50 - TestCheckboxes - INFO - click - Clicked element: ('id', 'checkbox2')
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Home
+2025-10-23 18:18:50 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 18:18:50 - TestCheckboxes - INFO - test_local_checkbox_interaction - Verifying final checkbox states
+2025-10-23 18:18:50 - TestCheckboxes - INFO - find_element - Found element: ('id', 'checkbox1')
+2025-10-23 18:18:50 - TestCheckboxes - INFO - find_element - Found element: ('id', 'checkbox2')
+2025-10-23 18:18:50 - TestCheckboxes - INFO - find_element - Found element: ('id', 'status-message')
+2025-10-23 18:18:50 - TestCheckboxes - INFO - get_text - Got text from element ('id', 'status-message'): Checkbox 1 is Checked, Checkbox 2 is Unchecked.
+2025-10-23 18:18:50 - TestCheckboxes - INFO - test_local_checkbox_interaction - Final states verified successfully. Status: 'Checkbox 1 is Checked, Checkbox 2 is Unchecked.'
+2025-10-23 18:18:50 - TestCheckboxes - INFO - setup_and_teardown - Checkbox Test completed
+2025-10-23 18:18:50 - TestCheckboxes - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:51 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 18:18:51 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Home' — color should be blue now
+2025-10-23 18:18:51 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Contact
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - test_01_browser_windows_and_tabs - Total windows: 2
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - switch_to_window - Switched to window: FF88A3AD659BF592F41FD298203958D6
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - test_01_browser_windows_and_tabs - Switched to window: FF88A3AD659BF592F41FD298203958D6
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - switch_to_window - Switched to window: 0AA4B5CE89644E7B24336CA894348478
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:18:52 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 18:18:53 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Contact' — color should be blue now
+2025-10-23 18:18:53 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: About us
+2025-10-23 18:18:53 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:18:53 - TestDemoBlazeE2E_chrome - INFO - test_05_alerts_handling - Testing alert handling
+2025-10-23 18:18:53 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Contact')]")
+2025-10-23 18:18:53 - TestDemoBlazeE2E_chrome - INFO - send_keys_slowly - Sent keys slowly to element ('id', 'loginusername'): test
+2025-10-23 18:18:53 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 18:18:53 - TestDemoBlazeE2E_chrome - INFO - key_combination - Pressed key combination on element ('id', 'loginusername'): ('\ue009', 'a')
+2025-10-23 18:18:54 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 18:18:54 - TestDemoBlazeE2E_chrome - INFO - open_contact_modal - Opened contact modal
+2025-10-23 18:18:54 - TestDemoBlazeE2E_chrome - INFO - key_combination - Pressed key combination on element ('id', 'loginusername'): ('\ue009', 'c')
+2025-10-23 18:18:54 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 18:18:54 - TestDemoBlazeE2E_chrome - INFO - press_key - Pressed key  on element: ('id', 'loginusername')
+2025-10-23 18:18:54 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'About us' — color should be blue now
+2025-10-23 18:18:54 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Cart
+2025-10-23 18:18:55 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-email'): test@example.com
+2025-10-23 18:18:55 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-name'): Test User
+2025-10-23 18:18:55 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'message-text'): Test message
+2025-10-23 18:18:55 - TestDemoBlazeE2E_chrome - INFO - fill_contact_form - Filled contact form with email: test@example.com, name: Test User
+2025-10-23 18:18:55 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Send message')]")
+2025-10-23 18:18:55 - TestDemoBlazeE2E_chrome - INFO - send_contact_message - Sent contact message
+2025-10-23 18:18:55 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Thanks for the message!!
+2025-10-23 18:18:55 - TestDemoBlazeE2E_chrome - INFO - test_05_alerts_handling - Alert handled with text: Thanks for the message!!
+2025-10-23 18:18:56 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'signin2')
+2025-10-23 18:18:56 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Cart' — color should be blue now
+2025-10-23 18:18:56 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Log in
+2025-10-23 18:18:56 - TestDemoBlazeE2E_chrome - INFO - test_03_keyboard_operations - Keyboard operations completed
+2025-10-23 18:18:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:18:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:18:57 - TestDemoBlazeE2E_chrome - INFO - open_signup_modal - Opened signup modal
+2025-10-23 18:18:57 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Log in' — color should be blue now
+2025-10-23 18:18:57 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Sign up
+2025-10-23 18:18:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:18:57 - TestDemoBlazeE2E_chrome - INFO - test_07_scrolling_operations - Testing scrolling operations
+2025-10-23 18:18:58 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-username'): QpcJ0kTBm5
+2025-10-23 18:18:58 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-password'): Test@123
+2025-10-23 18:18:58 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+2025-10-23 18:18:58 - TestDemoBlazeE2E_chrome - INFO - signup - Signed up with username: QpcJ0kTBm5
+2025-10-23 18:18:58 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Sign up successful.
+2025-10-23 18:18:58 - TestDemoBlazeE2E_chrome - INFO - test_05_alerts_handling - Signup alert: Sign up successful.
+2025-10-23 18:18:58 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:18:58 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:59 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:18:59 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:18:59 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Sign up' — color should be blue now
+2025-10-23 18:18:59 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Performing right-click on logo
+2025-10-23 18:19:00 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:00 - TestDemoBlazeE2E_chrome - INFO - test_09_wait_strategies - Testing wait strategies
+2025-10-23 18:19:00 - TestDemoBlazeE2E_chrome - INFO - wait_for_element_visible - Element is visible: ('id', 'nava')
+2025-10-23 18:19:00 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:19:00 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Right-click performed and canceled
+2025-10-23 18:19:00 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Double-clicking first product title
+2025-10-23 18:19:00 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'next2')
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - wait_for_element_visible - Element is visible: ('xpath', "//a[contains(text(),'Samsung galaxy s6')]")
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - test_09_wait_strategies - Wait strategies tested successfully
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/after_scroll_gw2_20251023_181902_393476_1.png
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - test_07_scrolling_operations - Scrolling operations completed
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:02 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Starting true data-driven test with JSON
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Testing with JSON data: {'name': 'Samsung galaxy s6', 'category': 'Phones', 'price': '360'}
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Double-clicked first product title — page should have changed
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - All mouse operations completed successfully
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Starting true data-driven test with XML
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Testing with XML data: {'username': 'testuser1', 'password': 'Test@123', 'product': 'Samsung galaxy s6', 'category': 'Phones'}
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - test_06_cookie_operations - Testing cookie operations
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - get_cookies - Got 0 cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - test_06_cookie_operations - Found 0 cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - add_cookie - Added cookie: {'name': 'test_cookie', 'value': 'test_value_123', 'path': '/', 'domain': '.demoblaze.com'}
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - test_06_cookie_operations - Added custom cookie
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - refresh_page - Page refreshed
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - get_cookies - Got 2 cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - delete_cookie - Deleted cookie: test_cookie
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - delete_all_cookies - Deleted all cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - get_cookies - Got 0 cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - test_06_cookie_operations - Cookies after deletion: 0
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - test_13b_utility_demo_csv - Demonstrating CSV write and read utility
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - test_13b_utility_demo_csv - Successfully wrote data to data/test_output.csv
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - test_13b_utility_demo_csv - Successfully read back 2 records from CSV.
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:05 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:06 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:19:06 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:06 - TestDemoBlazeE2E_chrome - INFO - test_14_storage_operations - Testing storage operations
+2025-10-23 18:19:06 - TestDemoBlazeE2E_chrome - INFO - test_14_storage_operations - Local storage: {'test_key': 'test_value', 'user_preference': 'dark_mode'}
+2025-10-23 18:19:06 - TestDemoBlazeE2E_chrome - INFO - test_14_storage_operations - Session storage: {'session_key': 'session_value'}
+2025-10-23 18:19:06 - TestDemoBlazeE2E_chrome - INFO - test_14_storage_operations - Storage operations completed
+2025-10-23 18:19:06 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:06 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:07 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:07 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:07 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 18:19:08 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:08 - TestDemoBlazeE2E_chrome - INFO - test_15_performance_metrics - Testing performance metrics
+2025-10-23 18:19:08 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 18:19:09 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 18:19:10 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - test_15_performance_metrics - Page load time: 75.89999999999418 ms
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - test_15_performance_metrics - Browser logs count: 2
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - test_15_performance_metrics - Performance metrics collected
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 18:19:11 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Successfully verified product: Samsung galaxy s6
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - test_16_element_states - Testing element states
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Successfully verified product: Samsung galaxy s6
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'cartur')
+2025-10-23 18:19:12 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 18:19:13 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Testing with JSON data: {'name': 'Nokia lumia 1520', 'category': 'Phones', 'price': '820'}
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Testing with XML data: {'username': 'testuser2', 'password': 'Test@456', 'product': 'Sony vaio i5', 'category': 'Laptops'}
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//div[@id='logInModal']//button[contains(text(),'Close')]")
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - test_16_element_states - Element state validations completed
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:14 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - test_17_css_properties - Testing CSS properties
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - get_css_property - Got CSS property 'font-size' from element ('id', 'nava'): 20px
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - get_css_property - Got CSS property 'color' from element ('id', 'nava'): rgba(255, 255, 255, 1)
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - get_css_property - Got CSS property 'display' from element ('id', 'nava'): block
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - test_17_css_properties - Logo font size: 20px, color: rgba(255, 255, 255, 1), display: block
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - test_17_css_properties - CSS property validations completed
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:15 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:16 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:19:16 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 18:19:16 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:16 - TestDemoBlazeE2E_chrome - INFO - test_18_browser_navigation - Testing browser navigation
+2025-10-23 18:19:16 - TestDemoBlazeE2E_chrome - INFO - get_current_url - Current URL: https://www.demoblaze.com/
+2025-10-23 18:19:17 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:19:18 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Nokia lumia 1520')]")
+2025-10-23 18:19:18 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Sony vaio i5')]")
+2025-10-23 18:19:19 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:19:19 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 18:19:20 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Nokia lumia 1520
+2025-10-23 18:19:20 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Sony vaio i5
+2025-10-23 18:19:21 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 18:19:22 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 18:19:22 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Nokia lumia 1520
+2025-10-23 18:19:22 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Nokia lumia 1520
+2025-10-23 18:19:22 - TestDemoBlazeE2E_chrome - INFO - test_12_data_driven_json - Successfully verified product: Nokia lumia 1520
+2025-10-23 18:19:22 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 18:19:22 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Sony vaio i5
+2025-10-23 18:19:22 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Sony vaio i5
+2025-10-23 18:19:22 - TestDemoBlazeE2E_chrome - INFO - test_11_data_driven_xml - Successfully verified product: Sony vaio i5
+2025-10-23 18:19:23 - TestDemoBlazeE2E_chrome - INFO - get_current_url - Current URL: https://www.demoblaze.com/prod.html?idp_=1
+2025-10-23 18:19:23 - TestDemoBlazeE2E_chrome - INFO - go_back - Navigated back
+2025-10-23 18:19:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:25 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:25 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:25 - TestDemoBlazeE2E_chrome - INFO - go_forward - Navigated forward
+2025-10-23 18:19:25 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:25 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Starting true data-driven test with CSV
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser1', 'password': 'Test@123', 'product': 'Samsung galaxy s6', 'category': 'Phones'}
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - test_12b_utility_demo_json - Demonstrating JSON write and read utility
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - test_12b_utility_demo_json - Successfully wrote data to data/test_output.json
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - test_12b_utility_demo_json - Successfully read back 2 user records from JSON.
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:26 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:27 - TestDemoBlazeE2E_chrome - INFO - refresh_page - Page refreshed
+2025-10-23 18:19:27 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:27 - TestDemoBlazeE2E_chrome - INFO - test_21_invalid_login - Testing invalid login
+2025-10-23 18:19:27 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 18:19:28 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:19:28 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 18:19:29 - TestDemoBlazeE2E_chrome - INFO - test_18_browser_navigation - Browser navigation completed
+2025-10-23 18:19:29 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:29 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:29 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:29 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:29 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginusername'): invaliduser
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): wrongpass
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - login - Logged in with username: invaliduser
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Testing with Faker generated data
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Generated email: skinnercharles@example.org
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Generated name: Victoria Hamilton
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Wrong password.
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:30 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Contact')]")
+2025-10-23 18:19:31 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:31 - TestDemoBlazeE2E_chrome - INFO - test_22_duplicate_signup - Testing duplicate signup
+2025-10-23 18:19:31 - TestDemoBlazeE2E_chrome - INFO - open_contact_modal - Opened contact modal
+2025-10-23 18:19:32 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'signin2')
+2025-10-23 18:19:32 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-email'): skinnercharles@example.org
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - open_signup_modal - Opened signup modal
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-name'): Victoria Hamilton
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'message-text'): Message from Victoria Hamilton
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - fill_contact_form - Filled contact form with email: skinnercharles@example.org, name: Victoria Hamilton
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Send message')]")
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - send_contact_message - Sent contact message
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Thanks for the message!!
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - test_19_faker_data_generation - Faker data testing completed
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-username'): testuser2024
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-password'): Test@1234
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - signup - Signed up with username: testuser2024
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - test_23_contact_form - Testing contact form
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: Samsung galaxy s6
+2025-10-23 18:19:34 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Contact')]")
+2025-10-23 18:19:35 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: This user already exist.
+2025-10-23 18:19:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:35 - TestDemoBlazeE2E_chrome - INFO - open_contact_modal - Opened contact modal
+2025-10-23 18:19:36 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:36 - TestDemoBlazeE2E_chrome - INFO - test_24_about_us_modal - Testing About Us modal
+2025-10-23 18:19:36 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'About us')]")
+2025-10-23 18:19:36 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser2', 'password': 'Test@456', 'product': 'MacBook air', 'category': 'Laptops'}
+2025-10-23 18:19:36 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-email'): brandonnichols@example.com
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'recipient-name'): Timothy Torres
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'message-text'): Fy0yjWAaTekfhHqvXfJewKw1CH3SEOIrSVyxbHG1kGrwLzFwl0
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - fill_contact_form - Filled contact form with email: brandonnichols@example.com, name: Timothy Torres
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Send message')]")
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - send_contact_message - Sent contact message
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Thanks for the message!!
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - open_about_modal - Opened About Us modal
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:38 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:38 - TestDemoBlazeE2E_chrome - INFO - test_27_network_emulation - Testing network emulation
+2025-10-23 18:19:38 - TestDemoBlazeE2E_chrome - INFO - set_network_conditions - Network conditions set: offline=False, latency=100ms
+2025-10-23 18:19:38 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'example-video')
+2025-10-23 18:19:38 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 18:19:41 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'MacBook air')]")
+2025-10-23 18:19:43 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: MacBook air
+2025-10-23 18:19:43 - TestDemoBlazeE2E_chrome - INFO - set_network_conditions - Network conditions set: offline=False, latency=0ms
+2025-10-23 18:19:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:44 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:44 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Testing log collection
+2025-10-23 18:19:44 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): MacBook air
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: MacBook air
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: MacBook air
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginusername'): test
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): test
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 18:19:45 - TestDemoBlazeE2E_chrome - INFO - login - Logged in with username: test
+2025-10-23 18:19:47 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser3', 'password': 'Test@789', 'product': 'ASUS Full HD', 'category': 'Monitors'}
+2025-10-23 18:19:47 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Monitors')]")
+2025-10-23 18:19:49 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: monitors
+2025-10-23 18:19:51 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'ASUS Full HD')]")
+2025-10-23 18:19:53 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: ASUS Full HD
+2025-10-23 18:19:55 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 18:19:55 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): ASUS Full HD
+2025-10-23 18:19:55 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: ASUS Full HD
+2025-10-23 18:19:55 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: ASUS Full HD
+2025-10-23 18:19:56 - TestDemoBlazeE2E_chrome - WARNING - accept_alert - No alert present
+2025-10-23 18:19:56 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761243584483}
+2025-10-23 18:19:56 - TestDemoBlazeE2E_chrome - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761243586489}
+2025-10-23 18:19:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - test_30_cleanup - Performing cleanup
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - delete_all_cookies - Deleted all cookies
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - refresh_page - Page refreshed
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - test_30_cleanup - Cleanup completed
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - INFO - test_32_broken_links_check - Running broken links check
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - INFO - test_32_broken_links_check - Testing on W3.org
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - ERROR - click - Failed to click element: ('class name', 'vjs-play-control'). Error: Message: 
+
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('class name', 'vjs-play-control')
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element using JavaScript: ('class name', 'vjs-play-control')
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - INFO - play_video - Playing video
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:58 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Starting complete E2E shopping flow on chrome
+2025-10-23 18:19:59 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'signin2')
+2025-10-23 18:20:00 - TestDemoBlazeE2E_chrome - INFO - open_signup_modal - Opened signup modal
+2025-10-23 18:20:00 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//div[@id='videoModal']//button[contains(text(),'Close')]")
+2025-10-23 18:20:00 - TestDemoBlazeE2E_chrome - INFO - close_about_modal - Closed About Us modal
+2025-10-23 18:20:00 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:20:00 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:20:00 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:20:00 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-username'): 32FKCY1b_chrome
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-password'): Test@1234
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - signup - Signed up with username: 32FKCY1b_chrome
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - test_28_mobile_emulation - Mobile emulation test skipped - enable in browser_config.py
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - check_broken_links - Checking for broken links...
+2025-10-23 18:20:01 - TestDemoBlazeE2E_chrome - INFO - check_broken_links - Found 92 links
+2025-10-23 18:20:03 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Sign up successful.
+2025-10-23 18:20:03 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Signup successful for user: 32FKCY1b_chrome
+2025-10-23 18:20:05 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 18:20:06 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 18:20:07 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginusername'): 32FKCY1b_chrome
+2025-10-23 18:20:07 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): Test@1234
+2025-10-23 18:20:08 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 18:20:08 - TestDemoBlazeE2E_chrome - INFO - login - Logged in with username: 32FKCY1b_chrome
+2025-10-23 18:20:08 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Login modal closed successfully
+2025-10-23 18:20:11 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 18:20:11 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('id', 'nameofuser'): Welcome 32FKCY1b_chrome
+2025-10-23 18:20:11 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - User is logged in successfully
+2025-10-23 18:20:11 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 18:20:11 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('id', 'nameofuser'): Welcome 32FKCY1b_chrome
+2025-10-23 18:20:11 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Welcome message verified for user: 32FKCY1b_chrome
+2025-10-23 18:20:11 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:20:12 - TestDemoBlazeE2E_chrome - INFO - check_broken_links - Success: Broken Links Check Complete: 0 broken out of 91
+2025-10-23 18:20:12 - TestDemoBlazeE2E_chrome - INFO - test_32_broken_links_check - W3.org: Found 91 valid, 0 broken
+2025-10-23 18:20:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:20:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:20:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:20:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:20:13 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:20:13 - TestDemoBlazeE2E_chrome - INFO - test_33_radio_button_demo - Testing radio button selection
+2025-10-23 18:20:13 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:20:13 - TestDemoBlazeE2E_chrome - WARNING - test_33_radio_button_demo - Selenium Easy failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=140.0.7339.207)
+Stacktrace:
+#0 0x55adcfad6fba <unknown>
+#1 0x55adcf55b6d0 <unknown>
+#2 0x55adcf5528f8 <unknown>
+#3 0x55adcf543cb6 <unknown>
+#4 0x55adcf545a00 <unknown>
+#5 0x55adcf54405e <unknown>
+#6 0x55adcf5439dc <unknown>
+#7 0x55adcf5436b5 <unknown>
+#8 0x55adcf54153b <unknown>
+#9 0x55adcf541d1a <unknown>
+#10 0x55adcf55ebe9 <unknown>
+#11 0x55adcf5f9715 <unknown>
+#12 0x55adcf5d2e32 <unknown>
+#13 0x55adcf5f8b54 <unknown>
+#14 0x55adcf5d2c03 <unknown>
+#15 0x55adcf59f7a8 <unknown>
+#16 0x55adcf5a0421 <unknown>
+#17 0x55adcfa9bb28 <unknown>
+#18 0x55adcfa9f87f <unknown>
+#19 0x55adcfa83c49 <unknown>
+#20 0x55adcfaa0405 <unknown>
+#21 0x55adcfa694ff <unknown>
+#22 0x55adcfac4258 <unknown>
+#23 0x55adcfac4432 <unknown>
+#24 0x55adcfad5fa3 <unknown>
+#25 0x7f499809caa4 <unknown>
+#26 0x7f4998129c6c <unknown>
+
+2025-10-23 18:20:15 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 18:20:16 - TestDemoBlazeE2E_chrome - INFO - test_33_radio_button_demo - Radio button test passed on demoqa
+2025-10-23 18:20:16 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:20:16 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:20:17 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 18:20:19 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 18:20:19 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 18:20:19 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 18:20:19 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h3[@class='price-container']")
+2025-10-23 18:20:19 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h3[@class='price-container']"): $360 *includes tax
+2025-10-23 18:20:19 - TestDemoBlazeE2E_chrome - INFO - get_product_price - Retrieved and cleaned product price: 360
+2025-10-23 18:20:19 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Product verified: Samsung galaxy s6 - $360
+2025-10-23 18:20:20 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Add to cart')]")
+2025-10-23 18:20:20 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Product added.
+2025-10-23 18:20:20 - TestDemoBlazeE2E_chrome - INFO - add_to_cart - Product added to cart. Alert: Product added.
+2025-10-23 18:20:22 - TestDemoBlazeE2E_chrome - INFO - add_to_cart - Completed 'Add to cart' action
+2025-10-23 18:20:22 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Product added to cart successfully
+2025-10-23 18:20:22 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'cartur')
+2025-10-23 18:20:24 - TestDemoBlazeE2E_chrome - INFO - go_to_cart - Navigated to cart
+2025-10-23 18:20:26 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 1 elements: ('xpath', "//tbody[@id='tbodyid']//tr")
+2025-10-23 18:20:26 - TestDemoBlazeE2E_chrome - INFO - get_cart_items_count - Cart contains 1 item(s)
+2025-10-23 18:20:26 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'totalp')
+2025-10-23 18:20:26 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('id', 'totalp'): 360
+2025-10-23 18:20:26 - TestDemoBlazeE2E_chrome - INFO - get_total_price - Cart total price: $360
+2025-10-23 18:20:26 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Cart verified: 1 item(s), Total: $360
+2025-10-23 18:20:26 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Place Order')]")
+2025-10-23 18:20:27 - TestDemoBlazeE2E_chrome - INFO - place_order - Clicked 'Place Order'
+2025-10-23 18:20:29 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'name'): Cheryl Brennan
+2025-10-23 18:20:29 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'country'): USA
+2025-10-23 18:20:29 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'city'): New York
+2025-10-23 18:20:29 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'card'): 9031029520056609
+2025-10-23 18:20:29 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'month'): 12
+2025-10-23 18:20:29 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'year'): 2025
+2025-10-23 18:20:29 - TestDemoBlazeE2E_chrome - INFO - fill_order_form - Filled order form with shipping and payment details
+2025-10-23 18:20:29 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Purchase')]")
+2025-10-23 18:20:31 - TestDemoBlazeE2E_chrome - INFO - complete_purchase - Completed purchase
+2025-10-23 18:20:33 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//div[contains(@class, 'sweet-alert')]//h2[contains(text(), 'Thank you for your purchase!')]")
+2025-10-23 18:20:33 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//div[contains(@class, 'sweet-alert')]//h2[contains(text(), 'Thank you for your purchase!')]"): Thank you for your purchase!
+2025-10-23 18:20:33 - TestDemoBlazeE2E_chrome - INFO - get_confirmation_text - Order confirmation received: Thank you for your purchase!...
+2025-10-23 18:20:33 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Order placed successfully
+2025-10-23 18:20:33 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'OK')]")
+2025-10-23 18:20:33 - TestDemoBlazeE2E_chrome - INFO - close_confirmation - Closed confirmation modal
+2025-10-23 18:20:34 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'logout2')
+2025-10-23 18:20:34 - TestDemoBlazeE2E_chrome - INFO - logout - Logged out
+2025-10-23 18:20:36 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - User logged out successfully
+2025-10-23 18:20:37 - TestDemoBlazeE2E_chrome - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/e2e_complete_chrome_gw2_20251023_182036_934173_1_gw2_20251023_182036_934271_2.png
+2025-10-23 18:20:37 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Complete E2E shopping flow completed successfully on chrome
+2025-10-23 18:20:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:20:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

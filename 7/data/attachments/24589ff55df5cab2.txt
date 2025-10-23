@@ -1,0 +1,33 @@
+2025-10-23 19:42:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:42:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:42:13 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:42:13 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Starting true data-driven test with Excel
+2025-10-23 19:42:13 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Testing with Excel data: {'product_name': 'Samsung galaxy s6', 'category': 'Phones', 'expected_price': '360'}
+2025-10-23 19:42:13 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 19:42:15 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 19:42:18 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 19:42:20 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 19:42:22 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:42:22 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 19:42:22 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 19:42:22 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Successfully verified product: Samsung galaxy s6
+2025-10-23 19:42:24 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Testing with Excel data: {'product_name': 'Nokia lumia 1520', 'category': 'Phones', 'expected_price': '820'}
+2025-10-23 19:42:24 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 19:42:26 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 19:42:28 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Nokia lumia 1520')]")
+2025-10-23 19:42:30 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Nokia lumia 1520
+2025-10-23 19:42:32 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:42:32 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Nokia lumia 1520
+2025-10-23 19:42:32 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Nokia lumia 1520
+2025-10-23 19:42:32 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Successfully verified product: Nokia lumia 1520
+2025-10-23 19:42:34 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Testing with Excel data: {'product_name': 'Sony vaio i5', 'category': 'Laptops', 'expected_price': '790'}
+2025-10-23 19:42:34 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 19:42:36 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 19:42:39 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Sony vaio i5')]")
+2025-10-23 19:42:41 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Sony vaio i5
+2025-10-23 19:42:43 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 19:42:43 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Sony vaio i5
+2025-10-23 19:42:43 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Sony vaio i5
+2025-10-23 19:42:43 - TestDemoBlazeE2E_chrome - INFO - test_10_data_driven_excel - Successfully verified product: Sony vaio i5
+2025-10-23 19:42:45 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:42:45 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

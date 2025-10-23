@@ -1,0 +1,8 @@
+2025-10-23 19:43:30 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:43:30 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:43:31 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:43:31 - TestDemoBlazeE2E_chrome - INFO - test_12b_utility_demo_json - Demonstrating JSON write and read utility
+2025-10-23 19:43:31 - TestDemoBlazeE2E_chrome - INFO - test_12b_utility_demo_json - Successfully wrote data to data/test_output.json
+2025-10-23 19:43:31 - TestDemoBlazeE2E_chrome - INFO - test_12b_utility_demo_json - Successfully read back 2 user records from JSON.
+2025-10-23 19:43:31 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:43:31 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

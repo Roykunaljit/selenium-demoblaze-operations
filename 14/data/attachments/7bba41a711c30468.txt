@@ -1,0 +1,8 @@
+2025-10-23 21:02:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:02:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 21:02:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 21:02:56 - TestDemoBlazeE2E_chrome - INFO - test_13b_utility_demo_csv - Demonstrating CSV write and read utility
+2025-10-23 21:02:56 - TestDemoBlazeE2E_chrome - INFO - test_13b_utility_demo_csv - Successfully wrote data to data/test_output.csv
+2025-10-23 21:02:56 - TestDemoBlazeE2E_chrome - INFO - test_13b_utility_demo_csv - Successfully read back 2 records from CSV.
+2025-10-23 21:02:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 21:02:56 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

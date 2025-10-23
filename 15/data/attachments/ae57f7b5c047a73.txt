@@ -1,0 +1,73 @@
+2025-10-23 21:12:34 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:12:34 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 21:12:35 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 21:12:35 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Starting complete E2E shopping flow on chrome
+2025-10-23 21:12:35 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'signin2')
+2025-10-23 21:12:36 - TestDemoBlazeE2E_chrome - INFO - open_signup_modal - Opened signup modal
+2025-10-23 21:12:37 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-username'): Z2vHqCg4_chrome
+2025-10-23 21:12:37 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'sign-password'): Test@1234
+2025-10-23 21:12:37 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+2025-10-23 21:12:37 - TestDemoBlazeE2E_chrome - INFO - signup - Signed up with username: Z2vHqCg4_chrome
+2025-10-23 21:12:39 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Sign up successful.
+2025-10-23 21:12:39 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Signup successful for user: Z2vHqCg4_chrome
+2025-10-23 21:12:41 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 21:12:42 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 21:12:44 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginusername'): Z2vHqCg4_chrome
+2025-10-23 21:12:44 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): Test@1234
+2025-10-23 21:12:44 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 21:12:44 - TestDemoBlazeE2E_chrome - INFO - login - Logged in with username: Z2vHqCg4_chrome
+2025-10-23 21:12:44 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Login modal closed successfully
+2025-10-23 21:12:47 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 21:12:47 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('id', 'nameofuser'): Welcome Z2vHqCg4_chrome
+2025-10-23 21:12:47 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - User is logged in successfully
+2025-10-23 21:12:47 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nameofuser')
+2025-10-23 21:12:47 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('id', 'nameofuser'): Welcome Z2vHqCg4_chrome
+2025-10-23 21:12:47 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Welcome message verified for user: Z2vHqCg4_chrome
+2025-10-23 21:12:47 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 21:12:49 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 21:12:51 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 21:12:53 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 21:12:55 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 21:12:55 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 21:12:55 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 21:12:55 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h3[@class='price-container']")
+2025-10-23 21:12:55 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h3[@class='price-container']"): $360 *includes tax
+2025-10-23 21:12:55 - TestDemoBlazeE2E_chrome - INFO - get_product_price - Retrieved and cleaned product price: 360
+2025-10-23 21:12:55 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Product verified: Samsung galaxy s6 - $360
+2025-10-23 21:12:56 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Add to cart')]")
+2025-10-23 21:12:56 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Product added.
+2025-10-23 21:12:56 - TestDemoBlazeE2E_chrome - INFO - add_to_cart - Product added to cart. Alert: Product added.
+2025-10-23 21:12:58 - TestDemoBlazeE2E_chrome - INFO - add_to_cart - Completed 'Add to cart' action
+2025-10-23 21:12:58 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Product added to cart successfully
+2025-10-23 21:12:58 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'cartur')
+2025-10-23 21:13:00 - TestDemoBlazeE2E_chrome - INFO - go_to_cart - Navigated to cart
+2025-10-23 21:13:02 - TestDemoBlazeE2E_chrome - INFO - find_elements - Found 1 elements: ('xpath', "//tbody[@id='tbodyid']//tr")
+2025-10-23 21:13:02 - TestDemoBlazeE2E_chrome - INFO - get_cart_items_count - Cart contains 1 item(s)
+2025-10-23 21:13:02 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'totalp')
+2025-10-23 21:13:02 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('id', 'totalp'): 360
+2025-10-23 21:13:02 - TestDemoBlazeE2E_chrome - INFO - get_total_price - Cart total price: $360
+2025-10-23 21:13:02 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Cart verified: 1 item(s), Total: $360
+2025-10-23 21:13:02 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Place Order')]")
+2025-10-23 21:13:03 - TestDemoBlazeE2E_chrome - INFO - place_order - Clicked 'Place Order'
+2025-10-23 21:13:04 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'name'): James Rios
+2025-10-23 21:13:04 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'country'): USA
+2025-10-23 21:13:05 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'city'): New York
+2025-10-23 21:13:05 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'card'): 9073632840846970
+2025-10-23 21:13:05 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'month'): 12
+2025-10-23 21:13:05 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'year'): 2025
+2025-10-23 21:13:05 - TestDemoBlazeE2E_chrome - INFO - fill_order_form - Filled order form with shipping and payment details
+2025-10-23 21:13:05 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Purchase')]")
+2025-10-23 21:13:07 - TestDemoBlazeE2E_chrome - INFO - complete_purchase - Completed purchase
+2025-10-23 21:13:09 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//div[contains(@class, 'sweet-alert')]//h2[contains(text(), 'Thank you for your purchase!')]")
+2025-10-23 21:13:09 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//div[contains(@class, 'sweet-alert')]//h2[contains(text(), 'Thank you for your purchase!')]"): Thank you for your purchase!
+2025-10-23 21:13:09 - TestDemoBlazeE2E_chrome - INFO - get_confirmation_text - Order confirmation received: Thank you for your purchase!...
+2025-10-23 21:13:09 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Order placed successfully
+2025-10-23 21:13:09 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'OK')]")
+2025-10-23 21:13:09 - TestDemoBlazeE2E_chrome - INFO - close_confirmation - Closed confirmation modal
+2025-10-23 21:13:10 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'logout2')
+2025-10-23 21:13:10 - TestDemoBlazeE2E_chrome - INFO - logout - Logged out
+2025-10-23 21:13:12 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - User logged out successfully
+2025-10-23 21:13:12 - TestDemoBlazeE2E_chrome - INFO - take_screenshot - Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/reports/screenshots/e2e_complete_chrome_master_20251023_211312_657360_4_master_20251023_211312_657471_5.png
+2025-10-23 21:13:12 - TestDemoBlazeE2E_chrome - INFO - test_20_complete_e2e_flow - Complete E2E shopping flow completed successfully on chrome
+2025-10-23 21:13:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 21:13:12 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

@@ -1,0 +1,15 @@
+2025-10-23 16:48:13 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:48:13 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:48:14 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:48:14 - TestDemoBlazeE2E - INFO - test_29_log_collection - Testing log collection
+2025-10-23 16:48:14 - TestDemoBlazeE2E - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 16:48:15 - TestDemoBlazeE2E - INFO - open_login_modal - Opened login modal
+2025-10-23 16:48:15 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'loginusername'): test
+2025-10-23 16:48:15 - TestDemoBlazeE2E - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): test
+2025-10-23 16:48:15 - TestDemoBlazeE2E - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 16:48:15 - TestDemoBlazeE2E - INFO - login - Logged in with username: test
+2025-10-23 16:48:25 - TestDemoBlazeE2E - WARNING - accept_alert - No alert present
+2025-10-23 16:48:25 - TestDemoBlazeE2E - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761238094093}
+2025-10-23 16:48:25 - TestDemoBlazeE2E - INFO - test_29_log_collection - Browser log: {'level': 'WARNING', 'message': 'https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \\"reloadSourceOnError\\" already exists. You may want to avoid re-registering plugins!"', 'source': 'console-api', 'timestamp': 1761238096007}
+2025-10-23 16:48:25 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:48:25 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

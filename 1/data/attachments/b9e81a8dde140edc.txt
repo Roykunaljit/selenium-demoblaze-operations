@@ -1,0 +1,9 @@
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================
+2025-10-23 16:46:03 - TestDemoBlazeE2E - INFO - setup_and_teardown - Starting new test
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - setup_and_teardown - Navigated to DemoBlaze website
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - test_12_data_driven_json - Testing with JSON data
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - test_12_data_driven_json - Processing JSON user: jsonuser1
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - test_12_data_driven_json - Processing JSON user: jsonuser2
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - test_12_data_driven_json - JSON data testing completed
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - setup_and_teardown - Test completed
+2025-10-23 16:46:04 - TestDemoBlazeE2E - INFO - setup_and_teardown - ==================================================

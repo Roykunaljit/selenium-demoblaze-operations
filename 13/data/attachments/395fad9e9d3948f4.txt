@@ -1,0 +1,13 @@
+2025-10-23 20:49:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 20:49:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 20:49:58 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 20:49:58 - TestDemoBlazeE2E_chrome - INFO - test_16_element_states - Testing element states
+2025-10-23 20:49:58 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'nava')
+2025-10-23 20:49:58 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'cartur')
+2025-10-23 20:49:59 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 20:50:00 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 20:50:01 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 20:50:01 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//div[@id='logInModal']//button[contains(text(),'Close')]")
+2025-10-23 20:50:01 - TestDemoBlazeE2E_chrome - INFO - test_16_element_states - Element state validations completed
+2025-10-23 20:50:01 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:50:01 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

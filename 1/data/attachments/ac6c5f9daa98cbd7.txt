@@ -1,0 +1,16 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:279 Testing cookie operations
+INFO     TestDemoBlazeE2E:base_page.py:293 Got 0 cookies
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:282 Found 0 cookies
+INFO     TestDemoBlazeE2E:base_page.py:299 Added cookie: {'name': 'test_cookie', 'value': 'test_value_123', 'path': '/', 'domain': '.demoblaze.com'}
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:291 Added custom cookie
+INFO     TestDemoBlazeE2E:base_page.py:314 Page refreshed
+INFO     TestDemoBlazeE2E:base_page.py:293 Got 2 cookies
+INFO     TestDemoBlazeE2E:base_page.py:304 Deleted cookie: test_cookie
+INFO     TestDemoBlazeE2E:base_page.py:309 Deleted all cookies
+INFO     TestDemoBlazeE2E:base_page.py:293 Got 0 cookies
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:301 Cookies after deletion: 0
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

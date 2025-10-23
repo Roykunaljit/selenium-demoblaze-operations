@@ -1,0 +1,3 @@
+2025-10-23 20:22:19 - TestLinkChecker - INFO - setup - Initializing browser: chrome
+2025-10-23 20:22:20 - TestLinkChecker - INFO - test_check_internal_links - Testing internal links on https://www.w3.org/
+2025-10-23 20:22:30 - TestLinkChecker - INFO - test_check_internal_links - [PASS] Found 87 internal links

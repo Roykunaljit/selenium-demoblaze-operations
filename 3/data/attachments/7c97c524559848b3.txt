@@ -1,0 +1,10 @@
+2025-10-23 18:02:16 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:02:16 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:02:17 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:02:17 - TestDemoBlazeE2E_chrome - INFO - test_26_categories - Testing categories
+2025-10-23 18:02:18 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 18:02:20 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 18:02:43 - TestDemoBlazeE2E_chrome - ERROR - find_elements - Elements not found: ('class name', 'card')
+2025-10-23 18:02:43 - TestDemoBlazeE2E_chrome - INFO - get_all_products - Found 0 products
+2025-10-23 18:02:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:02:43 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

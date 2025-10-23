@@ -1,0 +1,28 @@
+
+============================================================
+PYTEST SESSION STARTED - Browser: EDGE
+============================================================
+
+[BrowserConfig] Initializing edge driver...
+[BrowserConfig] Failed with system driver: Message: session not created: No matching capabilities found
+Stacktrace:
+#0 0x562227d91fba <unknown>
+#1 0x5622278166d0 <unknown>
+#2 0x56222789ae12 <unknown>
+#3 0x562227899f9e <unknown>
+#4 0x56222789bb72 <unknown>
+#5 0x56222789b946 <unknown>
+#6 0x56222788dc03 <unknown>
+#7 0x56222785a7a8 <unknown>
+#8 0x56222785b421 <unknown>
+#9 0x562227d56b28 <unknown>
+#10 0x562227d5a87f <unknown>
+#11 0x562227d3ec49 <unknown>
+#12 0x562227d5b405 <unknown>
+#13 0x562227d244ff <unknown>
+#14 0x562227d7f258 <unknown>
+#15 0x562227d7f432 <unknown>
+#16 0x562227d90fa3 <unknown>
+#17 0x7f1b5949caa4 <unknown>
+#18 0x7f1b59529c6c <unknown>
+

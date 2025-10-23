@@ -1,0 +1,58 @@
+2025-10-23 17:58:36 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 17:58:36 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 17:58:37 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 17:58:37 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Starting true data-driven test with CSV
+2025-10-23 17:58:37 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser1', 'password': 'Test@123', 'product': 'Samsung galaxy s6', 'category': 'Phones'}
+2025-10-23 17:58:37 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 17:58:39 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: phones
+2025-10-23 17:58:45 - TestDemoBlazeE2E_chrome - ERROR - click - Failed to click element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]"). Error: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.207); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+#0 0x55b713ae3fba <unknown>
+#1 0x55b7135686d0 <unknown>
+#2 0x55b71356f358 <unknown>
+#3 0x55b713571e9a <unknown>
+#4 0x55b713606b3e <unknown>
+#5 0x55b7135dfe32 <unknown>
+#6 0x55b713605b54 <unknown>
+#7 0x55b7135dfc03 <unknown>
+#8 0x55b7135ac7a8 <unknown>
+#9 0x55b7135ad421 <unknown>
+#10 0x55b713aa8b28 <unknown>
+#11 0x55b713aac87f <unknown>
+#12 0x55b713a90c49 <unknown>
+#13 0x55b713aad405 <unknown>
+#14 0x55b713a764ff <unknown>
+#15 0x55b713ad1258 <unknown>
+#16 0x55b713ad1432 <unknown>
+#17 0x55b713ae2fa3 <unknown>
+#18 0x7effe7e9caa4 <unknown>
+#19 0x7effe7f29c6c <unknown>
+
+2025-10-23 17:58:45 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 17:58:46 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element using JavaScript: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+2025-10-23 17:58:48 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: Samsung galaxy s6
+2025-10-23 17:58:55 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 17:58:55 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+2025-10-23 17:58:55 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: Samsung galaxy s6
+2025-10-23 17:58:55 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: Samsung galaxy s6
+2025-10-23 17:58:57 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser2', 'password': 'Test@456', 'product': 'MacBook air', 'category': 'Laptops'}
+2025-10-23 17:58:57 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Laptops')]")
+2025-10-23 17:58:59 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: laptops
+2025-10-23 17:59:08 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'MacBook air')]")
+2025-10-23 17:59:10 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: MacBook air
+2025-10-23 17:59:20 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 17:59:20 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): MacBook air
+2025-10-23 17:59:20 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: MacBook air
+2025-10-23 17:59:20 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: MacBook air
+2025-10-23 17:59:22 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Testing with CSV data: {'username': 'testuser3', 'password': 'Test@789', 'product': 'ASUS Full HD', 'category': 'Monitors'}
+2025-10-23 17:59:22 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Monitors')]")
+2025-10-23 17:59:24 - TestDemoBlazeE2E_chrome - INFO - select_category - Selected category: monitors
+2025-10-23 17:59:39 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//a[contains(text(), 'ASUS Full HD')]")
+2025-10-23 17:59:41 - TestDemoBlazeE2E_chrome - INFO - click_product - Clicked on product: ASUS Full HD
+2025-10-23 17:59:53 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('xpath', "//h2[@class='name']")
+2025-10-23 17:59:53 - TestDemoBlazeE2E_chrome - INFO - get_text - Got text from element ('xpath', "//h2[@class='name']"): ASUS Full HD
+2025-10-23 17:59:53 - TestDemoBlazeE2E_chrome - INFO - get_product_name - Retrieved product name: ASUS Full HD
+2025-10-23 17:59:53 - TestDemoBlazeE2E_chrome - INFO - test_13_data_driven_csv - Successfully verified product: ASUS Full HD
+2025-10-23 17:59:55 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 17:59:55 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

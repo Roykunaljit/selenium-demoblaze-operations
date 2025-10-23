@@ -1,0 +1,31 @@
+2025-10-23 18:13:36 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:13:40 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Logo element found
+2025-10-23 18:13:40 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Home menu element found
+2025-10-23 18:13:40 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Cart menu element found
+2025-10-23 18:13:40 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Login menu element found
+2025-10-23 18:13:40 - TestPageFactory - INFO - test_page_factory_single_elements - [PASS] Single elements test passed
+2025-10-23 18:13:40 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:13:44 - TestPageFactory - INFO - test_page_factory_login_flow - Starting login flow test...
+2025-10-23 18:13:44 - TestPageFactory - INFO - test_page_factory_login_flow - Generated username: pqiwnlvu
+2025-10-23 18:13:44 - TestPageFactory - INFO - test_page_factory_login_flow - Opening signup modal...
+2025-10-23 18:13:47 - TestPageFactory - INFO - test_page_factory_login_flow - Signing up with username: pqiwnlvu
+2025-10-23 18:13:50 - TestPageFactory - INFO - test_page_factory_login_flow - Signup alert: Sign up successful.
+2025-10-23 18:13:50 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Signup successful
+2025-10-23 18:13:54 - TestPageFactory - INFO - test_page_factory_login_flow - Opening login modal...
+2025-10-23 18:13:56 - TestPageFactory - INFO - test_page_factory_login_flow - Logging in with username: pqiwnlvu
+2025-10-23 18:14:01 - TestPageFactory - INFO - test_page_factory_login_flow - Verifying login...
+2025-10-23 18:14:01 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User is logged in
+2025-10-23 18:14:01 - TestPageFactory - INFO - test_page_factory_login_flow - Welcome message: Welcome pqiwnlvu
+2025-10-23 18:14:01 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Welcome message contains username
+2025-10-23 18:14:01 - TestPageFactory - INFO - test_page_factory_login_flow - Logging out...
+2025-10-23 18:14:04 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] User logged out successfully
+2025-10-23 18:14:04 - TestPageFactory - INFO - test_page_factory_login_flow - [PASS] Login flow test completed successfully
+2025-10-23 18:14:04 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:14:08 - TestPageFactory - INFO - test_page_factory_menu_navigation - Testing menu navigation...
+2025-10-23 18:14:08 - TestPageFactory - INFO - test_page_factory_menu_navigation - Navigating to Phones...
+2025-10-23 18:14:10 - TestPageFactory - INFO - test_page_factory_menu_navigation - [PASS] Navigated to Phones
+2025-10-23 18:14:10 - TestPageFactory - INFO - test_page_factory_menu_navigation - Navigating to Laptops...
+2025-10-23 18:14:12 - TestPageFactory - INFO - test_page_factory_menu_navigation - [PASS] Navigated to Laptops
+2025-10-23 18:14:12 - TestPageFactory - INFO - test_page_factory_menu_navigation - Navigating to Monitors...
+2025-10-23 18:14:14 - TestPageFactory - INFO - test_page_factory_menu_navigation - [PASS] Navigated to Monitors
+2025-10-23 18:14:14 - TestPageFactory - INFO - test_page_factory_menu_navigation - [PASS] Menu navigation test completed

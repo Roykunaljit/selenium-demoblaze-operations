@@ -1,0 +1,9 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:479 Testing performance metrics
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:487 Page load time: 48.10000000000582 ms
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:490 Browser logs count: 2
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:492 Performance metrics collected
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

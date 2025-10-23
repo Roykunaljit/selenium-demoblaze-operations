@@ -1,0 +1,8 @@
+2025-10-23 19:56:12 - TestFileUpload - INFO - setup - Initializing browser: chrome
+2025-10-23 19:56:13 - TestFileUpload - INFO - _create_test_html - Test HTML file created at: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/selenium_demoblaze_framework/tests/../test_pages/multiple_upload_test.html
+2025-10-23 19:56:13 - TestFileUpload - INFO - setup - HTTP Server started on port 34181, serving from /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/selenium_demoblaze_framework/tests/../test_pages
+2025-10-23 19:56:13 - TestFileUpload - INFO - create_test_file - Test file created: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/test_files/file_0.txt
+2025-10-23 19:56:13 - TestFileUpload - INFO - create_test_file - Test file created: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/test_files/file_1.txt
+2025-10-23 19:56:13 - TestFileUpload - INFO - create_test_file - Test file created: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/test_files/file_2.txt
+2025-10-23 19:56:13 - TestFileUpload - INFO - upload_multiple_files - Multiple files uploaded: 3 files
+2025-10-23 19:56:13 - TestFileUpload - INFO - test_upload_multiple_files_local - [PASS] Multiple file upload test passed (Local Server)

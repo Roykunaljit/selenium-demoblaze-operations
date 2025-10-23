@@ -1,0 +1,17 @@
+2025-10-23 19:41:41 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:41:41 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:41:42 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:41:42 - TestDemoBlazeE2E_chrome - INFO - test_03_keyboard_operations - Testing keyboard operations
+2025-10-23 19:41:43 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 19:41:44 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 19:41:45 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 19:41:46 - TestDemoBlazeE2E_chrome - INFO - send_keys_slowly - Sent keys slowly to element ('id', 'loginusername'): test
+2025-10-23 19:41:46 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 19:41:46 - TestDemoBlazeE2E_chrome - INFO - key_combination - Pressed key combination on element ('id', 'loginusername'): ('\ue009', 'a')
+2025-10-23 19:41:46 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 19:41:47 - TestDemoBlazeE2E_chrome - INFO - key_combination - Pressed key combination on element ('id', 'loginusername'): ('\ue009', 'c')
+2025-10-23 19:41:47 - TestDemoBlazeE2E_chrome - INFO - find_element - Found element: ('id', 'loginusername')
+2025-10-23 19:41:47 - TestDemoBlazeE2E_chrome - INFO - press_key - Pressed key  on element: ('id', 'loginusername')
+2025-10-23 19:41:49 - TestDemoBlazeE2E_chrome - INFO - test_03_keyboard_operations - Keyboard operations completed
+2025-10-23 19:41:49 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:41:49 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

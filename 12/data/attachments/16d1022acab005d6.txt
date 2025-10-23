@@ -1,0 +1,23 @@
+2025-10-23 20:32:10 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 20:32:10 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 20:32:11 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 20:32:11 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Testing mouse operations on DemoBlaze - chrome
+2025-10-23 20:32:11 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Home
+2025-10-23 20:32:12 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Home' — color should be blue now
+2025-10-23 20:32:12 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Contact
+2025-10-23 20:32:14 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Contact' — color should be blue now
+2025-10-23 20:32:14 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: About us
+2025-10-23 20:32:15 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'About us' — color should be blue now
+2025-10-23 20:32:15 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Cart
+2025-10-23 20:32:17 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Cart' — color should be blue now
+2025-10-23 20:32:17 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Log in
+2025-10-23 20:32:18 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Log in' — color should be blue now
+2025-10-23 20:32:18 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovering over: Sign up
+2025-10-23 20:32:20 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Hovered over 'Sign up' — color should be blue now
+2025-10-23 20:32:20 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Performing right-click on logo
+2025-10-23 20:32:21 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Right-click performed and canceled
+2025-10-23 20:32:21 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Double-clicking first product title
+2025-10-23 20:32:24 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - Double-clicked first product title — page should have changed
+2025-10-23 20:32:24 - TestDemoBlazeE2E_chrome - INFO - test_02_mouse_operations - All mouse operations completed successfully
+2025-10-23 20:32:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:32:24 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

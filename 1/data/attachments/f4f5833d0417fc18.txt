@@ -1,0 +1,15 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:645 Testing invalid login
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'login2')
+INFO     TestDemoBlazeE2E:home_page.py:175 Opened login modal
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'loginusername'): invaliduser
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'loginpassword'): wrongpass
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+INFO     TestDemoBlazeE2E:home_page.py:182 Logged in with username: invaliduser
+INFO     TestDemoBlazeE2E:base_page.py:260 Accepted alert with text: Wrong password.
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nameofuser')
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('id', 'nameofuser'):
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

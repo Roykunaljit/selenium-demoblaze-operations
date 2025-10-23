@@ -1,0 +1,18 @@
+2025-10-23 19:57:18 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:57:18 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 19:57:19 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 19:57:19 - TestDemoBlazeE2E_edge - INFO - test_19_faker_data_generation - Testing with Faker generated data
+2025-10-23 19:57:19 - TestDemoBlazeE2E_edge - INFO - test_19_faker_data_generation - Generated email: fchan@example.org
+2025-10-23 19:57:19 - TestDemoBlazeE2E_edge - INFO - test_19_faker_data_generation - Generated name: Angela Warren
+2025-10-23 19:57:19 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Contact')]")
+2025-10-23 19:57:20 - TestDemoBlazeE2E_edge - INFO - open_contact_modal - Opened contact modal
+2025-10-23 19:57:21 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'recipient-email'): fchan@example.org
+2025-10-23 19:57:21 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'recipient-name'): Angela Warren
+2025-10-23 19:57:22 - TestDemoBlazeE2E_edge - INFO - send_keys - Sent keys to element ('id', 'message-text'): Message from Angela Warren
+2025-10-23 19:57:22 - TestDemoBlazeE2E_edge - INFO - fill_contact_form - Filled contact form with email: fchan@example.org, name: Angela Warren
+2025-10-23 19:57:22 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Send message')]")
+2025-10-23 19:57:22 - TestDemoBlazeE2E_edge - INFO - send_contact_message - Sent contact message
+2025-10-23 19:57:22 - TestDemoBlazeE2E_edge - INFO - accept_alert - Accepted alert with text: Thanks for the message!!
+2025-10-23 19:57:22 - TestDemoBlazeE2E_edge - INFO - test_19_faker_data_generation - Faker data testing completed
+2025-10-23 19:57:22 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 19:57:22 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

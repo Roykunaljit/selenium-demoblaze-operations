@@ -1,0 +1,10 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:214 Testing JavaScript execution
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:220 Page height: 1872
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nava')
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:227 Logo text:  PRODUCT STORE
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:247 Async result: Async execution complete
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

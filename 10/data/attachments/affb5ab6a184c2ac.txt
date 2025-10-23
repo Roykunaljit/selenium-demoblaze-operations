@@ -1,0 +1,76 @@
+INFO     TestPageFactory:test_page_factory.py:497 Initializing browser: edge
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:63 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.9.23/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:120 Executing process: /opt/hostedtoolcache/Python/3.9.23/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager --browser MicrosoftEdge --debug --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Found msedgedriver 140.0.3485.94 in PATH: /usr/bin/msedgedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 MicrosoftEdge detected at /usr/bin/microsoft-edge
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Running command: /usr/bin/microsoft-edge --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Output: "Microsoft Edge 141.0.3537.99 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Detected browser: MicrosoftEdge 141.0.3537.99
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Reading msedgedriver version from https://msedgedriver.azureedge.net/LATEST_RELEASE_141_LINUX
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:135 Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_141_LINUX): error trying to connect: dns error: failed to lookup address information: Name does not resolve
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:135 The msedgedriver version (140.0.3485.94) detected in PATH at /usr/bin/msedgedriver might not be compatible with the detected MicrosoftEdge version (141.0.3537.99); currently, msedgedriver  is recommended for MicrosoftEdge 141.*, so it is advised to delete the driver in PATH and retry
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Driver path: /usr/bin/msedgedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Browser path: /usr/bin/microsoft-edge
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:98 Using driver at: /usr/bin/msedgedriver
+DEBUG    selenium.webdriver.common.service:service.py:215 Started executable: `/usr/bin/msedgedriver` in a child process with pid: 9047
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "MicrosoftEdge", "pageLoadStrategy": "normal", "browserVersion": null, "ms:edgeOptions": {"prefs": {"download.default_directory": "/home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/downloads", "download.prompt_for_download": false, "download.directory_upgrade": true, "safebrowsing.enabled": false, "profile.default_content_settings.popups": 0, "profile.default_content_setting_values.notifications": 2}, "excludeSwitches": ["enable-logging", "enable-automation"], "useAutomationExtension": false, "extensions": [], "binary": "/usr/bin/microsoft-edge", "args": ["--headless=new", "--window-size=1920,1080", "--start-maximized", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--disable-software-rasterizer", "--disable-blink-features=AutomationControlled", "--single-process", "--disable-features=VizDisplayCompositor", "--disable-setuid-sandbox", "--disable-extensions", "--disable-popup-blocking", "--ignore-certificate-errors"]}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): localhost:51663
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"MicrosoftEdge","browserVersion":"141.0.3537.99","fedcm:accounts":true,"ms:edgeOptions":{"debuggerAddress":"localhost:37755"},"msedge":{"msedgedriverVersion":"140.0.3485.94 (9831641b47fbddfcc786ceb18c2e499530dc5e2b)","userDataDir":"/tmp/.com.microsoft.Edge.qjoxuM"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"bb299e1fb812981fc86ac4183185b257"}} | headers=HTTPHeaderDict({'Content-Length': '817', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/timeouts {"implicit": 10000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session/bb299e1fb812981fc86ac4183185b257/timeouts HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/timeouts {"pageLoad": 60000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session/bb299e1fb812981fc86ac4183185b257/timeouts HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/window/maximize {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session/bb299e1fb812981fc86ac4183185b257/window/maximize HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":{"height":600,"width":800,"x":0,"y":0}} | headers=HTTPHeaderDict({'Content-Length': '48', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/url {"url": "https://www.demoblaze.com"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session/bb299e1fb812981fc86ac4183185b257/url HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+INFO     TestPageFactory:test_page_factory.py:519 === Testing PURE Page Factory - Logo Click ===
+INFO     TestPageFactory:test_page_factory.py:522 Step 1: Navigating to cart using Page Factory...
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/element {"using": "css selector", "value": "[id=\"cartur\"]"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session/bb299e1fb812981fc86ac4183185b257/element HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A5728876D5E1BDB6F179949383D7E436.d.A464A07FD044CAC7231322AB85642787.e.43"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/element/f.A5728876D5E1BDB6F179949383D7E436.d.A464A07FD044CAC7231322AB85642787.e.43/click {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session/bb299e1fb812981fc86ac4183185b257/element/f.A5728876D5E1BDB6F179949383D7E436.d.A464A07FD044CAC7231322AB85642787.e.43/click HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 GET http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/url {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "GET /session/bb299e1fb812981fc86ac4183185b257/url HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":"https://www.demoblaze.com/cart.html"} | headers=HTTPHeaderDict({'Content-Length': '47', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+INFO     TestPageFactory:test_page_factory.py:532 ✓ Successfully navigated to cart
+INFO     TestPageFactory:test_page_factory.py:535 Step 2: Clicking logo using Page Factory...
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/element {"using": "css selector", "value": "[id=\"nava\"]"}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session/bb299e1fb812981fc86ac4183185b257/element HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A5728876D5E1BDB6F179949383D7E436.d.6EDF67EDDBA2522B3BAE53F27B90FB77.e.71"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 POST http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/element/f.A5728876D5E1BDB6F179949383D7E436.d.6EDF67EDDBA2522B3BAE53F27B90FB77.e.71/click {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "POST /session/bb299e1fb812981fc86ac4183185b257/element/f.A5728876D5E1BDB6F179949383D7E436.d.6EDF67EDDBA2522B3BAE53F27B90FB77.e.71/click HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 GET http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/title {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "GET /session/bb299e1fb812981fc86ac4183185b257/title HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":"STORE"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 GET http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257/url {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "GET /session/bb299e1fb812981fc86ac4183185b257/url HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":"https://www.demoblaze.com/index.html"} | headers=HTTPHeaderDict({'Content-Length': '48', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request
+INFO     TestPageFactory:test_page_factory.py:543 Page title: STORE
+INFO     TestPageFactory:test_page_factory.py:544 Current URL: https://www.demoblaze.com/index.html
+INFO     TestPageFactory:test_page_factory.py:550 ✓ Logo click successful - returned to home page
+INFO     TestPageFactory:test_page_factory.py:551 [PASS] Pure Page Factory logo click test passed! 🎉
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:313 DELETE http://localhost:51663/session/bb299e1fb812981fc86ac4183185b257 {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:51663 "DELETE /session/bb299e1fb812981fc86ac4183185b257 HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:329 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:356 Finished Request

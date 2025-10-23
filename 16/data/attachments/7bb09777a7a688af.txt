@@ -1,0 +1,16 @@
+2025-10-23 21:10:52 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:10:52 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - test_06_cookie_operations - Testing cookie operations
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - get_cookies - Got 1 cookies
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - test_06_cookie_operations - Found 1 cookies
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - add_cookie - Added cookie: {'name': 'test_cookie', 'value': 'test_value_123', 'path': '/', 'domain': '.demoblaze.com'}
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - test_06_cookie_operations - Added custom cookie
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - refresh_page - Page refreshed
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - get_cookies - Got 2 cookies
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - delete_cookie - Deleted cookie: test_cookie
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - delete_all_cookies - Deleted all cookies
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - get_cookies - Got 0 cookies
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - test_06_cookie_operations - Cookies after deletion: 0
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:10:53 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

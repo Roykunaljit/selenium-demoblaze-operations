@@ -1,0 +1,9 @@
+2025-10-23 20:49:53 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 20:49:53 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 20:49:54 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 20:49:54 - TestDemoBlazeE2E_chrome - INFO - test_15_performance_metrics - Testing performance metrics
+2025-10-23 20:49:57 - TestDemoBlazeE2E_chrome - INFO - test_15_performance_metrics - Page load time: 45.89999999999418 ms
+2025-10-23 20:49:57 - TestDemoBlazeE2E_chrome - INFO - test_15_performance_metrics - Browser logs count: 2
+2025-10-23 20:49:57 - TestDemoBlazeE2E_chrome - INFO - test_15_performance_metrics - Performance metrics collected
+2025-10-23 20:49:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 20:49:57 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

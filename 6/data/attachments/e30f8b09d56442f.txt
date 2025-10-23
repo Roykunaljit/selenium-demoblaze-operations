@@ -1,0 +1,13 @@
+2025-10-23 19:38:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 19:38:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 19:38:33 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 19:38:33 - TestDemoBlazeE2E_chrome - INFO - test_21_invalid_login - Testing invalid login
+2025-10-23 19:38:34 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('id', 'login2')
+2025-10-23 19:38:35 - TestDemoBlazeE2E_chrome - INFO - open_login_modal - Opened login modal
+2025-10-23 19:38:36 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginusername'): invaliduser
+2025-10-23 19:38:36 - TestDemoBlazeE2E_chrome - INFO - send_keys - Sent keys to element ('id', 'loginpassword'): wrongpass
+2025-10-23 19:38:36 - TestDemoBlazeE2E_chrome - INFO - click - Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+2025-10-23 19:38:36 - TestDemoBlazeE2E_chrome - INFO - login - Logged in with username: invaliduser
+2025-10-23 19:38:40 - TestDemoBlazeE2E_chrome - INFO - accept_alert - Accepted alert with text: Wrong password.
+2025-10-23 19:38:40 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 19:38:40 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

@@ -1,0 +1,16 @@
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 18:19:03 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - test_06_cookie_operations - Testing cookie operations
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - get_cookies - Got 0 cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - test_06_cookie_operations - Found 0 cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - add_cookie - Added cookie: {'name': 'test_cookie', 'value': 'test_value_123', 'path': '/', 'domain': '.demoblaze.com'}
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - test_06_cookie_operations - Added custom cookie
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - refresh_page - Page refreshed
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - get_cookies - Got 2 cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - delete_cookie - Deleted cookie: test_cookie
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - delete_all_cookies - Deleted all cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - get_cookies - Got 0 cookies
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - test_06_cookie_operations - Cookies after deletion: 0
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 18:19:04 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

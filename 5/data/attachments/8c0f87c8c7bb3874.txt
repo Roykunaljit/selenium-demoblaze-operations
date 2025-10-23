@@ -1,0 +1,10 @@
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:1142 ==================================================
+INFO     TestDemoBlazeE2E_edge:test_demoblaze_e2e.py:1143 Starting new test on EDGE
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:63 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.9.23/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:120 Executing process: /opt/hostedtoolcache/Python/3.9.23/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager --browser MicrosoftEdge --debug --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 msedgedriver not found in PATH
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 MicrosoftEdge detected at /usr/bin/microsoft-edge
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Running command: /usr/bin/microsoft-edge --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Output: "Microsoft Edge 141.0.3537.92 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Detected browser: MicrosoftEdge 141.0.3537.92
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:137 Reading msedgedriver version from https://msedgedriver.azureedge.net/LATEST_RELEASE_141_LINUX

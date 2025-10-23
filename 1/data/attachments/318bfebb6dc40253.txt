@@ -1,0 +1,9 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:783 Performing cleanup
+INFO     TestDemoBlazeE2E:base_page.py:309 Deleted all cookies
+INFO     TestDemoBlazeE2E:base_page.py:314 Page refreshed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:790 Cleanup completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

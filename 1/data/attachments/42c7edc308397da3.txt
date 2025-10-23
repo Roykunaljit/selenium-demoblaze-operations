@@ -1,0 +1,4 @@
+INFO     TestPageFactory:home_page_factory.py:259 Found product: Samsung galaxy s6
+INFO     TestPageFactory:test_page_factory.py:302 Found product: Samsung
+INFO     TestPageFactory:home_page_factory.py:265 Products on page: ['Samsung galaxy s6', 'Nokia lumia 1520', 'Nexus 6', 'Samsung galaxy s7', 'Iphone 6 32gb', 'Sony xperia z5', 'HTC One M9', 'Sony vaio i5', 'Sony vaio i7']
+INFO     TestPageFactory:test_page_factory.py:311 [PASS] Search functionality test passed

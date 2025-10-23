@@ -1,0 +1,38 @@
+2025-10-23 21:12:17 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:12:17 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Starting new test on CHROME
+2025-10-23 21:12:18 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Navigated to DemoBlaze website on chrome
+2025-10-23 21:12:18 - TestDemoBlazeE2E_chrome - INFO - test_33_radio_button_demo - Testing radio button selection
+2025-10-23 21:12:19 - TestDemoBlazeE2E_chrome - WARNING - test_33_radio_button_demo - Selenium Easy failed: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=140.0.7339.207)
+Stacktrace:
+#0 0x558993a85fba <unknown>
+#1 0x55899350a6d0 <unknown>
+#2 0x5589935018f8 <unknown>
+#3 0x5589934f2cb6 <unknown>
+#4 0x5589934f4a00 <unknown>
+#5 0x5589934f305e <unknown>
+#6 0x5589934f29dc <unknown>
+#7 0x5589934f26b5 <unknown>
+#8 0x5589934f053b <unknown>
+#9 0x5589934f0d1a <unknown>
+#10 0x55899350dbe9 <unknown>
+#11 0x5589935a8715 <unknown>
+#12 0x558993581e32 <unknown>
+#13 0x5589935a7b54 <unknown>
+#14 0x558993581c03 <unknown>
+#15 0x55899354e7a8 <unknown>
+#16 0x55899354f421 <unknown>
+#17 0x558993a4ab28 <unknown>
+#18 0x558993a4e87f <unknown>
+#19 0x558993a32c49 <unknown>
+#20 0x558993a4f405 <unknown>
+#21 0x558993a184ff <unknown>
+#22 0x558993a73258 <unknown>
+#23 0x558993a73432 <unknown>
+#24 0x558993a84fa3 <unknown>
+#25 0x7f3904e9caa4 <unknown>
+#26 0x7f3904f29c6c <unknown>
+
+2025-10-23 21:12:22 - TestDemoBlazeE2E_chrome - INFO - test_33_radio_button_demo - Radio button test passed on demoqa
+2025-10-23 21:12:22 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - Test completed on chrome
+2025-10-23 21:12:22 - TestDemoBlazeE2E_chrome - INFO - setup_and_teardown - ==================================================

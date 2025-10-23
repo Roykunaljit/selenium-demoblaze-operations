@@ -1,0 +1,12 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:327 Testing screenshot operations
+INFO     TestDemoBlazeE2E:utility_methods.py:36 Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/screenshots/full_page.png
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nava')
+INFO     TestDemoBlazeE2E:utility_methods.py:49 Element screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/screenshots/logo_screenshot.png
+INFO     TestDemoBlazeE2E:base_page.py:48 Found 9 elements: ('class name', 'card')
+INFO     TestDemoBlazeE2E:utility_methods.py:36 Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/screenshots/highlighted_element.png
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:338 Screenshot operations completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

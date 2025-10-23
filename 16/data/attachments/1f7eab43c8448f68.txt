@@ -1,0 +1,11 @@
+2025-10-23 21:10:56 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================
+2025-10-23 21:10:56 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Starting new test on EDGE
+2025-10-23 21:10:57 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Navigated to DemoBlaze website on edge
+2025-10-23 21:10:57 - TestDemoBlazeE2E_edge - INFO - test_09_wait_strategies - Testing wait strategies
+2025-10-23 21:10:58 - TestDemoBlazeE2E_edge - INFO - wait_for_element_visible - Element is visible: ('id', 'nava')
+2025-10-23 21:10:58 - TestDemoBlazeE2E_edge - INFO - click - Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+2025-10-23 21:11:00 - TestDemoBlazeE2E_edge - INFO - select_category - Selected category: phones
+2025-10-23 21:11:00 - TestDemoBlazeE2E_edge - INFO - wait_for_element_visible - Element is visible: ('xpath', "//a[contains(text(),'Samsung galaxy s6')]")
+2025-10-23 21:11:00 - TestDemoBlazeE2E_edge - INFO - test_09_wait_strategies - Wait strategies tested successfully
+2025-10-23 21:11:00 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - Test completed on edge
+2025-10-23 21:11:00 - TestDemoBlazeE2E_edge - INFO - setup_and_teardown - ==================================================

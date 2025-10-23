@@ -1,0 +1,16 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:527 Testing browser navigation
+INFO     TestDemoBlazeE2E:base_page.py:333 Current URL: https://www.demoblaze.com/
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+INFO     TestDemoBlazeE2E:home_page.py:86 Selected category: phones
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+INFO     TestDemoBlazeE2E:home_page.py:113 Clicked on product: Samsung galaxy s6
+INFO     TestDemoBlazeE2E:base_page.py:333 Current URL: https://www.demoblaze.com/prod.html?idp_=1
+INFO     TestDemoBlazeE2E:base_page.py:319 Navigated back
+INFO     TestDemoBlazeE2E:base_page.py:324 Navigated forward
+INFO     TestDemoBlazeE2E:base_page.py:314 Page refreshed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:544 Browser navigation completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

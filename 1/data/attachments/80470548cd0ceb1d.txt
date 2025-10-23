@@ -1,0 +1,8 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:796 Testing file upload using local server
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:863 Uploaded file: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/upload_test.txt
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:874  Local file upload test passed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

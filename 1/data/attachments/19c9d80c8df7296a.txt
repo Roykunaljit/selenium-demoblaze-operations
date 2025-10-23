@@ -1,0 +1,5 @@
+2025-10-23 16:52:31 - TestFileUpload - INFO - _create_test_html - Test HTML file created at: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/selenium_demoblaze_framework/tests/../test_pages/multiple_upload_test.html
+2025-10-23 16:52:31 - TestFileUpload - INFO - setup - HTTP Server started on port 37619, serving from /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/selenium_demoblaze_framework/tests/../test_pages
+2025-10-23 16:52:31 - TestFileUpload - INFO - create_test_file - Test file created: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/test_files/sample.txt
+2025-10-23 16:52:31 - TestFileUpload - INFO - test_upload_single_file_send_keys_local - Uploaded file via send_keys: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/test_files/sample.txt
+2025-10-23 16:52:31 - TestFileUpload - INFO - test_upload_single_file_send_keys_local - [PASS] Single file upload test passed (Local Server)

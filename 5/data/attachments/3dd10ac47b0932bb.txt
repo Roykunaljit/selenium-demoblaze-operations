@@ -1,0 +1,3 @@
+2025-10-23 18:13:42 - TestPageFactory - INFO - setup - Initializing browser: chrome
+2025-10-23 18:13:48 - TestPageFactory - INFO - test_page_factory_multiple_elements - Found 9 products
+2025-10-23 18:13:48 - TestPageFactory - INFO - test_page_factory_multiple_elements - [PASS] Multiple elements test passed

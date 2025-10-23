@@ -1,0 +1,66 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:572 Starting complete E2E shopping flow
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'signin2')
+INFO     TestDemoBlazeE2E:home_page.py:188 Opened signup modal
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'sign-username'): yNNJ1D3h
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'sign-password'): Test@1234
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Sign up')]")
+INFO     TestDemoBlazeE2E:home_page.py:195 Signed up with username: yNNJ1D3h
+INFO     TestDemoBlazeE2E:base_page.py:260 Accepted alert with text: Sign up successful.
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'login2')
+INFO     TestDemoBlazeE2E:home_page.py:175 Opened login modal
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'loginusername'): yNNJ1D3h
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'loginpassword'): Test@1234
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Log in')]")
+INFO     TestDemoBlazeE2E:home_page.py:182 Logged in with username: yNNJ1D3h
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nameofuser')
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('id', 'nameofuser'): Welcome yNNJ1D3h
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nameofuser')
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('id', 'nameofuser'): Welcome yNNJ1D3h
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Phones')]")
+INFO     TestDemoBlazeE2E:home_page.py:86 Selected category: phones
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(), 'Samsung galaxy s6')]")
+INFO     TestDemoBlazeE2E:home_page.py:113 Clicked on product: Samsung galaxy s6
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('xpath', "//h2[@class='name']")
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('xpath', "//h2[@class='name']"): Samsung galaxy s6
+INFO     TestDemoBlazeE2E:product_page.py:22 Retrieved product name: Samsung galaxy s6
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('xpath', "//h3[@class='price-container']")
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('xpath', "//h3[@class='price-container']"): $360 *includes tax
+INFO     TestDemoBlazeE2E:product_page.py:30 Retrieved and cleaned product price: 360
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//a[contains(text(),'Add to cart')]")
+INFO     TestDemoBlazeE2E:base_page.py:260 Accepted alert with text: Product added.
+INFO     TestDemoBlazeE2E:product_page.py:45 Product added to cart. Alert: Product added.
+INFO     TestDemoBlazeE2E:product_page.py:49 Completed 'Add to cart' action
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'cartur')
+INFO     TestDemoBlazeE2E:home_page.py:221 Navigated to cart
+INFO     TestDemoBlazeE2E:base_page.py:48 Found 1 elements: ('xpath', "//tbody[@id='tbodyid']//tr")
+INFO     TestDemoBlazeE2E:cart_page.py:36 Cart contains 1 item(s)
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'totalp')
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('id', 'totalp'): 360
+INFO     TestDemoBlazeE2E:cart_page.py:42 Cart total price: $360
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Place Order')]")
+INFO     TestDemoBlazeE2E:cart_page.py:59 Clicked 'Place Order'
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'name'): Glen Elliott
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'country'): USA
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'city'): New York
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'card'): 1565370235287404
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'month'): 12
+INFO     TestDemoBlazeE2E:base_page.py:111 Sent keys to element ('id', 'year'): 2025
+INFO     TestDemoBlazeE2E:cart_page.py:69 Filled order form with shipping and payment details
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'Purchase')]")
+INFO     TestDemoBlazeE2E:cart_page.py:75 Completed purchase
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('xpath', "//div[contains(@class, 'sweet-alert')]//h2[contains(text(), 'Thank you for your purchase!')]")
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('xpath', "//div[contains(@class, 'sweet-alert')]//h2[contains(text(), 'Thank you for your purchase!')]"): Thank you for your purchase!
+INFO     TestDemoBlazeE2E:cart_page.py:80 Order confirmation received: Thank you for your purchase!...
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//button[contains(text(),'OK')]")
+INFO     TestDemoBlazeE2E:cart_page.py:86 Closed confirmation modal
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'logout2')
+INFO     TestDemoBlazeE2E:home_page.py:200 Logged out
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nameofuser')
+INFO     TestDemoBlazeE2E:base_page.py:145 Got text from element ('id', 'nameofuser'): 
+INFO     TestDemoBlazeE2E:utility_methods.py:36 Screenshot saved: /home/runner/work/selenium-demoblaze-operations/selenium-demoblaze-operations/screenshots/e2e_complete.png
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:639 Complete E2E shopping flow completed successfully
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================

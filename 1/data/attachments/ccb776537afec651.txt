@@ -1,0 +1,13 @@
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:40 ==================================================
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:41 Starting new test
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:61 Navigated to DemoBlaze website
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:498 Testing element states
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'nava')
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'cartur')
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('id', 'login2')
+INFO     TestDemoBlazeE2E:home_page.py:175 Opened login modal
+INFO     TestDemoBlazeE2E:base_page.py:36 Found element: ('id', 'loginusername')
+INFO     TestDemoBlazeE2E:base_page.py:61 Clicked element: ('xpath', "//div[@id='logInModal']//button[contains(text(),'Close')]")
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:508 Element state validations completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:66 Test completed
+INFO     TestDemoBlazeE2E:test_demoblaze_e2e.py:67 ==================================================
